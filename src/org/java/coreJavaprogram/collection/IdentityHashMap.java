@@ -1,4 +1,4 @@
-package org.collection;
+package org.java.coreJavaprogram.collection;
 
 public class IdentityHashMap {
 }

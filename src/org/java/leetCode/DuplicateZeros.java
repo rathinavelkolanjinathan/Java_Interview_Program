@@ -33,7 +33,8 @@ public class DuplicateZeros {
                 duplicate = !duplicate;
             }
         }
-        Arrays.stream(memo).forEach(a -> System.out.println("index>>" + a));
+        Arrays.stream(memo)
+                .forEach(a -> System.out.println("index>>" + a));
 
     }
 

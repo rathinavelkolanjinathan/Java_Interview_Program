@@ -1,4 +1,4 @@
-package org.collection;
+package org.java.coreJavaprogram.collection;
 import java.util.List;
 
 
