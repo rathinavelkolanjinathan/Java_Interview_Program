@@ -1,6 +1,6 @@
 package org.java.solidprinciple.lsp;
 
-public class Facebook extends com.javatechie.solid.lsp.SocialMedia {
+public class Facebook extends SocialMedia {
 
     public void chatWithFriend() {
 
