@@ -1,6 +1,6 @@
-package org.collection.generics;
+package org.java.coreJavaprogram.collection.generics;
 
-import org.algorithm.Factorial;
+
 
 import java.util.Arrays;
 import java.util.List;

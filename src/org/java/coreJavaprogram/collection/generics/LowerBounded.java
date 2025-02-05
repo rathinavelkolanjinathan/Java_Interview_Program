@@ -1,4 +1,4 @@
-package org.collection.generics;
+package org.java.coreJavaprogram.collection.generics;
 
 import java.util.Arrays;
 import java.util.List;

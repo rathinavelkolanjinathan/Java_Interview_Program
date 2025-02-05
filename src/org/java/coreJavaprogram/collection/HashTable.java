@@ -1,6 +1,6 @@
-package org.collection;
+package org.java.coreJavaprogram.collection;
 
-import org.algorithm.Factorial;
+
 
 import java.util.Hashtable;
 import java.util.logging.Logger;

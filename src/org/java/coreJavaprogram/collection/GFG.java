@@ -1,6 +1,5 @@
-package org.collection;
+package org.java.coreJavaprogram.collection;
 
-import org.algorithm.Factorial;
 
 import java.util.EnumSet;
 import java.util.logging.Logger;
