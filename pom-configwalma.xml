@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.java.example</groupId>
+    <artifactId>jdk_own_practice</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>algorithm</module>
+       <!-- <module>common</module>
+        <module>domain</module>
+        <module>primary-adaptor</module>-->
+    </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <spring-boot-maven-plugin.version>3.0.3</spring-boot-maven-plugin.version>
+        <spring-kafka.version>3.0.3</spring-kafka.version>
+        <kafka-stream.version>2.8.0</kafka-stream.version>
+        <kafka-client.version>3.0.3</kafka-client.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <distuptor.version>3.4.4</distuptor.version>
+        <strati-af-tunr-utils-client-api.version>2.0.22</strati-af-tunr-utils-client-api.version>
+        <micrometer.versiuon>1.10.4</micrometer.versiuon>
+        <apache-commons.version>3.12.0</apache-commons.version>
+        <resilence4j-reactor.version>2.0.2</resilence4j-reactor.version>
+        <resilence4j-spring-boot2.version>2.0.2</resilence4j-spring-boot2.version>
+        <starati-af-turn-utils-client-api-version>2.0.22</starati-af-turn-utils-client-api-version>
+        <micrometer.version>1.10.4</micrometer.version>
+        <apache-commons-lang-version>3.12.0</apache-commons-lang-version>
+        <reactor.adaptor.version>3.4.6</reactor.adaptor.version>
+        <spring-boot-version>3.0.5</spring-boot-version>
+        <springcontext-version>6.5.0</springcontext-version>
+        <netty-code-https2.version>4.1.85.Final</netty-code-https2.version>
+        <reactor-netty.version>2.0.46.Final</reactor-netty.version>
+        <reactor-netty.version>1.1.0</reactor-netty.version>
+        <reactor-core.version>3.4.24</reactor-core.version>
+        <validation-api-version>2.0.1.Final</validation-api-version>
+        <resilience4j.version>1.18.26</resilience4j.version>
+        <mockito.core.version>1.18.26</mockito.core.version>
+        <mockito-inline.version>5.1.1</mockito-inline.version>
+        <mockito.junit-jupiter.version>5.1.1</mockito.junit-jupiter.version>
+        <awitility.version>4.1.1</awitility.version>
+        <jackson.annotation.version>2.14.2</jackson.annotation.version>
+        <log4j2.version>2.20.0</log4j2.version>
+        <mvn-compiler-plugin.version>3.11.0</mvn-compiler-plugin.version>
+        <maven-resource-plugin.version>3.1.0</maven-resource-plugin.version>
+        <mvn-jar-plugin.version>3.2.0</mvn-jar-plugin.version>
+        <mvn-release-plugin.version>3.0.0-M1</mvn-release-plugin.version>
+        <mvn-install-plugin.version>3.0.0-M1</mvn-install-plugin.version>
+        <maven-deployee-plugin-version>3.0.0-M1</maven-deployee-plugin-version>
+        <maven-site-plugin.version>3.9.0</maven-site-plugin.version>
+        <sonar-jacoco-listener.version>3.2</sonar-jacoco-listener.version>
+        <mvn-surefire-plugin.version>3.0.0-M5</mvn-surefire-plugin.version>
+
+        <mvn-failsafe-plugin.version>3.0.0-M5</mvn-failsafe-plugin.version>
+
+        <jacoco-version>0.8.7</jacoco-version>
+        <jacoco.unittest.destfile>${project.build.directory}/covarage-report/jacoco-ut.exe</jacoco.unittest.destfile>
+        <sonar-jacoco.reportpath>${jacoco.unittest.destfile}</sonar-jacoco.reportpath>
+        <jacoco.unittests.reportpath>${project.build.directory}/coverage-reports/jacoco.it.exe</jacoco.unittests.reportpath>
+       <!-- <sonar.jacoco.itReportPath>${jacoco.integrationtests.destFile}</sonar.jacoco.itReportPath>-->
+        <sonar.exclusion>**/config/**/*,**/constants/**/*,**/controller/**/*,**/valueobject/**/*,**/*config.java,**
+            /cpmmand/**,**/model/**,*</sonar.exclusion>
+
+        <jacoco.aggregate.destfile>${project.build.directory}/covarage-report/aggregate.exec</jacoco.aggregate.destfile>
+       <!--<sonar.coverage.jacoco.xmlReportPaths>${jacoco.aggregate.reportPath}/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>-->
+        <jacoco.percentage.line>1.0</jacoco.percentage.line>
+        <git-commit-id-plugin.version>4.0 0</git-commit-id-plugin.version>
+        <lombok-maven-plugin-version>1.18.20.0</lombok-maven-plugin-version>
+        <maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
+        <checkstyle.version>8.8</checkstyle.version>
+        <disable.checkstyle.validation>false</disable.checkstyle.validation>
+        <azure.spring.boot.starter.cosmos.version>4.6.0</azure.spring.boot.starter.cosmos.version>
+        <spring-statemachine.version>3.2.0</spring-statemachine.version>
+        <hibernate-validator-version>6.2.3.Final</hibernate-validator-version>
+        <spring-security-oauth2.version>5.8.1</spring-security-oauth2.version>
+        <swagger.maven.plugin.version>5.3.1.8</swagger.maven.plugin.version>
+        <spring-box-boot-starter.version>3.0.0</spring-box-boot-starter.version>
+        <swagger.core.version>1.6.4</swagger.core.version>
+        <jaxb.api.version>2.3.1</jaxb.api.version>
+        <slf4j-api-version>2.0.6</slf4j-api-version>
+        <spring.context.version>6.0.5</spring.context.version>
+        <jaxb.runtime.version>3.0.0</jaxb.runtime.version>
+        <jakarta.xml.bind.api.version>4.0.0</jakarta.xml.bind.api.version>
+        <activation.version>1.1</activation.version>
+        <lombok.version>1.18.26</lombok.version>
+        <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- New code -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j.pom</artifactId>
+                <version>${slf4j-api-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-web</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-webmvc</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework-boot</groupId>
+                        <artifactId>spring-boot</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.context.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring.test</artifactId>
+                <version>${spring.context.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.projectreactor.addons</groupId>
+                <artifactId>reactor-adaptor</artifactId>
+                <version>${reactor-adaptor.version}</version>
+
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-test</artifactId>
+                <version>${reactor-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>springcontext</artifactId>
+                <version>${spring.context.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.context.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework-boot</groupId>
+                <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${spring.boot.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-webflux</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-strator.logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webflux</artifactId>
+                <version>${spring.context.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-strater-bootstrap-webflux</artifactId>
+                <version>${spring.cloud.bootstrap.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-strater-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-code-http2</artifactId>
+                <version>${netty-code-http.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler</artifactId>
+                <version>${netty-handler.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springframework.boot</groupId>
+                <artifactId>spring-boot-strater-log4j2</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor.core</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty-handler.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>io.tcnative</artifactId>
+                <version>${netty-tcnative.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>io.tcnative</artifactId>
+                <version>${netty-tcnative.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-strater-test</artifactId>
+                <version>${spring-boot.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-strater-test</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-strater-actuator</artifactId>
+                <version>${spring-boot.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework-boot</groupId>
+                        <artifactId>spring-boot-starte-logging</artifactId>
+                    </exclusion>
+
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-all</artifactId>
+                <version>${resilience4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet.api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springfrmework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.context.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.codebase.sonar.plugin.java</groupId>
+                <artifactId>sonar-jacoco-listener</artifactId>
+                <version>${sonar-jacoco-listener.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.awaility</groupId>
+                <artifactId>awaility</artifactId>
+                <version>${awaility.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito.junit.jupiter</artifactId>
+                <version>${mockito.juit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito.core</artifactId>
+                <version>${mockito.core.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito.inline</artifactId>
+                <version>${mockito.inline.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jacksoncore</groupId>
+                <artifactId>jackson.datafind</artifactId>
+                <version>${jackson.annotation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jacksoncore</groupId>
+                <artifactId>jackson.annotations</artifactId>
+                <version>${jackson.annotation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jacksoncore</groupId>
+                <artifactId>jackson.core</artifactId>
+                <version>${jackson.annotation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-spring-boot2</artifactId>
+                <version>${resilience4j-spring-boot2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-reactor</artifactId>
+                <version>${resilience4j-reactor.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-micrometer</artifactId>
+                <version>${resilience4j-reactor.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-micrometer</artifactId>
+                <version>${resilience4j-reactor.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-commons-lang-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-register-promethus</artifactId>
+                <version>${micrometer.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-core</artifactId>
+                <version>${micrometer.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.strati.turn.utils</groupId>
+                <artifactId>strati-af-turn-utils-client-spring</artifactId>
+                <version>${strati-af-turn-utils-client-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${disruptor.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka-clients.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.project</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka-clients.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.projectreactor.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.azure.spring</groupId>
+                <artifactId>spring-cloud-azure-starter-data-cosmos</artifactId>
+                <version>${azure.spring.boot.strater.cosmos.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.projectreactor</groupId>
+                        <artifactId>reactor.bom</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.springframework.boot</groupId>
+                        <artifactId>reactor-bom</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.springframework.boot</groupId>
+                        <artifactId>spring-boot-strater-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.statemachine</groupId>
+                <artifactId>spring-statemachine-strater</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-strater-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-actuator</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${spring-statemachine.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springframework.security</groupId>
+                <artifactId>spring-security-oauth2-core</artifactId>
+                <version>${spring-security-oauth2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springframework.security</groupId>
+                <artifactId>spring-security-oauth2-client</artifactId>
+                <version>${spring-security-oauth2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>javax-api</artifactId>
+                <version>${jaxb.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>${jakarta.xml.bind-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>${activation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${jaxb.runtime.version}</version>
+            </dependency>
+            <!-- End of New code -->
+
+            <!-- old code -->
+
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>2020.0.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <scope>import</scope>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <scope>import</scope>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+        <!-- end of old code -->
+    </dependencyManagement>
+
+
+    <dependencies>
+        <!-- new code -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-strater-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>io.projectreactor.addons</groupId>
+            <artifactId>reactor-adaptor</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <!--<dependency>
+
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>org.springframework.book</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty.tcnative</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-strater-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-all</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>org.codehaus.sonar-plugins.java</groupId>
+            <artifactId>sonar.jacoco-listeners</artifactId>
+        </dependency>
+-->
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- end new code -->
+
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.4.9</version>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>io.projectreactor.addons</groupId>
+            <artifactId>reactor-adapter</artifactId>
+            <version>3.4.6</version>
+        </dependency>
+        &lt;!&ndash; test data &ndash;&gt;
+
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <version>3.5.0</version>
+            <scope>test</scope>
+
+        </dependency>-->
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>4.2.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.2.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <version>4.2.0</version>
+            <scope>test</scope>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson.databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson.core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.annotation</groupId>
+            <artifactId>jackson.annotation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-spring-boot2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-reactor</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-micrometer</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>io-micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io-micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io-strati-turn-utils</groupId>
+            <artifactId>strati-af-turn-utils-client-spring</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-to-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>io-strati-turn-utils</groupId>
+            <artifactId>strati-af-turn-utils-client-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+
+       &lt;!&ndash; <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka.client</artifactId>
+        </dependency>-->
+
+       <!-- <dependency>
+            <groupId>io.projectreactor.kafka</groupId>
+            <artifactId>reactor-kafka</artifactId>
+        </dependency>&ndash;&gt;
+-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>spring-cloud-azure-starter-data-cosmos</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.projectreactor</groupId>
+                    <artifactId>reactor-bom</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>-->
+
+        <!--<dependency>
+            <groupId>org.springframework.statemachine</groupId>
+            <artifactId>spring-statemachine-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-client</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb.api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glashfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+        </dependency>-->
+
+    </dependencies>
+
+    <!--<distributionManagement>
+        <repository>
+            <id>pangaea-release</id>
+            <url>http://repository.walmart.com/nexus/context/repositories/pangea-release</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>pangaea-snapshot</id>
+            <url>http://repository.walmart.com/nexus/context/repositories/pangea-snapshot</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+
+    </distributionManagement>-->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${mvn-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <!--<compilerArgument>xlint:all</compilerArgument>-->
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                    <encoding>UTF-8</encoding>
+
+                        <source>17</source>
+                        <target>17</target>
+
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactid>lombok</artifactid>
+                            <version>${lombok.version}</version>
+                        </path>
+
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${mvn-jar-plugin.version}</version>
+                <configuration>
+                    <execludes>
+                        <exclude>config/**/</exclude>
+                    </execludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+               <!-- <version>${mvn-release-plugin.version}</version>-->
+                <configuration>
+                    <localcheckout>true</localcheckout>
+                    <useReleaseprofile>false</useReleaseprofile>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+               <!-- <version>${mvn-surefire-plugin.version}</version>-->
+                <configuration>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>org.sonar.java.jacoco.JunitListener</value>
+                        </property>
+                    </properties>
+                    <argLine>${surefireArgLine}</argLine>
+                    <includes>**/*Test*</includes>
+                    <excludes>
+                        <exclude>
+                            **/*IntegrationTest*
+                        </exclude>
+                    </excludes>
+
+                </configuration>
+            </plugin>
+            <!--- Used for IntegrationTest-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${mvn-failsafe-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>Integration-Test</id>
+                        <goals>
+                            <goal>Integration-Test</goal>
+                            <goal>Verify</goal>
+                        </goals>
+                        <configuration>
+                            <properties>
+                                <property>
+                                    <name>Listener</name>
+                                    <value>org.sonar.java.jacoco.JunitListener</value>
+                                </property>
+                            </properties>
+                            <argLine>${failsafeLine}</argLine>
+                            <include>**/*/*IntegrationTest.java</include>
+                            <parallel>false</parallel>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+               <!-- <version>${jacoco-version}</version>-->
+                <executions>
+                    <execution>
+                        <id>pre-unit-Test</id>
+                        <phase>Initialize</phase>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <destfile>${jacoco.unittests.destFile}</destfile>
+                            <propertyname>surefireArgLine</propertyname>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <datafile>${jacoco.unitests.destFile}</datafile>
+                            <outputDirectory>${jacoco.unittests.reportPath}</outputDirectory>
+                            <excludes>
+                                <exclude>**/config/*.class</exclude>
+                                <exclude>**/model/**/.class</exclude>
+                                <exclude>**/model/*.class</exclude>
+                                <exclude>**/constant/*.class</exclude>
+                                <exclude>**/beans/**/*.class</exclude>
+                                <exclude>**/dto/**/.class</exclude>
+                                <exclude>**/dto/*.class</exclude>
+                                <exclude>**/exception/*.class</exclude>
+                                <exclude>**/entity/*.class</exclude>
+                                <exclude>**/common/resilience/*.class</exclude>
+                                <exclude>**/common/webclient/*.class</exclude>
+                                <exclude>**/util/encoder/**/</exclude>
+
+                            </excludes>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>merge-results</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>merge</goal>
+                        </goals>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>${project.build.directory}/coverage-reports}</directory>
+                                    <includes>
+                                        <include>*.exec</include>
+                                    </includes>
+                                </fileset>
+                            </filesets>
+                            <destfile>${jacoco.aggregate.destFile}</destfile>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>post-merge-report</id>
+
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <datafile>${jacoco.aggregate.destFile}</datafile>
+                            <outputDirectory>${jacoco.aggregate.reportPath}</outputDirectory>
+                            <excludes>
+                                <exclude>**/config/*.class</exclude>
+                                <exclude>**/model/**/.class</exclude>
+                                <exclude>**/model/*.class</exclude>
+                                <exclude>**/constant/*.class</exclude>
+                                <exclude>**/beans/**/*.class</exclude>
+                                <exclude>**/dto/**/.class</exclude>
+                                <exclude>**/dto/*.class</exclude>
+                                <exclude>**/exception/*.class</exclude>
+                                <exclude>**/entity/*.class</exclude>
+                                <exclude>**/common/resilience/*.class</exclude>
+                                <exclude>**/common/webclient/*.class</exclude>
+                                <exclude>**/util/encoder/**/</exclude>
+
+                            </excludes>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>jacoco-check-unit</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <datafile>${jacoco.unittest.destFile}</datafile>
+                            <excludes>
+                                <exclude>**/config/*.class</exclude>
+                                <exclude>**/model/**/.class</exclude>
+                                <exclude>**/model/*.class</exclude>
+                                <exclude>**/constant/*.class</exclude>
+                                <exclude>**/beans/**/*.class</exclude>
+                                <exclude>**/dto/**/.class</exclude>
+                                <exclude>**/dto/*.class</exclude>
+                                <exclude>**/exception/*.class</exclude>
+                                <exclude>**/entity/*.class</exclude>
+                                <exclude>**/common/resilience/*.class</exclude>
+                                <exclude>**/common/webclient/*.class</exclude>
+                                <exclude>**/util/encoder/**/</exclude>
+
+                            </excludes>
+                            <rules>
+                                <rule>
+                                    <element>BUNDLE</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>INSTRUCTION</counter>
+                                            <value>CONVEREDRATION</value>
+                                            <minimum>${jacoco.percentage.Line}</minimum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>pre-integration-test</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>pre-agent</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${jacoco.integrationtests.destFile}</destFile>
+                            <propertyName>failssafeArgLine</propertyName>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>post-integration-test</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${jacoco.integrationtests.destFile}</destFile>
+                            <outputDirectory>${jacoco.integrationtests.reportPath}</outputDirectory>
+                        </configuration>
+                    </execution>
+
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>p1.projects13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+               <!-- <version>${git-commit-id-plugin.version}</version>-->
+                <executions>
+                    <execution>
+                        <id>get-the-git-infos</id>
+                        <goals>
+                            <goal>revision</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <goGitDirectory>${project-basedir}.git</goGitDirectory>
+                    <prefix>git</prefix>
+                    <verbose>false</verbose>
+                    <generateGitPropeortyFile>true</generateGitPropeortyFile>
+                    <generateGitPropeortyFileName>${project.build.outputDirectory}git.properties
+                    </generateGitPropeortyFileName>
+                    <format>properties</format>
+                    <getDescribe>
+                        <skip>false</skip>
+                        <always>false</always>
+                        <dirty>-dirty</dirty>
+                    </getDescribe>
+                </configuration>
+            </plugin>
+
+           <!-- <plugin>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok-maven-plugin</artifactId>
+               &lt;!&ndash; <version>${lombok-maven-plugin.version}</version>&ndash;&gt;
+                <dependencies>
+                    <dependency>
+                        <groupId>org.projectlombok</groupId>
+                        <artifactId>lombok</artifactId>
+                        <version>1.18.24</version>
+                    </dependency>
+                </dependencies>
+
+            </plugin>-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <!--<version>${maven-checkstyle-plugin.version}</version>-->
+                <configuration>
+                    <excludes>**/cosmos/model/**</excludes>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <!--<version>${checkstyle.version}</version>-->
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <skip>${disable.checkstyle.validation}</skip>
+                            <configLocation>checkstyle.xml</configLocation>
+                            <encode>UTF-8</encode>
+                            <consoleoutput>true</consoleoutput>
+                            <failonviolation>warning</failonviolation>
+                        </configuration>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
