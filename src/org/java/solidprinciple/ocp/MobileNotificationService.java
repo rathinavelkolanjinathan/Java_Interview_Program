@@ -1,6 +1,6 @@
 package org.java.solidprinciple.ocp;
 
-public class MobileNotificationService implements Notificationservice {
+public class MobileNotificationService implements NotificationService {
     public void sendOTP(String medium) {
         //write the logic to send otp to mobile
         //twillo api

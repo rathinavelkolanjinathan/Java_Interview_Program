@@ -2,7 +2,7 @@ package org.java.algorithm;
 
 import java.util.logging.Logger;
 
-public class Fibonacci {
+public class FibonacciSeries {
     /**
      * This method is used to generate the nth fibonacci number
      *
@@ -10,7 +10,7 @@ public class Fibonacci {
      * @return a nth fibonacci number
      */
 
-    private static final Logger logger = Logger.getLogger(Fibonacci.class.toString());
+    private static final Logger logger = Logger.getLogger(FibonacciSeries.class.toString());
 
     public static int fib(int n) {
         //System.out.println("input values: "+n);

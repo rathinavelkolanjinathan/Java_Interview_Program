@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class LeftRotation {
-    private static final Logger logger = Logger.getLogger(LeftRotation.class.toString());
+public class LeftRotationOfArray {
+    private static final Logger logger = Logger.getLogger(LeftRotationOfArray.class.toString());
 
     static int[] rotLeft(int[] a, int d) {
         int n = a.length;
