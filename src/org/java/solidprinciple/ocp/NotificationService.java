@@ -1,6 +1,6 @@
 package org.java.solidprinciple.ocp;
 
-public interface Notificationservice {
+public interface NotificationService {
 
     public void sendOTP(String medium);
 

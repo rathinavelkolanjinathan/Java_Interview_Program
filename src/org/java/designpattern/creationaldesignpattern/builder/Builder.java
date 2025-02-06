@@ -2,11 +2,11 @@ package org.java.designpattern.creationaldesignpattern.builder;
 
 public interface Builder {
 
-    public void buildFloor();
+     void buildFloor();
 
-    public void buildWalls();
+     void buildWalls();
 
-    public void buildTerrace();
+     void buildTerrace();
 
-    public Home getComplexObject();
+     Home getComplexObject();
 }

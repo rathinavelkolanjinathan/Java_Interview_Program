@@ -1,7 +1,5 @@
 package org.java.solidprinciple.srp;
 
-import java.util.Random;
-
 public class BankService {
 
     public long deposit(long amount, String accountNo) {
