@@ -1,6 +1,7 @@
 package org.java.algorithm;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Logger;
 
 public class MakingAnagrams {
@@ -13,24 +14,24 @@ public class MakingAnagrams {
         String strCopyTwo = secondString.replaceAll("\\s", "").toUpperCase();
         //If the strings aren’t the same length, not anagrams
         if (strCopyOne.length() != strCopyTwo.length()) {
-            logger.info(firstString + " and " + secondString + " are not anagrams.");
+            logger.info("Input string are not anagrams");
             return;
         }
         //HashMap to store the number of characters
-        HashMap mapOne = createMapKeys(strCopyOne);
-        HashMap mapTwo = createMapKeys(strCopyTwo);
+        Map<Character,Integer> mapOne = createMapKeys(strCopyOne);
+        Map<Character,Integer> mapTwo = createMapKeys(strCopyTwo);
         if (mapOne.equals(mapTwo)) {
-            logger.info(firstString + " and " + secondString + " are anagrams");
+            logger.info("Input string are anagrams");
         } else {
-            logger.info(firstString + " and " + secondString + " are not anagrams.");
+            logger.info("Input string are not anagrams.");
         }
     }
 
-    public static HashMap createMapKeys(String str) {
-        HashMap map = new HashMap();
+    public static Map<Character,Integer> createMapKeys(String str) {
+        HashMap<Character,Integer> map = new HashMap();
         for (int i = 0; i < str.length(); i++) {
             if (map.containsKey(str.charAt(i))) {
-                int count = (int) map.get(str.charAt(i));
+                int count =  map.get(str.charAt(i));
                 map.put(str.charAt(i), count + 1);
             } else {
                 map.put(str.charAt(i), 0);

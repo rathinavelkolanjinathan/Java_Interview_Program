@@ -26,8 +26,9 @@ public class CustomizeListSorting {
         // System.out.println(list);
 
         //Lambda implements
-         //Ascending order  Method1
-        Collections.sort(list, (emp1, emp2) -> (int) (emp1.getSalary() - emp2.getSalary()));
+        //Ascending order  Method1
+        Collections.sort(list, (emp1, emp2) ->
+                (int) (emp1.getSalary() - emp2.getSalary()));
         // System.out.println("Labda sort "+list);
 
 
@@ -35,7 +36,8 @@ public class CustomizeListSorting {
 
         //Method2
         list.stream()
-                .sorted((emp1, emp2) -> (int) (emp1.getSalary() - emp2.getSalary()))
+                .sorted((emp1, emp2) ->
+                        (int) (emp1.getSalary() - emp2.getSalary()))
                 .forEach(System.out::println);
 
         //Method3

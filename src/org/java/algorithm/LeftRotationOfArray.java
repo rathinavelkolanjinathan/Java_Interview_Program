@@ -7,12 +7,12 @@ import java.util.logging.Logger;
 public class LeftRotationOfArray {
     private static final Logger logger = Logger.getLogger(LeftRotationOfArray.class.toString());
 
-    static int[] rotLeft(int[] a, int d) {
-        int n = a.length;
-        int[] rotArray = new int[n];
-        for (int oldIndex = 0; oldIndex < n; oldIndex++) {
-            int newIndex = (oldIndex + n - d) % n;
-            rotArray[newIndex] = a[oldIndex];
+    static int[] rotateLeft(int[] array, int d) {
+        int arrLength = array.length;
+        int[] rotArray = new int[arrLength];
+        for (int oldIndex = 0; oldIndex < arrLength; oldIndex++) {
+            int newIndex = (oldIndex + arrLength - d) % arrLength;
+            rotArray[newIndex] = array[oldIndex];
         }
         return rotArray;
     }
@@ -21,12 +21,13 @@ public class LeftRotationOfArray {
         Scanner sc = new Scanner(System.in);
         int arraySize = sc.nextInt();
         int input = sc.nextInt();
-        int[] defaultSize = new int[arraySize];
-        for (int i = 0; i < defaultSize.length; i++) {
-            defaultSize[i] = sc.nextInt();
+        int[] arrSize = new int[arraySize];
+        for (int i = 0; i < arrSize.length; i++) {
+            arrSize[i] = sc.nextInt();
         }
-        int res[] = rotLeft(defaultSize, input);
-        logger.info("LeftRotation" + Arrays.toString(res));
+        int[] res = rotateLeft(arrSize, input);
+        String rotateResult = Arrays.toString(res);
+        logger.info("Left Rotation" + rotateResult);
         sc.close();
     }
 }

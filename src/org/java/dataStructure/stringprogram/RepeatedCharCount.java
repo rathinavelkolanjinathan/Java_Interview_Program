@@ -5,14 +5,10 @@ import java.util.Map;
 import java.util.Set;
 
 public class RepeatedCharCount {
-
     public static void main(String[] args) {
         String word = "indiiaaii";
-		repeatCharacterCount(word);
-
+        repeatCharacterCount(word);
     }
-
-
     public static void repeatCharacterCount(String word) {
         Map<Character, Integer> map = new HashMap<>();
         char[] ch = word.toCharArray();
@@ -32,6 +28,5 @@ public class RepeatedCharCount {
                 System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
             }
         }
-
     }
 }

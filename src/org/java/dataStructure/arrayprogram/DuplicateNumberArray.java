@@ -7,7 +7,7 @@ public class DuplicateNumberArray {
 		int[][] test = new int[][] { { 1, 1, 2, 2, 3, 4, 5 }, { 1, 1, 1, 1, 1, 1, 1 }, { 1, 2, 3, 4, 5, 6, 7 },
 				{ 1, 2, 1, 1, 1, 1, 1 }, };
 		for (int[] input : test) {
-			System.out.println("Array with Duplicates       : " + Arrays.toString(input));
+			//System.out.println("Array with Duplicates       : " + Arrays.toString(input));
 			System.out.println("After removing duplicates   : " + Arrays.toString(removeDuplicates(input)));
 		}
 	}
@@ -16,6 +16,7 @@ public class DuplicateNumberArray {
 		Arrays.sort(inputArray);
 		int[] result = new int[inputArray.length];
 		int previous = inputArray[0];
+		//System.out.println("previous"+previous);
 		result[0] = previous;
 		for (int i = 1; i < inputArray.length; i++) {
 			int ch = inputArray[i];

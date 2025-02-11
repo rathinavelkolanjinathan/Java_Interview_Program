@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import org.java.coreJavaprogram.collection.Hosting;
 
 public class ConvertListToMapJDK8 {
     private static final Logger logger = Logger.getLogger(ConvertListToMapJDK8.class.toString());

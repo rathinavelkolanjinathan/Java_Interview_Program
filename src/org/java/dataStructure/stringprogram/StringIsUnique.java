@@ -3,7 +3,7 @@ package org.java.dataStructure.stringprogram;
 /**
  * Implement an algorithm String has all unique characters.
  */
-public class IsUnique {
+public class StringIsUnique {
     public static void main(String[] args) {
         boolean result = isUniqueChars("Strring");
         System.out.println("Test values " + result);

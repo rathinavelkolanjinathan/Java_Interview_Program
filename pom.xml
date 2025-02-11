@@ -107,18 +107,18 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
-                &lt;!&ndash;<configuration>
+                <!--<configuration>
                     <excludes>**/cosmos/model/**</excludes>
-                </configuration>&ndash;&gt;
+                </configuration>-->
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
                         <artifactId>checkstyle</artifactId>
-                        <version>8.41</version> &lt;!&ndash; Specify the Checkstyle version here &ndash;&gt;
+                        <version>8.41</version> <!-- Specify the Checkstyle version here -->
                     </dependency>
                 </dependencies>
                 <executions>
@@ -131,7 +131,7 @@
                             <encoding>UTF-8</encoding>
                            <consoleOutput>true</consoleOutput>
                             <failsOnError>true</failsOnError>
-                            &lt;!&ndash;<failsOnViolation>true</failsOnViolation>&ndash;&gt;
+                            <!--<failsOnViolation>true</failsOnViolation>-->
                             <violationSeverity>warning</violationSeverity>
                         </configuration>
                         <goals>
@@ -139,7 +139,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 

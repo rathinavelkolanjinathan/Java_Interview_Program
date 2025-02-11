@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Given two strings ,write a method to decide if one is permutation of the other
- *
+ * <p>
  * Input:  god ,dog
  */
 public class CheckPermutation {
@@ -23,8 +23,8 @@ public class CheckPermutation {
         return sort(str1).equals(sort(str1));
     }
 
-    static String sort(String s) {
-        char content[] = s.toCharArray();
+    static String sort(String str) {
+        char content[] = str.toCharArray();
         Arrays.sort(content);
         return new String(content);
 

@@ -8,7 +8,6 @@ public class StringDescendingOrder {
         String[] ss = {"4", "8", "5", "7", "9", "1"};
         Arrays.stream(ss)
                 .sorted(Comparator.reverseOrder())
-                .forEach(s -> System.out.println
-                (s));//descending
+                .forEach(s -> System.out.println(s));//descending
     }
 }

@@ -8,8 +8,8 @@ public class RemoveEvenInteger {
 
     public static void main(String[] args) {
         int[] evenArray = {2, 3, 4, 5, 6};
-        int result[] = removeEvenNumber(evenArray);
-        printArray(result);
+        int [] evenNumber = removeEvenNumber(evenArray);
+        printArray(evenNumber);
     }
 
     public static int[] removeEvenNumber(int evenArray[]) {

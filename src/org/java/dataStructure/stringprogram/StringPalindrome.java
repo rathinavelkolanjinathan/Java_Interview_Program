@@ -4,7 +4,7 @@ public class StringPalindrome {
 
     public static void main(String[] args) {
         String inputStr = "202";
-        String result = reverse(inputStr);
+        String result = polindrome(inputStr);
         if (inputStr.equals(result)) {
             System.out.println("Yes "+inputStr+" is a Palindrome  : " + result);
         } else {
@@ -12,7 +12,7 @@ public class StringPalindrome {
         }
     }
 
-    public static String reverse(String source) {
+    public static String polindrome(String source) {
         String reverse = "";
         int length = source.length();
         if (source == null || source.isEmpty()) {

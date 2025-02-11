@@ -21,6 +21,7 @@ public class EvenAndOddPrinter {
                 .filter(condition)
                 .forEach(EvenAndOddPrinter::execute);
     }
+
     public static void execute(int i) {
         synchronized (object) {
             try {

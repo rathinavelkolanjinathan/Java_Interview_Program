@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class SecondLargestArrayElement {
 
+
+
     public static void main(String[] args) {
         Integer originalArray[] = {100, 300, 200, 600, 400, 700, 500, 8000, 900};
         int arrayLength = originalArray.length;

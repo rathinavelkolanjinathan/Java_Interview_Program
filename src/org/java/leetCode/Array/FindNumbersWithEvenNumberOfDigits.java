@@ -1,4 +1,4 @@
-package org.java.leetCode;
+package org.java.leetCode.Array;
 
 /**
  * Working fine

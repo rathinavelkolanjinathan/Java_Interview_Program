@@ -8,47 +8,46 @@ import java.util.stream.IntStream;
 
 public class ParallelStreamTest {
     public static void main(String[] args) {
-        long start=0;
-        long end=0;
+        long start = 0;
+        long end = 0;
 
-        start=System.currentTimeMillis();
-        IntStream.range(1,100).forEach(System.out::println);
-        end=System.currentTimeMillis();
-        System.out.println("Plain stream took time : "+(end-start));
+        start = System.currentTimeMillis();
+        IntStream.range(1, 100).forEach(System.out::println);
+        end = System.currentTimeMillis();
+        System.out.println("Plain stream took time : " + (end - start));
 
         System.out.println("============================================");
 
-        start=System.currentTimeMillis();
-        IntStream.range(1,100)
+        start = System.currentTimeMillis();
+        IntStream.range(1, 100)
                 .parallel()
                 .forEach(System.out::println);
-        end=System.currentTimeMillis();
-        System.out.println("Parallel stream took time : "+(end-start));
+        end = System.currentTimeMillis();
+        System.out.println("Parallel stream took time : " + (end - start));
 
 
-
-        IntStream.range(1,10).forEach(x->{
-            System.out.println("Thread : "+Thread.currentThread().getName()+" : "+x);
+        IntStream.range(1, 10).forEach(x -> {
+            System.out.println("Thread : " + Thread.currentThread().getName() + " : " + x);
         });
 
-        IntStream.range(1,10).parallel().forEach(x->{
-            System.out.println("Thread : "+Thread.currentThread().getName()+" : "+x);
+        IntStream.range(1, 10).parallel().forEach(x -> {
+            System.out.println("Thread : " + Thread.currentThread().getName() + " : " + x);
         });
 
         List<Employee> employees = Database.getEmployeeDetails();
 
         //normal
-        start=System.currentTimeMillis();
+        start = System.currentTimeMillis();
         double salaryWithStream = employees.stream()
                 .map(Employee::getSalary)
                 .mapToDouble(i -> i)
                 .average()
                 .getAsDouble();
-        end=System.currentTimeMillis();
+        end = System.currentTimeMillis();
 
-        System.out.println("Normal stream execution time : "+(end-start)+" : Avg salary : "+salaryWithStream);
+        System.out.println("Normal stream execution time : " + (end - start) + " : Avg salary : " + salaryWithStream);
 
-        start=System.currentTimeMillis();
+        start = System.currentTimeMillis();
         //using parallel stream
         double salaryWithParallelStream = employees.parallelStream()
                 .map(Employee::getSalary)
@@ -56,8 +55,8 @@ public class ParallelStreamTest {
                 .average()
                 .getAsDouble();
 
-        end=System.currentTimeMillis();
+        end = System.currentTimeMillis();
 
-        System.out.println("Parallel stream execution time : "+(end-start)+" : Avg salary : "+salaryWithParallelStream);
+        System.out.println("Parallel stream execution time : " + (end - start) + " : Avg salary : " + salaryWithParallelStream);
     }
 }

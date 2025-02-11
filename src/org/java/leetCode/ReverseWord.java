@@ -14,7 +14,8 @@ public class ReverseWord {
 
     public static String reverseWords(String s) {
         char[] ch = s.toCharArray();
-        int left = 0, right = 0;
+        int left = 0;
+        int right = 0;
         while (right < ch.length) {
             if (ch[right] == ' ') {
                 reverse(ch, left, right - 1);
@@ -35,6 +36,7 @@ public class ReverseWord {
             arr[right--] = temp;
         }
     }
+
     public static void main(String[] args) {
         String st = "kolanji";
         String ref = reverseWords(st);

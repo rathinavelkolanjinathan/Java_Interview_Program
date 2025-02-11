@@ -7,8 +7,8 @@ public class MinimumValuesArray {
 
     public static void main(String[] args) {
         int[] minimumArray = {5, 9, 3, 15, 1, 2};
-        int result = getMinimumValueArray(minimumArray);
-        logger.info("final values " + result);
+        int minimumValues = getMinimumValueArray(minimumArray);
+        logger.info("final values " + minimumValues);
     }
 
     public static int getMinimumValueArray(int[] minimumArray) {
@@ -23,7 +23,7 @@ public class MinimumValuesArray {
         for (int i = 0; i < minimumArray.length; i++) {
             if (minimumArray[i] < min) {   // this is find the miminumn logic
                 min = minimumArray[i]; // when is minimu values is occured then only come inside
-                // logger.info("loop"+min);
+                logger.info("loop" + min);
             }
         }
         return min;

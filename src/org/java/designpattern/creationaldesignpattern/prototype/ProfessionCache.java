@@ -12,18 +12,18 @@ public class ProfessionCache {
         return (Profession) cacheProfession.cloningMethod();
     }
 
-    public static void loadProfession() {
+    public static void loadProfessionCache() {
 
         Doctor doc = new Doctor();
         doc.id = 1;
         map.put(doc.id, doc);
 
         Engineer eng = new Engineer();
-        eng.id = 1;
+        eng.id = 2;
         map.put(eng.id, doc);
 
         Teacher teach = new Teacher();
-        teach.id = 1;
+        teach.id = 3;
         map.put(doc.id, doc);
     }
 }
