@@ -9,7 +9,6 @@ public class TopTwoMaximum {
 		//topTwo(new int[] { Integer.MAX_VALUE, 0, Integer.MAX_VALUE });
 		//topTwo(new int[] { 1, 1, 0 });
 	}
-
 	public static void topTwoMax(int[] numbers) {
 		int max1 = Integer.MIN_VALUE;
 		int max2 = Integer.MIN_VALUE;
@@ -21,10 +20,8 @@ public class TopTwoMaximum {
 				max2 = number;
 			}
 		}
-
 		System.out.println("Given integer array : " + Arrays.toString(numbers));
 		System.out.println("First maximum number is : " + max1);
 		System.out.println("Second maximum number is : " + max2);
 	}
-
 }

@@ -8,9 +8,11 @@ public class ReverseArray {
 
     public static void main(String[] args) {
 
-        int [] reverseArr = {2, 3, 4, 5, 6, 7, 8, 9};
-        ReverseArray.reverseArray(reverseArr, 0, reverseArr.length - 1);
-        Arrays.stream(reverseArr)
+        int [] array = {2, 3, 4, 5, 6, 7, 8, 9};
+        //Use algorithm
+        ReverseArray.reverseArray(array, 0, array.length - 1);
+        //Use jdk8
+        Arrays.stream(array)
                 .forEach(values -> logger.info("Reverse array" + values));
     }
 

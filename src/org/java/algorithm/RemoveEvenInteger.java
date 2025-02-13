@@ -7,8 +7,8 @@ public class RemoveEvenInteger {
     private static final Logger logger = Logger.getLogger(RemoveEvenInteger.class.toString());
 
     public static void main(String[] args) {
-        int[] evenArray = {2, 3, 4, 5, 6};
-        int [] evenNumber = removeEvenNumber(evenArray);
+        int[] array = {2, 3, 4, 5, 6};
+        int[] evenNumber = removeEvenNumber(array);
         printArray(evenNumber);
     }
 
@@ -31,7 +31,8 @@ public class RemoveEvenInteger {
     }
 
     public static void printArray(int[] result) {
-        Arrays.stream(result).forEach(eventInt -> logger.info("Remove EvenInteger" + eventInt));
+        Arrays.stream(result)
+                .forEach(eventInt -> logger.info("Remove EvenInteger" + eventInt));
 
     }
 }

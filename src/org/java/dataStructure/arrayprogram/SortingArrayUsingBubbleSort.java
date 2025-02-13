@@ -1,9 +1,6 @@
 package org.java.dataStructure.arrayprogram;
 
-import java.util.Arrays;
-
 public class SortingArrayUsingBubbleSort {
-
     public static void main(String[] args) {
         int[] arr = new int[]{6, 8, 7, 4, 312, 78, 54, 9, 12, 100, 89, 74};
 

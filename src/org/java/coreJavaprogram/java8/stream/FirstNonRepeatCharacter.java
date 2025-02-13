@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class FirstNonRepeatCharacter {
     public static void main(String[] args) {
-        String nonRepeat = "koollaanji";
+        String str = "koollaanji";
 
-       String firstNonRepeat = Arrays.stream(nonRepeat.split(""))
+       String firstNonRepeat = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(),
                         LinkedHashMap::new,Collectors.counting()))
                 .entrySet()
@@ -19,11 +19,11 @@ public class FirstNonRepeatCharacter {
                 .get()
                 .getKey();
 
-       System.out.println("First NonRepeatChar:: "+firstNonRepeat);
+       System.out.println("First Non-Repeated Character :: "+firstNonRepeat);
 
        //First Repeat character
 
-           String firstRepeat =    Arrays.stream(nonRepeat.split(""))
+           String firstRepeat =    Arrays.stream(str.split(""))
                                   .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,
                                    Collectors.counting()))
                        .entrySet()
@@ -32,6 +32,6 @@ public class FirstNonRepeatCharacter {
                        .findFirst()
                        .get()
                        .getKey();
-        System.out.println("FirstRepeatChar:: "+ firstRepeat);
+        System.out.println("First Repeated Character:: "+ firstRepeat);
     }
 }

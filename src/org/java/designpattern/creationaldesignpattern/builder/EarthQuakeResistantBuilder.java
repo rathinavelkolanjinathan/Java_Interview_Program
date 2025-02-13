@@ -1,6 +1,6 @@
 package org.java.designpattern.creationaldesignpattern.builder;
 
-public class EarthQuakeResistantBuilde implements Builder {
+public class EarthQuakeResistantBuilder implements Builder {
 
     private Home home = new Home();
 

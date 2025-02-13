@@ -7,25 +7,27 @@ import java.util.stream.Stream;
 public class ReverseLetter {
     public static void main(String[] args) {
       //Wthout jdk8
-        String inputStr = "Hello Java";
-        String[] splits = inputStr.split(" ");
+        String str = "Hello Java";
+        String[] splits = str.split(" ");
+
+
         //StringJoiner is used to construct a sequence of characters separated
         // by a delimiter and optionally starting with
         // a supplied prefix and ending with a supplied suffix.
-        StringJoiner outputString = new StringJoiner(" ");
+        StringJoiner stringJoiner = new StringJoiner(" ");
 
         for (String split : splits) {
-            outputString.add(new StringBuilder(split)
+            stringJoiner.add(new StringBuilder(split)
                     .reverse()
                     .toString());
         }
 
-        System.out.println("Using string builder ::" + outputString.toString());
+        System.out.println("Using string builder ::" + stringJoiner.toString());
 
         //Using Jdk8
-        String String = Stream.of(inputStr)
-                .map(inputValues ->
-                        new StringBuilder(inputValues)
+        String String = Stream.of(str)
+                .map(values ->
+                        new StringBuilder(values)
                                 .reverse())
                 .collect(Collectors.joining());
         System.out.println("Using jdk8 :: " + String);

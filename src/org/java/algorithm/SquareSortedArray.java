@@ -6,10 +6,10 @@ import java.util.logging.Logger;
 public class SquareSortedArray {
     private static final Logger logger = Logger.getLogger(SquareSortedArray.class.toString());
 
-    public static int[] sortedSquares(int[] nums) {
-        int[] sq = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            sq[i] = nums[i] + 1 * nums[i] + 1;
+    public static int[] sortedSquares(int[] array) {
+        int[] sq = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            sq[i] = array[i] + 1 * array[i] + 1;
         }
         Arrays.sort(sq);
         return sq;

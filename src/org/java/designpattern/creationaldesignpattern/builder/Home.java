@@ -17,7 +17,7 @@ public class Home {
 
 
     public static void main(String[] args) {
-        EarthQuakeResistantBuilde builder = new EarthQuakeResistantBuilde();
+        EarthQuakeResistantBuilder builder = new EarthQuakeResistantBuilder();
         Director dir = new Director(builder);
         dir.manageRequiredHomeConstruction();
         Home home = dir.getCompleteObjectofHome();

@@ -10,8 +10,8 @@ public class StartsWith1Array {
 
       List<String> startOne =  Arrays.stream(number)
                 .boxed()
-                .map(s ->s+"")
-                .filter(x->x.startsWith("1"))
+                .map(s -> s+ "")
+                .filter(x -> x.startsWith("1"))
                 .collect(Collectors.toList());
 
       System.out.println("startOne "+startOne);

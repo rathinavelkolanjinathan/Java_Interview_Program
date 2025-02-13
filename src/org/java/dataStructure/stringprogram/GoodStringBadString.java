@@ -10,7 +10,8 @@ public class GoodStringBadString {
 
         String bad = "good baad jaava schooool objeect";
 
-        String goodString = bad.replaceAll("(?i)(\\p{L})\\1", "$1");
+        String goodString = bad
+                .replaceAll("(?i)(\\p{L})\\1", "$1");
         logger.info("Result " + goodString);
     }
 }
