@@ -26,6 +26,7 @@ public class Map_Test {
                 .sum();
 
         System.out.println("sum Values " + sum);
+
         //List words= Arrays.asList("JavaDevJournal","Java");
         List words = Arrays.asList("clone", "aava", "aava", "nathan");
         words.stream()

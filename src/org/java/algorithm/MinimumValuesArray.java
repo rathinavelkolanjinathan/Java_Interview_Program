@@ -8,22 +8,22 @@ public class MinimumValuesArray {
     public static void main(String[] args) {
         int[] minimumArray = {5, 9, 3, 15, 1, 2};
         int minimumValues = getMinimumValueArray(minimumArray);
-        logger.info("final values " + minimumValues);
+        logger.info("Minimum Values " + minimumValues);
     }
 
-    public static int getMinimumValueArray(int[] minimumArray) {
+    public static int getMinimumValueArray(int[] array) {
 
-        if (minimumArray == null || minimumArray.length == 0) {
+        if (array == null || array.length == 0) {
 
             throw new IllegalArgumentException("Exception");
         }
 
-        int min = minimumArray[0];
+        int min = array[0];
 
-        for (int i = 0; i < minimumArray.length; i++) {
-            if (minimumArray[i] < min) {   // this is find the miminumn logic
-                min = minimumArray[i]; // when is minimu values is occured then only come inside
-                logger.info("loop" + min);
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {   // this is find the miminumn logic
+                min = array[i]; // when is minimu values is occured then only come inside
+               // logger.info("loop" + min);
             }
         }
         return min;

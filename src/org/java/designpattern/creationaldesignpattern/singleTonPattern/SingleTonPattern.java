@@ -1,15 +1,16 @@
-package org.java.designpattern.singleTonPattern;
+package org.java.designpattern.creationaldesignpattern.singleTonPattern;
 
 public class SingleTonPattern {
     private static SingleTonPattern INSTANCE = null;
+
     private SingleTonPattern() {
     }
+
     public static SingleTonPattern getInstance() throws InterruptedException {
         if (INSTANCE == null) {
-            synchronized(SingleTonPattern.class)
-        {
+            synchronized (SingleTonPattern.class) {
                 if (INSTANCE == null) {
-                    synchronized(SingleTonPattern.class) {
+                    synchronized (SingleTonPattern.class) {
                         Thread.sleep(2000);
                     }
                 }

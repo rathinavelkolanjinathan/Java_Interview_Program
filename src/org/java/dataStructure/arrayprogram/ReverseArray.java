@@ -20,9 +20,10 @@ public class ReverseArray {
 
 
 
+
         for (int i = 0; i < array.length / 2; i++) {
             int other = array.length - i - 1;
-           // System.out.println(other);
+            System.out.println(other);
             int temp = array[i];
             array[i] = array[other];
             array[other] = temp;

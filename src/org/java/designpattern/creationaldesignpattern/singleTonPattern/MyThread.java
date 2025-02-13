@@ -1,4 +1,4 @@
-package org.java.designpattern.singleTonPattern;
+package org.java.designpattern.creationaldesignpattern.singleTonPattern;
 
 public class MyThread implements Runnable {
     @Override
