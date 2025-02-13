@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringReverseUsingRecursion {
+public class ReverseUsingRecursion {
 	 /* Function to print reverse of the passed string */
     void reverse(String str)
     {
@@ -18,7 +18,7 @@ public class StringReverseUsingRecursion {
     public static void main(String[] args)
     {
         String str = "java in";
-        StringReverseUsingRecursion obj = new StringReverseUsingRecursion();
+        ReverseUsingRecursion obj = new ReverseUsingRecursion();
         obj.reverse(str);
     }   
 }

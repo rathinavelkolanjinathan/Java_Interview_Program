@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringPalindrome {
+public class Palindrome {
 
     public static void main(String[] args) {
         String inputStr = "202";

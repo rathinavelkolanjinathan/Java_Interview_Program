@@ -8,6 +8,7 @@ public class AnagramString {
         isAnagram("Keep", "Peek");
         isAnagram("Mother In Law", "Hitler Woman");
     }
+
     static void isAnagram(String str1, String str2) {
         String s1 = str1.replaceAll("\\s", "");   //white spaces check 
         String s2 = str2.replaceAll("\\s", "");

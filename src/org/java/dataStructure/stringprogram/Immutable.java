@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringImmutable {
+public class Immutable {
     public static void main(String[] args) {
         String st = new String("kolanji");
         String st2 = "nathan";

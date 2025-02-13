@@ -7,10 +7,8 @@ public class FirstNonRepeatedChar {
 
     public static void main(String[] args) {
         String input = "kolaanji".toLowerCase();
-
-        FirstNonRepeatedChar te = new FirstNonRepeatedChar();
-        char c = te.getFirstNonRepeatedChar(input);
-        System.out.println("values " + c);
+        char ch = FirstNonRepeatedChar.getFirstNonRepeatedChar(input);
+        System.out.println("values " + ch);
 
     }
     /* * Using LinkedHashMap to find first non repeated character of String *

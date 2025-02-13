@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StringAscendingOrder {
+public class AscendingOrder {
     public static void main(String[] args) {
         String st[] = {"{30,40}\n{70,80}\n{50,60}"};
         String result = "";

@@ -3,11 +3,11 @@ package org.java.dataStructure.stringprogram;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class StringDescendingOrder {
+public class DescendingOrder {
     public static void main(String[] args) {
-        String[] ss = {"4", "8", "5", "7", "9", "1"};
-        Arrays.stream(ss)
+        String[] array = {"4", "8", "5", "7", "9", "1"};
+        Arrays.stream(array)
                 .sorted(Comparator.reverseOrder())
-                .forEach(s -> System.out.println(s));//descending
+                .forEach(arr -> System.out.println(arr));//descending
     }
 }

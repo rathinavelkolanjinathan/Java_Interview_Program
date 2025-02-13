@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class PrintAllPermutation {
+public class PermutationPrintAll {
     public static void main(String[] args) {
         String per = "123";
         permutation(per, "");

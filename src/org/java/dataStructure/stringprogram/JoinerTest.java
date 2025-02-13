@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.StringJoiner;
 
-public class StringJoinerTest {
+public class JoinerTest {
 	public static void main(String a[]){
 		
 		String st="kolanji";

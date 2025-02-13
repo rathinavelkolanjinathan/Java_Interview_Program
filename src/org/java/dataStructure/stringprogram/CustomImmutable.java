@@ -35,11 +35,11 @@ public final class CustomImmutable {
         Date date = new Date();
         List<String> list = new ArrayList();
         list.add("25");
-        CustomImmutable cust = new CustomImmutable("hi", 20, Arrays.stream(new String[]{"123", "452"}).collect(Collectors.toList()));
+        CustomImmutable imu = new CustomImmutable("hi", 20, Arrays.stream(new String[]{"123", "452"}).collect(Collectors.toList()));
 
         // cust.name="kolanji";
-        cust.getMobile().add("950");
-        System.out.println("Immutable"+cust.toString());
+        imu.getMobile().add("950");
+        System.out.println("Immutable"+imu.toString());
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * <p>
  * Input:  god ,dog
  */
-public class CheckPermutation {
+public class Permutation {
     public static void main(String args[]) {
 
         /* * A method exposed to client to calculate permutation of String in Java. */
