@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class ReverseLetter {
     public static void main(String[] args) {
-
+      //Wthout jdk8
         String inputStr = "Hello Java";
         String[] splits = inputStr.split(" ");
         //StringJoiner is used to construct a sequence of characters separated

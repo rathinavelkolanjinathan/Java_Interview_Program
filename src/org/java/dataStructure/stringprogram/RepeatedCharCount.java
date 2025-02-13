@@ -9,6 +9,7 @@ public class RepeatedCharCount {
         String word = "indiiaaii";
         repeatCharacterCount(word);
     }
+
     public static void repeatCharacterCount(String word) {
         Map<Character, Integer> map = new HashMap<>();
         char[] ch = word.toCharArray();

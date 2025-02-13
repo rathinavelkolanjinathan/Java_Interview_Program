@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringValueCompare {
+public class ValueCompare {
     public static void main(String[] args) {
         String s1 = "kolanji";
         String s2 = new String("kolanji");
