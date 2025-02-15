@@ -1,4 +1,6 @@
-package org.java.algorithm;
+package org.java.dataStructure.stringprogram;
+
+import org.java.dataStructure.arrayprogram.MinimumValuesArray;
 
 import java.util.logging.Logger;
 

@@ -1,4 +1,4 @@
-package org.java.algorithm;
+package org.java.dataStructure.stringprogram;
 
 public class StringToInteger {
     public static int myAtoi(String str) {

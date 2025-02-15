@@ -1,4 +1,4 @@
-package org.java.algorithm;
+package org.java.dataStructure.arrayprogram;
 
 /**
  * Leetcode problem

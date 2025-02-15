@@ -1,7 +1,5 @@
 package org.java.coreJavaprogram.java8.functionalInterfaceTest;
 
-import org.java.algorithm.SecondMaxValuesArray;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;

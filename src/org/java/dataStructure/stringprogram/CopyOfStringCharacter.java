@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class CopyOfStringCharacter {
+public class CopyString {
 
 
     public static void main(String[] args) {

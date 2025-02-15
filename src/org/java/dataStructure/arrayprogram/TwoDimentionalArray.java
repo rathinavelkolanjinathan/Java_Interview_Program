@@ -1,4 +1,4 @@
-package org.java.algorithm;
+package org.java.dataStructure.arrayprogram;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
