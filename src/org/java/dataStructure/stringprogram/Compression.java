@@ -2,8 +2,8 @@ package org.java.dataStructure.stringprogram;
 
 import java.util.logging.Logger;
 
-public class StringCompression {
-    private static final Logger logger = Logger.getLogger(StringCompression.class.toString());
+public class Compression {
+    private static final Logger logger = Logger.getLogger(Compression.class.toString());
 
     public static String compress(String st) {
         int count = 0;

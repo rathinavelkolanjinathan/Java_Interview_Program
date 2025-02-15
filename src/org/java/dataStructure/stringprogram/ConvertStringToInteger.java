@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringToInteger {
+public class ConvertStringToInteger {
     public static int myAtoi(String str) {
         str = str.trim();
         if (str == null || str.length() == 0) {

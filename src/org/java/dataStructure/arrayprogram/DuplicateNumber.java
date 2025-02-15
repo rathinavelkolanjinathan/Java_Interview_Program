@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DuplicateNumberArray {
+public class DuplicateNumber {
     // private static final Logger logger =
     // LoggerFactory.getLogger(DuplicateNumber.class);
     public static void main(String args[]) {

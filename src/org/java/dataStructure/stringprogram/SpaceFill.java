@@ -1,7 +1,7 @@
 package org.java.dataStructure.stringprogram;
 import java.util.Arrays;
 
-public class StringSpaceFill {
+public class SpaceFill {
 	//public final int i;
 	/*
 	 * public static void main(String[] args) { String st="hello java independent";

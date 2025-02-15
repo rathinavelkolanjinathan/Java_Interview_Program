@@ -4,12 +4,12 @@ import org.java.dataStructure.arrayprogram.MinimumValuesArray;
 
 import java.util.logging.Logger;
 
-public class StringUniqueCharacter_Model1 {
-    private static final Logger logger = Logger.getLogger(MinimumValuesArray.class.toString());
+public class UniqueCharacter_Model1 {
+    private static final Logger logger = Logger.getLogger(UniqueCharacter_Model1.class.toString());
 
     public static void main(String[] args) {
         String uniqueVal = "Hellohhhh";
-        boolean b = StringUniqueCharacter_Model1.uniqueChar(uniqueVal);
+        boolean b = UniqueCharacter_Model1.uniqueChar(uniqueVal);
         logger.info("boolean " + b);
     }
 

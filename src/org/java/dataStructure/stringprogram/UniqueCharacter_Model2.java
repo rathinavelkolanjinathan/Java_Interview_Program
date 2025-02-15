@@ -4,11 +4,11 @@ import org.java.dataStructure.arrayprogram.MinimumValuesArray;
 
 import java.util.logging.Logger;
 
-public class StringUniqueCharacter_Model2 {
-    private static final Logger logger = Logger.getLogger(MinimumValuesArray.class.toString());
+public class UniqueCharacter_Model2 {
+    private static final Logger logger = Logger.getLogger(UniqueCharacter_Model2.class.toString());
 
     public static void main(String args[]) {
-        StringUniqueCharacter_Model2 obj = new StringUniqueCharacter_Model2();
+        UniqueCharacter_Model2 obj = new UniqueCharacter_Model2();
         String input = "GeeksforGeeks";
 
         if (obj.uniqueCharacters(input))

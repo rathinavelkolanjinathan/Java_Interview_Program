@@ -1,6 +1,6 @@
 package org.java.dataStructure.stringprogram;
 
-public class StringIntern {
+public class Intern {
 
 	public static void main(String[] args) {
 		String s="kolanji";
