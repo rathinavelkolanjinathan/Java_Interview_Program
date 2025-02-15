@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class DuplicateNumber {
     // private static final Logger logger =
     // LoggerFactory.getLogger(DuplicateNumber.class);
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int[][] array = new int[][]{{1, 1, 2, 2, 3, 4, 5}, {1, 1, 1, 1, 1, 1, 1}, {1, 2, 3, 4, 5, 6, 7},
                 {1, 2, 1, 1, 1, 1, 1},};
         for (int[] arr : array) {

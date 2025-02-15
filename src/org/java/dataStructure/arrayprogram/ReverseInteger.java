@@ -18,7 +18,7 @@ public class ReverseInteger {
         return res;
     }
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
 
         int result = reverse(123);
     }

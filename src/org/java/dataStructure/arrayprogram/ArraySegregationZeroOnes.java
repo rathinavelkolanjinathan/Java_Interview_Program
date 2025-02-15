@@ -1,7 +1,7 @@
 package org.java.dataStructure.arrayprogram;
 
 public class ArraySegregationZeroOnes {
-    static void getSegregate(int arr[], int length) {
+    static void getSegregate(int[] arr, int length) {
         int count = 0; // counts the no of zeros in arr
         for (int i = 0; i <length; i++) {
             if (arr[i] == 0)

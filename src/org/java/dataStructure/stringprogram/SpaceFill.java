@@ -13,7 +13,7 @@ public class SpaceFill {
 	 * }
 	 */
 
-public static void main(String args[] ) throws Exception {
+public static void main(String [] args ) throws Exception {
     int arr[]={10,20,30,40};
     int size=arr.length;
     Arrays.sort(arr);

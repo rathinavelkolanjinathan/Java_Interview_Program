@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class ReverseArray {
     public static void main(String[] args) {
-        int originalArray[] = {10, 4, 2, 5, 9, 8, 7};
+        int[] originalArray = {10, 4, 2, 5, 9, 8, 7};
         getReverse(originalArray);   //Using algorithm
         //getReverseJdk8(originalArray);
     }

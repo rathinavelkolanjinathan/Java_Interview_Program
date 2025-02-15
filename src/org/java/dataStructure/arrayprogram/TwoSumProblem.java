@@ -10,7 +10,7 @@ public class TwoSumProblem {
     public static void main(String[] args) {
         //target =9;
 
-        int number[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] number = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] result = twoSum(number, 9);
 
         logger.info("result " + result[0] + "re::" + result[1]);
@@ -19,7 +19,7 @@ public class TwoSumProblem {
     public static int[] twoSum(int[] arr, int target) {
 
         int[] result = new int[4];
-        Map map = new HashMap();
+        Map<Integer,Integer> map = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
             if (!map.containsKey(target - arr[i])) {
                 //System.out.println("array " + arr[i]);

@@ -30,7 +30,7 @@ public class MakingAnagrams {
     }
 
     public static Map<Character,Integer> createMapKeys(String str) {
-        HashMap<Character,Integer> map = new HashMap();
+        HashMap<Character,Integer> map = new HashMap<>();
         for (int i = 0; i < str.length(); i++) {
             if (map.containsKey(str.charAt(i))) {
                 int count =  map.get(str.charAt(i));

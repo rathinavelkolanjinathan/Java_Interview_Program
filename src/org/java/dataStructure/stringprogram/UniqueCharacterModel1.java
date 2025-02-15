@@ -1,27 +1,25 @@
 package org.java.dataStructure.stringprogram;
 
-import org.java.dataStructure.arrayprogram.MinimumValuesArray;
-
 import java.util.logging.Logger;
 
-public class UniqueCharacter_Model1 {
-    private static final Logger logger = Logger.getLogger(UniqueCharacter_Model1.class.toString());
+public class UniqueCharacterModel1 {
+    private static final Logger logger = Logger.getLogger(UniqueCharacterModel1.class.toString());
 
     public static void main(String[] args) {
         String uniqueVal = "Hellohhhh";
-        boolean b = UniqueCharacter_Model1.uniqueChar(uniqueVal);
-        logger.info("boolean " + b);
+        boolean  uniqueChar = UniqueCharacterModel1.uniqueChar(uniqueVal);
+        logger.info("boolean " + uniqueChar);
     }
 
     public static boolean uniqueChar(String uniqueVal) {
         if (uniqueVal.length() > 128) {
             return false;
         }
-        boolean[] char_Set = new boolean[128];
+        boolean[] charSet = new boolean[128];
         for (int i = 0; i < uniqueVal.length(); i++) {
             int val = uniqueVal.charAt(i);
             logger.info("values " + val);
-            if (char_Set[val]) {
+            if (charSet[val]) {
                 return false;
             } else {
                 return true;

@@ -2,7 +2,7 @@ package org.java.algorithm;
 
 public class isNumber {
 
-    public static boolean isNumber(String str) {
+    public static boolean checkIsNumber(String str) {
         try {
             int length = str.length();
             if (str.equals("Infinity") || str.equals("-Infinity") ||
@@ -10,7 +10,6 @@ public class isNumber {
                     str.charAt(length - 1) == 'd' || str.charAt(length - 1) == 'D' ||
                     str.charAt(length - 1) == 'F')
                 return false;
-            //double num = Double.parseDouble(str);
             return true;
         } catch (Exception e) {
             return false;
@@ -20,7 +19,7 @@ public class isNumber {
     }
 
     public static void main(String[] args) {
-        boolean isNumb = isNumber("1254---");
+        boolean isNumb = checkIsNumber("1254---");
         System.out.println(isNumb);
     }
 }

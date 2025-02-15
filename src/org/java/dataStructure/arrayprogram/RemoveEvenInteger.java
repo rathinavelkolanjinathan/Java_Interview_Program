@@ -12,7 +12,7 @@ public class RemoveEvenInteger {
         printArray(evenNumber);
     }
 
-    public static int[] removeEvenNumber(int evenArray[]) {
+    public static int[] removeEvenNumber(int[] evenArray) {
         int oddcount = 0;
         for (int i = 0; i < evenArray.length; i++) {
             if (evenArray[i] % 2 != 0) {

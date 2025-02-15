@@ -1,14 +1,12 @@
 package org.java.dataStructure.stringprogram;
 
-import org.java.dataStructure.arrayprogram.MinimumValuesArray;
-
 import java.util.logging.Logger;
 
-public class UniqueCharacter_Model2 {
-    private static final Logger logger = Logger.getLogger(UniqueCharacter_Model2.class.toString());
+public class UniqueCharacterModel2 {
+    private static final Logger logger = Logger.getLogger(UniqueCharacterModel2.class.toString());
 
-    public static void main(String args[]) {
-        UniqueCharacter_Model2 obj = new UniqueCharacter_Model2();
+    public static void main(String[] args) {
+        UniqueCharacterModel2 obj = new UniqueCharacterModel2();
         String input = "GeeksforGeeks";
 
         if (obj.uniqueCharacters(input))

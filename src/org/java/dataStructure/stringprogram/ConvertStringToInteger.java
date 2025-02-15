@@ -36,7 +36,7 @@ public class ConvertStringToInteger {
 
     }
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
         myAtoi("kolanji42");
 
     }
