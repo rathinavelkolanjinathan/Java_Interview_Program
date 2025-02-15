@@ -1,4 +1,4 @@
-package org.java.algorithm;
+package org.java.dataStructure.stringprogram;
 
 import java.util.HashMap;
 import java.util.Map;
