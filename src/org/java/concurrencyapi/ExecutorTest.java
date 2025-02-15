@@ -3,12 +3,12 @@ package org.java.concurrencyapi;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-public class ExecutorFramework {
+public class ExecutorTest {
     public static void main(String[] args) {
-        Executor ex = Executors.newFixedThreadPool(10);
+        Executor executor = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 100; i++) {
 
-            ex.execute(new ExecutorFramework.Task());
+            executor.execute(new ExecutorTest.Task());
         }
     }
 

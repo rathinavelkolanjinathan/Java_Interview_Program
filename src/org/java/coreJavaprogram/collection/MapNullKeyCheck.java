@@ -3,7 +3,7 @@ package org.java.coreJavaprogram.collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class NullKeyValue {
+public class MapNullKeyCheck {
 
     public static void main(String[] args) {
 

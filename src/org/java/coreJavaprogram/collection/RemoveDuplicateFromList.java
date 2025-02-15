@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 public class RemoveDuplicateFromList {
-
-
     public static void main(String[] args) {
         List<String> tempList = new ArrayList<>();
         List<String> list = new ArrayList<>();

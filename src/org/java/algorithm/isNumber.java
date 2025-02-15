@@ -2,15 +2,15 @@ package org.java.algorithm;
 
 public class isNumber {
 
-    public static boolean isNumber(String s) {
+    public static boolean isNumber(String str) {
         try {
-            int l = s.length();
-            if (s.equals("Infinity") || s.equals("-Infinity") ||
-                    s.equals("+Infinity") || s.charAt(l - 1) == 'f' ||
-                    s.charAt(l - 1) == 'd' || s.charAt(l - 1) == 'D' ||
-                    s.charAt(l - 1) == 'F')
+            int length = str.length();
+            if (str.equals("Infinity") || str.equals("-Infinity") ||
+                    str.equals("+Infinity") || str.charAt(length - 1) == 'f' ||
+                    str.charAt(length - 1) == 'd' || str.charAt(length - 1) == 'D' ||
+                    str.charAt(length - 1) == 'F')
                 return false;
-            double x = Double.parseDouble(s);
+            //double num = Double.parseDouble(str);
             return true;
         } catch (Exception e) {
             return false;
@@ -20,7 +20,7 @@ public class isNumber {
     }
 
     public static void main(String[] args) {
-        boolean ss = isNumber("1254---");
-        System.out.println(ss);
+        boolean isNumb = isNumber("1254---");
+        System.out.println(isNumb);
     }
 }

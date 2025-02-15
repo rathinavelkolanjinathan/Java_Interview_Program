@@ -53,6 +53,6 @@ public class Student implements Comparable<Student> {
         Collections.sort(list);
 
         list.stream().forEach(st1 -> System.out.println(st1));
-        System.out.println("Vlaue" + list);
+        System.out.println("Values " + list);
     }
 }

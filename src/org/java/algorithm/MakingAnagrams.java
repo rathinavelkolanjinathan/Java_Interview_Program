@@ -9,14 +9,16 @@ public class MakingAnagrams {
 
     public static void isAnagram(String firstString, String secondString) {
 
-//Remove all white space & case differences
+         //Remove all white space & case differences
         String strCopyOne = firstString.replaceAll("\\s", "").toUpperCase();
         String strCopyTwo = secondString.replaceAll("\\s", "").toUpperCase();
+
         //If the strings aren’t the same length, not anagrams
         if (strCopyOne.length() != strCopyTwo.length()) {
             logger.info("Input string are not anagrams");
             return;
         }
+
         //HashMap to store the number of characters
         Map<Character,Integer> mapOne = createMapKeys(strCopyOne);
         Map<Character,Integer> mapTwo = createMapKeys(strCopyTwo);
