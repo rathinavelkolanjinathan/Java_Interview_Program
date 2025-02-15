@@ -3,24 +3,24 @@ package org.java.dataStructure.stringprogram;
 public class Palindrome {
 
     public static void main(String[] args) {
-        String inputStr = "202";
-        String result = polindrome(inputStr);
-        if (inputStr.equals(result)) {
-            System.out.println("Yes "+inputStr+" is a Palindrome  : " + result);
+        String str = "202";
+        String result = palindrome(str);
+        if (str.equals(result)) {
+            System.out.println(str + " is a Palindrome  : " + result);
         } else {
-            System.out.println("NO "+inputStr + " is not a palindrome  : " + result);
+            System.out.println(str + " is not a Palindrome  : " + result);
         }
     }
 
-    public static String polindrome(String source) {
+    public static String palindrome(String str) {
         String reverse = "";
-        int length = source.length();
-        if (source == null || source.isEmpty()) {
-            return source;
+        int length = str.length();
+        if (str == null || str.isEmpty()) {
+            return str;
         }
         for (int i = length - 1; i >= 0; i--) {
             //System.out.println("reverse: " + reverse);
-            reverse = reverse + source.charAt(i);
+            reverse = reverse + str.charAt(i);
         }
         return reverse;
     }

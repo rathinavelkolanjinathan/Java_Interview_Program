@@ -13,7 +13,7 @@ public class ReverseUsingRecursion {
 
     /* Driver program to test above function */
     public static void main(String[] args) {
-        String str = "java in";
+        String str = "java";
         //ReverseUsingRecursion obj = new ReverseUsingRecursion();
         ReverseUsingRecursion.reverse(str);
     }

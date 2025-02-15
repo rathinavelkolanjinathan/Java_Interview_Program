@@ -12,15 +12,10 @@ public class ReverseArray {
 
     //old method algorithm o(n)
     public static void getReverse(int[] array) {
-
        /* for(int i= array.length-1;i>=0;i--){
 
             System.out.println(array[i]);
         }*/
-
-
-
-
         for (int i = 0; i < array.length / 2; i++) {
             int other = array.length - i - 1;
             System.out.println(other);
@@ -31,11 +26,10 @@ public class ReverseArray {
         for (int arr : array) {
             System.out.println("after reverse array " + arr);
         }
-
     }
     //using jdk8
-    public static void getReverseJdk8(int[] originalArray) {
-        int[] reversedArray = Arrays.stream(originalArray)
+    public static void getReverseJdk8(int[] array) {
+        int[] reversedArray = Arrays.stream(array)
                 .boxed()
                 .sorted(Collections.reverseOrder())
                 .mapToInt(Integer::intValue)

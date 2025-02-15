@@ -1,4 +1,4 @@
-package org.java.dataStructure.arrayprogram;
+package org.java.coreJavaprogram.java8.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;

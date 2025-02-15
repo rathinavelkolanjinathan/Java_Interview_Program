@@ -2,7 +2,7 @@ package org.java.dataStructure.stringprogram;
 
 import java.util.Arrays;
 
-public class AnagramString {
+public class Anagram {
 
     public static void main(String[] args) {
         isAnagram("Keep", "Peek");

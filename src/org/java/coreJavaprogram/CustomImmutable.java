@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.java.coreJavaprogram;
 
 
 import java.util.ArrayList;

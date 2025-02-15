@@ -1,4 +1,4 @@
-package org.java.dataStructure.arrayprogram;
+package org.java.coreJavaprogram.java8.stream;
 
 public class IntToArrayJdk8 {
     public static void main(String[] args) {
