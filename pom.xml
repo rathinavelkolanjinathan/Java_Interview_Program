@@ -15,10 +15,10 @@
          <module>domain</module>
          <module>primary-adaptor</module>&ndash;&gt;
     </modules>-->
-<properties>
-    <disable.checkstyle.validation>false</disable.checkstyle.validation>
-    <mvn-compiler-plugin.version>3.11.0</mvn-compiler-plugin.version>
-</properties>
+    <properties>
+        <disable.checkstyle.validation>false</disable.checkstyle.validation>
+        <mvn-compiler-plugin.version>3.11.0</mvn-compiler-plugin.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -26,16 +26,20 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.5</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.5</version>
         </dependency>
+
         <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>1.2.3</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
         </dependency>
+
+
         <dependency>
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-core</artifactId>
@@ -48,7 +52,6 @@
             <version>3.4.6</version>
         </dependency>
         <!-- test data -->
-
 
 
         <dependency>
@@ -129,7 +132,7 @@
                             <skip>${disable.checkstyle.validation}</skip>
                             <configLocation>${basedir}/src/main/resources/checkstyle.xml</configLocation>
                             <encoding>UTF-8</encoding>
-                           <consoleOutput>true</consoleOutput>
+                            <consoleOutput>true</consoleOutput>
                             <failsOnError>true</failsOnError>
                             <!--<failsOnViolation>true</failsOnViolation>-->
                             <violationSeverity>warning</violationSeverity>
