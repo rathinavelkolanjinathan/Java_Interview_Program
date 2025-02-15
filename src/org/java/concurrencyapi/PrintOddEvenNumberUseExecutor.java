@@ -7,33 +7,38 @@ import java.util.stream.IntStream;
 
 public class PrintOddEvenNumberUseExecutor {
     public static void main(String[] args) {
+
         ExecutorService firstExecutorService = Executors.newSingleThreadExecutor(r -> {
-            Thread t = new Thread(r);
-            t.setName("first");
-            return t;
+            Thread thread = new Thread(r);
+            thread.setName("first");
+            return thread;
         });
+
         ExecutorService secondExecutorService = Executors.newSingleThreadExecutor(r -> {
-            Thread t = new Thread(r);
-            t.setName("second");
-            return t;
+            Thread thread = new Thread(r);
+            thread.setName("second");
+            return thread;
         });
+
         IntStream.range(1, 101).forEach(num -> {
-            CompletableFuture<Integer> thenApplyAsync = CompletableFuture.completedFuture(num).thenApplyAsync(x -> {
+            CompletableFuture<Integer> completableFuture =
+                    CompletableFuture.completedFuture(num)
+                            .thenApplyAsync(x -> {
+                                if (x % 2 == 1) {
+                            System.out.println(x + " " + Thread.currentThread().getName());
+                        }
+                        return num;
+                    }, firstExecutorService);
+            completableFuture.join();
 
-                if (x % 2 == 1) {
-                    System.out.println(x + " " + Thread.currentThread().getName());
-                }
-                return num;
-            }, firstExecutorService);
-            thenApplyAsync.join();
-
-            CompletableFuture<Integer> thenApplyAsync2 = CompletableFuture.completedFuture(num).thenApplyAsync(x -> {
-                if (x % 2 == 0) {
-                    System.out.println(x + " " + Thread.currentThread().getName());
-                }
-                return num;
-            }, secondExecutorService);
-            thenApplyAsync2.join();
+            CompletableFuture<Integer> completableFuture2 =
+                    CompletableFuture.completedFuture(num).thenApplyAsync(x -> {
+                        if (x % 2 == 0) {
+                            System.out.println(x + " " + Thread.currentThread().getName());
+                        }
+                        return num;
+                    }, secondExecutorService);
+            completableFuture2.join();
         });
 
         firstExecutorService.shutdown();
