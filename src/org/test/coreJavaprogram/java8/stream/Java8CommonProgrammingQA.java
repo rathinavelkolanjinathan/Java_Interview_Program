@@ -1,6 +1,6 @@
-package org.java.coreJavaprogram.java8.stream;
+package org.test.coreJavaprogram.java8.stream;
 
-import org.java.common.Student;
+import org.test.common.Student;
 
 import java.util.*;
 import java.util.stream.Collectors;

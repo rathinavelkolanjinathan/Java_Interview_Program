@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.test.dataStructure.stringprogram;
 
 public class PasswordSecure {
 public static void main(String[] args) {

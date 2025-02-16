@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection;
 
 public class Account {
     public int getId() {

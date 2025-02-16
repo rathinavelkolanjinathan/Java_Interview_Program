@@ -1,6 +1,6 @@
-package org.java.coreJavaprogram.java8.sorting;
+package org.test.coreJavaprogram.java8.sorting;
 
-import org.java.common.Employee;
+import org.test.common.Employee;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;

@@ -1,7 +1,7 @@
-package org.java.coreJavaprogram.java8.sorting;
+package org.test.coreJavaprogram.java8.sorting;
 
-import org.java.common.Database;
-import org.java.common.Employee;
+import org.test.common.Database;
+import org.test.common.Employee;
 
 import java.util.Collections;
 import java.util.Comparator;

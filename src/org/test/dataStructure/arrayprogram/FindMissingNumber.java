@@ -1,4 +1,4 @@
-package org.java.dataStructure.arrayprogram;
+package org.test.dataStructure.arrayprogram;
 
 public class FindMissingNumber {
 

@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.test.dataStructure.stringprogram;
 
 public class ReverseUsingRecursion {
     /* Function to print reverse of the passed string */

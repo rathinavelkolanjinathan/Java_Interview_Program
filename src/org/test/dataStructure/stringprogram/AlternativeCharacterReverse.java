@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.test.dataStructure.stringprogram;
 
 public class AlternativeCharacterReverse {
     public static void main(String[] args) throws java.lang.Exception {

@@ -1,7 +1,7 @@
-package org.java.coreJavaprogram.java8.parallelstream;
+package org.test.coreJavaprogram.java8.parallelstream;
 
-import org.java.common.Database;
-import org.java.common.Employee;
+import org.test.common.Database;
+import org.test.common.Employee;
 
 import java.util.List;
 import java.util.stream.IntStream;

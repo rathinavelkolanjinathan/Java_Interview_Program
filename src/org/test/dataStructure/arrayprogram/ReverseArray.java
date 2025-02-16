@@ -1,4 +1,4 @@
-package org.java.dataStructure.arrayprogram;
+package org.test.dataStructure.arrayprogram;
 
 import java.util.Arrays;
 import java.util.Collections;

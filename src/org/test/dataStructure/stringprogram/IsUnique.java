@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.test.dataStructure.stringprogram;
 
 /**
  * Implement an algorithm String has all unique characters.

@@ -1,4 +1,4 @@
-package org.java.dataStructure.stringprogram;
+package org.test.dataStructure.stringprogram;
 
 import java.util.StringJoiner;
 import java.util.stream.Collectors;

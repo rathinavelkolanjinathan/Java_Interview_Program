@@ -1,4 +1,4 @@
-package org.java.dataStructure.arrayprogram;
+package org.test.dataStructure.arrayprogram;
 
 public class ArraySegregationZeroOnes {
     static void getSegregate(int[] arr, int length) {

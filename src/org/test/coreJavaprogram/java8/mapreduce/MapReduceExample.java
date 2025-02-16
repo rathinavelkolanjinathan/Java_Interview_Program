@@ -1,6 +1,6 @@
-package org.java.coreJavaprogram.java8.mapreduce;
+package org.test.coreJavaprogram.java8.mapreduce;
 
-import org.java.common.Database;
+import org.test.common.Database;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,7 +1,7 @@
-package org.java.coreJavaprogram.java8.optional;
+package org.test.coreJavaprogram.java8.optional;
 
-import org.java.common.Database;
-import org.java.common.Employee;
+import org.test.common.Database;
+import org.test.common.Employee;
 
 import java.util.List;
 
