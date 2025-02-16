@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.lambdaexpression.demo;
+package org.test.coreJavaprogram.java8.lambdaexpression.demo;
 
 public interface MyFunctionalInterface {
 

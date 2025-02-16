@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.lamdaexpression;
+package org.test.coreJavaprogram.java8.lamdaexpression;
 
 public interface ThisFunction_Test {
 

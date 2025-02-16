@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.lambdaexpression.example;
+package org.test.coreJavaprogram.java8.lambdaexpression.example;
 
 public class Book {
 	private int id;

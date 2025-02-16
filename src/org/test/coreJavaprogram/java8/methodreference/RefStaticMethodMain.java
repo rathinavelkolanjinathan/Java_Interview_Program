@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.methodreference;
+package org.test.coreJavaprogram.java8.methodreference;
 
 public class RefStaticMethodMain {
 

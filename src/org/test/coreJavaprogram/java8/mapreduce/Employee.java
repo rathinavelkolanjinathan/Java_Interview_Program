@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.mapreduce;
+package org.test.coreJavaprogram.java8.mapreduce;
 
 public class Employee {
     private int id;

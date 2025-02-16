@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.lambdaexpression.example;
+package org.test.coreJavaprogram.java8.lambdaexpression.example;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.peekdemo;
+package org.test.coreJavaprogram.java8.peekdemo;
 
 import java.util.Arrays;
 import java.util.List;

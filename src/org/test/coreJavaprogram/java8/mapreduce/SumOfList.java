@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.mapreduce;
+package org.test.coreJavaprogram.java8.mapreduce;
 
 import java.util.Arrays;
 import java.util.List;

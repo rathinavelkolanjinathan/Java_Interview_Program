@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.prdicate;
+package org.test.coreJavaprogram.java8.prdicate;
 
 
 import org.java.coreJavaprogram.java8.fucntionalinterface.Predicate;

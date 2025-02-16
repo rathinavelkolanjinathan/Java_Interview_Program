@@ -11,15 +11,15 @@ public class StructureConcurrency {
             System.out.print(Thread.currentThread().getName());
         });
 
-        Thread employement = new Thread(() -> {
+        Thread thread = new Thread(() -> {
 
             System.out.print(Thread.currentThread().getName());
         });
 
         creditCard.start();
-        employement.start();
+        thread.start();
         creditCard.join();
-        employement.join();
+        thread.join();
         System.out.print("All check is completed");
 
 

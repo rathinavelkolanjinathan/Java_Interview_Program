@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.prdicate;
+package org.test.coreJavaprogram.java8.prdicate;
 
 public class Employee {
 	public Employee(Integer id, Integer age, String gender, String fName, String lName) {
