@@ -1,5 +1,4 @@
-package org.java.coreJavaprogram.java8.stream;
-
+package org.test.coreJavaprogram.java8.stream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

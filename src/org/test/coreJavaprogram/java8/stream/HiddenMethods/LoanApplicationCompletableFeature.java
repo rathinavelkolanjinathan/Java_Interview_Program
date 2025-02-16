@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.stream.HiddenMethods;
+package org.test.coreJavaprogram.java8.stream.HiddenMethods;
 
 import java.util.concurrent.CompletableFuture;
 

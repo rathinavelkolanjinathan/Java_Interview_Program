@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.stream;
+package org.test.coreJavaprogram.java8.stream;
 
 import java.util.ArrayList;
 import java.util.List;

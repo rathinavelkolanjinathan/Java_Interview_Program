@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.staticmethodoverride;
+package org.test.coreJavaprogram.java8.staticmethodoverride;
 
 public class StaticmethodOverride {
 

@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8;
+package org.test.coreJavaprogram.java8;
 
 public class Paytm implements Payment {
 

@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.sorting;
+package org.test.coreJavaprogram.java8.sorting;
 
 import java.util.*;
 import java.util.Map.Entry;
