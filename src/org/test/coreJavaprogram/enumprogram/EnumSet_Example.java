@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.enumprogram;
+package org.test.coreJavaprogram.enumprogram;
 
 public class EnumSet_Example {
     // Main driver method

@@ -1,7 +1,7 @@
-package org.java.coreJavaprogram.java8.stream;
+package org.test.coreJavaprogram.java8.stream;
 
-import org.java.common.Database;
-import org.java.common.Employee;
+import org.test.common.Database;
+import org.test.common.Employee;
 import java.util.Map;
 import java.util.stream.Collectors;
 public class ConvertListToMap {

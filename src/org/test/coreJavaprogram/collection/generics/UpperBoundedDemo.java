@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.collection.generics;
+package org.test.coreJavaprogram.collection.generics;
 
 
 

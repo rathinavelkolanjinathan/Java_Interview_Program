@@ -1,6 +1,6 @@
-package org.java.coreJavaprogram.enumprogram;
+package org.test.coreJavaprogram.enumprogram;
 
-import org.java.concurrencyapi.Declare;
+import org.test.concurrencyapi.Declare;
 
 public class EnumValueOf {
 
