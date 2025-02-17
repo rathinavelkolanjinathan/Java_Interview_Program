@@ -1,10 +1,10 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
-public class EvenAndOddPrinterBy2Threads implements Runnable {
+public class EvenAndOddPrinterTwoThreads implements Runnable {
     static int count = 1;
     Object object;
 
-    public EvenAndOddPrinterBy2Threads(Object object) {
+    public EvenAndOddPrinterTwoThreads(Object object) {
         this.object = object;
     }
 
@@ -37,8 +37,8 @@ public class EvenAndOddPrinterBy2Threads implements Runnable {
 
     public static void main(String[] args) {
         Object lock= new Object();
-        Runnable r1=new EvenAndOddPrinterBy2Threads(lock);
-        Runnable r2=new EvenAndOddPrinterBy2Threads(lock);
+        Runnable r1=new EvenAndOddPrinterTwoThreads(lock);
+        Runnable r2=new EvenAndOddPrinterTwoThreads(lock);
         new Thread(r1, "even").start();
         new Thread(r2, "odd").start();
     }

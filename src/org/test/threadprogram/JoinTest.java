@@ -1,6 +1,6 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
-public class Sleep_Test_UserDefined extends Thread {
+public class JoinTest extends Thread {
 
 	public void run() {
 		for (int i = 0; i < 10; i++) {
@@ -12,17 +12,14 @@ public class Sleep_Test_UserDefined extends Thread {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		}
-
 	}
-
 	public static void main(String[] args) throws InterruptedException {
 
-		Sleep_Test_UserDefined tt = new Sleep_Test_UserDefined();
+		JoinTest tt = new JoinTest();
 		tt.setName("Sub1");
 		tt.start();
-
+        tt.join();
 		for (int i = 0; i < 10; i++) {
 
 			System.out.println("Main -" + Thread.currentThread().getName());

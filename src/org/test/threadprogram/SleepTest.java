@@ -1,11 +1,11 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
 public class SleepTest {
-public static void main(String[] args) throws InterruptedException{
-	for(int i=0;i<10;i++) {
-		
-		System.out.println("Main -"+Thread.currentThread().getName());
-		Thread.sleep(3000);
-	}
-}
+    public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i < 10; i++) {
+
+            System.out.println("Main -" + Thread.currentThread().getName());
+            Thread.sleep(3000);
+        }
+    }
 }

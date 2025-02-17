@@ -1,6 +1,6 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
-public class Sysnchronized_Test  {
+public class SynchronizedTest  {
 public static void main(String[] args) {
 	Institute ins=new Institute();
 	MyThread m1 =new MyThread(ins, "Raj");

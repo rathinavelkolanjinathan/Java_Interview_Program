@@ -1,14 +1,14 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownDevA extends Thread {
 
-	private CountDownLatch latch;
+	private CountDownLatch countDownLatch;
 
 	public CountDownDevA(CountDownLatch count, String name) {
 		super(name);
-		this.latch = count;
+		this.countDownLatch = count;
 
 	}
 
@@ -21,7 +21,7 @@ public class CountDownDevA extends Thread {
 			e.printStackTrace();
 		}
 		System.out.println("Finished the devtools" + Thread.currentThread().getName());
-		latch.countDown();
+		countDownLatch.countDown();
 
 	}
 
