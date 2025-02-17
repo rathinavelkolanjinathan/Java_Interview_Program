@@ -1,4 +1,4 @@
-package org.java.designpattern.creationaldesignpattern.builder;
+package org.test.designpattern.creationaldesignpattern.builder;
 
 public class FloorResistenceBuilder implements Builder {
     private Home home = new Home();

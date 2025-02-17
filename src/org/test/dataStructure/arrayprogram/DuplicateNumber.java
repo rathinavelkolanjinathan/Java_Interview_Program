@@ -21,18 +21,18 @@ public class DuplicateNumber {
     public static int[] removeDuplicates(int[] array) {
         // Sorting array to bring duplicates together
         Arrays.sort(array);
-        int[] result = new int[array.length];
+        int[] temp = new int[array.length];
         int previous = array[0];
         //System.out.println("previous"+previous);
-        result[0] = previous;
+        temp[0] = previous;
         for (int i = 1; i < array.length; i++) {
-            int ch = array[i];
-            if (previous != ch) {
-                result[i] = ch;
+            int nonRepeated = array[i];
+            if (previous != nonRepeated) {
+                temp[i] = nonRepeated;
             }
-            previous = ch;
+            previous = nonRepeated;
         }
-        return result;
+        return temp;
     }
 
 
@@ -43,12 +43,12 @@ public class DuplicateNumber {
 
         System.out.println("Array:" + arrayList);
 
-        List<Integer> listWithoutDuplicates =
+        List<Integer> withoutDuplicates =
                 arrayList
                         .stream()
                         .distinct()
                         .collect(Collectors.toList());
 
-        System.out.println("With out duplicate:" + listWithoutDuplicates);
+        System.out.println("With out duplicate:" + withoutDuplicates);
     }
 }
