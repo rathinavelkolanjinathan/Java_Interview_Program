@@ -9,8 +9,8 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <!--<modules>
-        <module>algorithm</module>
+  <!-- <modules>
+        <module>org.test.algorithm</module>
         &lt;!&ndash; <module>common</module>
          <module>domain</module>
          <module>primary-adaptor</module>&ndash;&gt;
@@ -130,7 +130,8 @@
                         <phase>validate</phase>
                         <configuration>
                             <skip>${disable.checkstyle.validation}</skip>
-                            <configLocation>${basedir}/src/main/resources/checkstyle.xml</configLocation>
+
+                            <configLocation>${basedir}/src/resources/checkstyle.xml</configLocation>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
                             <failsOnError>true</failsOnError>

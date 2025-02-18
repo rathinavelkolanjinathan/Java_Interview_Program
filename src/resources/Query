@@ -1,0 +1,34 @@
+
+
+#inner join   which values is matched those values will print
+---------------------------------------------------------------
+SELECT emp.empname,dept.designation FROM employee emp,department dept
+ WHERE emp.empid=dept.empid;
+================================================================================
+#left outer join display match all values and right table then in left table unmatched values also will diplay
+
+SELECT emp.empname,dept.designation FROM employee emp LEFT JOIN
+department dept ON emp.empid=dept.empid;
+================================================================================================
+#right outer join  display both table eqauls values and then right table will dispaly unmatched values with left table
+
+SELECT emp.empname,dept.designation FROM employee emp RIGHT JOIN department dept
+ON emp.empid=dept.empid;
+===============================================================================================
+#full outer join
+
+SELECT emp.empname,dept.designation FROM employee emp ,department dept ON
+emp.empid=dept.empid;
+
+UNION
+
+SELECT emp.empname,dept.designation FROM employee emp ,department dept
+ ON emp.empid=dept.empid;
+=========================================================================================
+
+# A table itself doing the join is called the selfjoin
+#self join
+
+SELECT emp.empname FROM employee emp
+WHERE empid IN (SELECT emp.empid FROM employee WHERE empname LIKE 'priya%');
+============================================================================
