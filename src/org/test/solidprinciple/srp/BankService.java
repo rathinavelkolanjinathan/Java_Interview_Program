@@ -1,4 +1,4 @@
-package org.java.solidprinciple.srp;
+package org.test.solidprinciple.srp;
 
 public class BankService {
 

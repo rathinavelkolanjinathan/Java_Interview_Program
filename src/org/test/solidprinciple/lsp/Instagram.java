@@ -1,4 +1,4 @@
-package org.java.solidprinciple.lsp;
+package org.test.solidprinciple.lsp;
 
 public class Instagram extends SocialMedia {
 

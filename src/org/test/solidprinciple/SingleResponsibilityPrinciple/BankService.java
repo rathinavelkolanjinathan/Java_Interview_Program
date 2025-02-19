@@ -1,4 +1,4 @@
-package org.java.solidprinciple.SingleResponsibilityPrinciple;
+package org.test.solidprinciple.SingleResponsibilityPrinciple;
 
 import java.util.Random;
 

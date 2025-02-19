@@ -1,4 +1,4 @@
-package org.java.solidprinciple.LiskovsubstitutionPrinciple;
+package org.test.solidprinciple.LiskovsubstitutionPrinciple;
 
 public class Whatsapp extends SocialMedia {
     public void chatWithFriend() {

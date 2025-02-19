@@ -1,4 +1,4 @@
-package org.java.solidprinciple.lsp;
+package org.test.solidprinciple.lsp;
 
 public class Whatsapp extends SocialMedia {
     public void chatWithFriend() {

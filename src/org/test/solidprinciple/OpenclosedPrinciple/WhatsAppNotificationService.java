@@ -1,4 +1,4 @@
-package org.java.solidprinciple.OpenclosedPrinciple;
+package org.test.solidprinciple.OpenclosedPrinciple;
 
 public class WhatsAppNotificationService implements NotificationService {
 

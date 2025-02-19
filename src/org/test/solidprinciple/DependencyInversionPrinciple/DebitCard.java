@@ -1,4 +1,4 @@
-package org.java.solidprinciple.DependencyInversionPrinciple;
+package org.test.solidprinciple.DependencyInversionPrinciple;
 
 public class DebitCard implements BankCard{
 

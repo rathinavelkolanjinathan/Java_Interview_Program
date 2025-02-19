@@ -1,4 +1,4 @@
-package org.java.solidprinciple.dip;
+package org.test.solidprinciple.dip;
 
 public class DebitCard implements BankCard {
 

@@ -1,4 +1,4 @@
-package org.java.solidprinciple.LiskovsubstitutionPrinciple.solution;
+package org.test.solidprinciple.LiskovsubstitutionPrinciple.solution;
 
 public class WhatsApp implements SocialMedia,SocialVideoCallManager {
     public void chatWithFriend() {

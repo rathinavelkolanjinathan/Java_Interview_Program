@@ -1,4 +1,4 @@
-package org.java.reactiveprogram;
+package org.test.reactiveprogram;
 
 import org.reactivestreams.Publisher;
 

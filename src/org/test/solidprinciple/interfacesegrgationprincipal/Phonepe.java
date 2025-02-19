@@ -1,4 +1,4 @@
-package org.java.solidprinciple.interfacesegrgationprincipal;
+package org.test.solidprinciple.interfacesegrgationprincipal;
 
 public class Phonepe implements UPIPayments {
     public void payMoney() {

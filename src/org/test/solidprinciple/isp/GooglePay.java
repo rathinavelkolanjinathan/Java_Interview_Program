@@ -1,4 +1,4 @@
-package org.java.solidprinciple.isp;
+package org.test.solidprinciple.isp;
 
 public class GooglePay implements UPIPayments,CashBackManager {
 

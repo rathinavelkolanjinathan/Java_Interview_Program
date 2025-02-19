@@ -1,4 +1,4 @@
-package org.java.solidprinciple.lsp.solution;
+package org.test.solidprinciple.lsp.solution;
 
 public interface SocialMedia {
 

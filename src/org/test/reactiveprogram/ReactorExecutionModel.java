@@ -1,4 +1,4 @@
-package org.java.reactiveprogram;
+package org.test.reactiveprogram;
 
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;

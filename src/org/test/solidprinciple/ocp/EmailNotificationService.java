@@ -1,4 +1,4 @@
-package org.java.solidprinciple.ocp;
+package org.test.solidprinciple.ocp;
 
 
 public class EmailNotificationService implements NotificationService {
