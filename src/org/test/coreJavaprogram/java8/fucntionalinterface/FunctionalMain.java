@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public class FunctionalLaunch implements FunctionalInterfaceTest {
+public class FunctionalMain implements FunctionalInterfaceTest {
 
     @Override
     public void m1() {
@@ -9,7 +9,7 @@ public class FunctionalLaunch implements FunctionalInterfaceTest {
     }
 
     public static void main(String[] args) {
-        FunctionalInterfaceTest obj = new FunctionalLaunch();
+        FunctionalInterfaceTest obj = new FunctionalMain();
         obj.m1();
         obj.m2();
         //m4();  static method call

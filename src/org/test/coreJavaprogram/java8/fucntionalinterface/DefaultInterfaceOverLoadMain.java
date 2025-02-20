@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public class OverLoadLaunch implements OverLoadAndOverRide {
+public class DefaultInterfaceOverLoadMain implements DefaultInterfaceOverLoadAndOverRide {
 
 	@Override
 	public void m1() {

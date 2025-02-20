@@ -1,7 +1,7 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
 @FunctionalInterface
-public interface FunctionInhe1 {
+public interface FunctionInheritance1 {
 
-	public  void m1();
+	  void m1();
 }

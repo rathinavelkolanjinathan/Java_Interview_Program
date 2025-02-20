@@ -1,8 +1,8 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public interface TestInterface1 {
+public interface DefaultInterface1 {
 
-	default void dispaly1() {
+	default void display() {
 
 		System.out.println("Display1");
 	}

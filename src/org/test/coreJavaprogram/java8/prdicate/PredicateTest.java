@@ -1,8 +1,6 @@
 package org.test.coreJavaprogram.java8.prdicate;
 
 
-import org.test.coreJavaprogram.java8.fucntionalinterface.Predicate;
-
 public class PredicateTest {
 	 public static void main(String[] args) {
 	        

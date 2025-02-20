@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public interface B extends A {
+public interface DefaultInterfaceB extends DefaultInterfaceA {
 
 	default void display2()  {
 		

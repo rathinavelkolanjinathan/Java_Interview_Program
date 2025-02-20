@@ -1,8 +1,6 @@
 package org.test.coreJavaprogram.java8.prdicate;
 
 
-import org.test.coreJavaprogram.java8.fucntionalinterface.Predicate;
-
 public class EmployeePredicates {
 	  public static Predicate<Employee> isAdultMale() {
 	        return p -> p.getAge() > 21 && p.getGender().equalsIgnoreCase("M");

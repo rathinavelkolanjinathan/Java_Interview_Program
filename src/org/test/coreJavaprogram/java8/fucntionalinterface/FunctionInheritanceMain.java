@@ -1,10 +1,10 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public class FuncinheMain {
+public class FunctionInheritanceMain {
 
     public static void main(String[] args) {
 
-        FunctionIn2 fun = new FunctionIn2() {
+        FunctionInheritance2 fun = new FunctionInheritance2() {
 
             @Override
             public void m1() {
