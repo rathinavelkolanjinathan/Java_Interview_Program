@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.functionalInterfaceTest;
+package org.test.coreJavaprogram.java8.lamdaexpression;
 
 import java.util.ArrayList;
 import java.util.HashMap;
