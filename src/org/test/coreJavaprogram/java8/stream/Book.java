@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.fucntionalinterface.Streaming;
+package org.test.coreJavaprogram.java8.stream;
 
 public class Book {
 	String bname;

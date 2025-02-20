@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.oop;
+package org.test.coreJavaprogram.oop;
 
 public class Child extends Parent {
 

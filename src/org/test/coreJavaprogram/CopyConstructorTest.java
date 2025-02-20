@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram;
+package org.test.coreJavaprogram;
 
 public class CopyConstructorTest {
     private String name;

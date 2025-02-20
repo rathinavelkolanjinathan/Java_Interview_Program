@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.functionalInterfaceTest;
+package org.test.coreJavaprogram;
 
 public class TestTryWithResource {
    // FileReader read= new FileReader();
