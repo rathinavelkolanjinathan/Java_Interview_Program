@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.equalshashcode;
+package org.test.coreJavaprogram.java8.equalshashcode;
 
 public class Emp {
 

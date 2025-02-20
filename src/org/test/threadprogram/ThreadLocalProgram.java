@@ -1,4 +1,4 @@
-package org.java.threadprogram;
+package org.test.threadprogram;
 
 public class ThreadLocalProgram {
 

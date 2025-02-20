@@ -1,10 +1,10 @@
-package org.java.coreJavaprogram.java8.flatmapVSmap;
+package org.test.coreJavaprogram.java8.flatmapVSmap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class FlatMap_Example {
+public class FlatMapExample {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList();
         System.out.println("list size" + list.size());

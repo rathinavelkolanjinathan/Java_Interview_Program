@@ -1,11 +1,11 @@
-package org.java.coreJavaprogram.java8.flatmapVSmap;
+package org.test.coreJavaprogram.java8.flatmapVSmap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Map_Test {
+public class MapTest {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList();

@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.flatmapVSmap;
+package org.test.coreJavaprogram.java8.flatmapVSmap;
 
 import java.util.List;
 import java.util.stream.Collectors;
