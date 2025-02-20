@@ -20,23 +20,23 @@ public class PrintOddEvenNumberUseExecutor {
             return thread;
         });
 
-        IntStream.range(1, 101).forEach(num -> {
+        IntStream.range(1, 101).forEach(number -> {
             CompletableFuture<Integer> completableFuture =
-                    CompletableFuture.completedFuture(num)
+                    CompletableFuture.completedFuture(number)
                             .thenApplyAsync(x -> {
                                 if (x % 2 == 1) {
                             System.out.println(x + " " + Thread.currentThread().getName());
                         }
-                        return num;
+                        return number;
                     }, firstExecutorService);
             completableFuture.join();
 
             CompletableFuture<Integer> completableFuture2 =
-                    CompletableFuture.completedFuture(num).thenApplyAsync(x -> {
+                    CompletableFuture.completedFuture(number).thenApplyAsync(x -> {
                         if (x % 2 == 0) {
                             System.out.println(x + " " + Thread.currentThread().getName());
                         }
-                        return num;
+                        return number;
                     }, secondExecutorService);
             completableFuture2.join();
         });

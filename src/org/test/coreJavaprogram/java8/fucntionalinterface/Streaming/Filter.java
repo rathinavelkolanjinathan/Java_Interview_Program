@@ -1,10 +1,10 @@
-package org.java.coreJavaprogram.java8.fucntionalinterface.Streaming;
+package org.test.coreJavaprogram.java8.fucntionalinterface.Streaming;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FilterTest {
+public class Filter {
     public static void main(String[] args) {
         ArrayList<Integer> l = new ArrayList();
         l.add(5);

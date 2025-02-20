@@ -9,10 +9,11 @@ import java.util.stream.Collectors;
 public class DuplicatesCharacter {
     public static void main(String[] args) {
 
-        String duplicate = "kooolllaanjii";
+        String str = "kooolllaanjii";
         /* All Duplicate Element */
-        List<String> results = Arrays.stream(duplicate.split(""))
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+        List<String> results = Arrays.stream(str.split(""))
+                .collect(Collectors.groupingBy(Function.identity(),
+                        Collectors.counting()))
                 .entrySet()
                 .stream()
                 .filter(m -> m.getValue() > 1)
@@ -22,7 +23,7 @@ public class DuplicatesCharacter {
         System.out.println("Duplicate Values " + results);
 
         /* All Unique Element */
-        List<String> uniqueElement = Arrays.stream(duplicate.split(""))
+        List<String> uniqueElement = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet()
                 .stream()

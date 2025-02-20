@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.fundamentals;
+package org.test.coreJavaprogram.fundamentals;
 
 public class StringObject {
 

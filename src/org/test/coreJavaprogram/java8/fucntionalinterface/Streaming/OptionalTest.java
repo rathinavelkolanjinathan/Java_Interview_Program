@@ -1,8 +1,8 @@
-package org.java.coreJavaprogram.java8.fucntionalinterface.Streaming;
+package org.test.coreJavaprogram.java8.fucntionalinterface.Streaming;
 
 import java.util.Optional;
 
-public class Optional_Test {
+public class OptionalTest {
 
 	public static void main(String[] args) {
 		String st[]=new String[5];

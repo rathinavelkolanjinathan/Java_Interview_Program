@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.functionalInterfaceTest;
+package org.test.coreJavaprogram.java8.functionalInterfaceTest;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +15,8 @@ public class ConsumerDemo {
 
 		List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
 
-		list1.stream().forEach(result -> logger.info("print  : " + result));
+		list1.stream()
+				.forEach(result -> logger.info("print  : " + result));
 
 	}
 }

@@ -1,8 +1,8 @@
-package org.java.coreJavaprogram.java8.fucntionalinterface.Streaming;
+package org.test.coreJavaprogram.java8.fucntionalinterface.Streaming;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
-public class ArrayListDistinct_values {
+public class Distinct {
 	public static void main(String[] args) {
 		List<Integer>  l=new ArrayList();
 		l.add(5);
@@ -29,9 +29,11 @@ public class ArrayListDistinct_values {
 		 */
 		
 		
-		 long
-		 finalVal=l.stream().distinct().limit(4).peek((x)->{System.out.println(x*x);}).
-		 count(); 
+		 long finalVal=l.stream()
+				 .distinct()
+				 .limit(4)
+				 .peek((x)->{System.out.println(x*x);})
+				 .count();
 		 System.out.println(finalVal);
 		
 	}

@@ -14,14 +14,16 @@ public class CountingWords {
         //Methods1
         List<String> list = Arrays.asList(str.split(" "));
         Map<String, Long> countWord1 = list.stream()
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        System.out.println("CountWord Method1"+countWord1);
+                .collect(Collectors.groupingBy(Function.identity()
+                        , Collectors.counting()));
+
+        System.out.println("CountWord Method1" + countWord1);
 
         //methods2
         Map<String, Long> countWord =
                 Arrays.stream(str.split(" "))
-                        .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-        System.out.println("CountWord Method2"+countWord);
+                        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println("CountWord Method2" + countWord);
 
 
     }

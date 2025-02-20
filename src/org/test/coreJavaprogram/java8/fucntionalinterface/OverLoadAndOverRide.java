@@ -1,6 +1,6 @@
-package org.java.coreJavaprogram.java8.fucntionalinterface;
+package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public interface OverLoadandOverRide {
+public interface OverLoadAndOverRide {
 	 abstract void m1();
 
 	 default void m2(int x) {

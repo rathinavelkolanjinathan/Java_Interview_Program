@@ -2,7 +2,7 @@ package org.test.coreJavaprogram.java8.prdicate;
 
 
 
-import org.java.coreJavaprogram.java8.fucntionalinterface.Predicate;
+import org.test.coreJavaprogram.java8.fucntionalinterface.Predicate;
 
 import java.util.Arrays;
 import java.util.List;

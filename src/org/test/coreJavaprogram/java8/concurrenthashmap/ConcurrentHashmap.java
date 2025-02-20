@@ -1,10 +1,10 @@
-package org.java.coreJavaprogram.java8.concurrenthashmap;
+package org.test.coreJavaprogram.java8.concurrenthashmap;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class Concurrenthashmap {
+public class ConcurrentHashmap {
 
     public static void main(String[] args) {
 

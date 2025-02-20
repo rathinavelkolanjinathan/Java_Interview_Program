@@ -8,10 +8,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-public class Callable_Test implements Callable<Integer> {
+public class CallableTest implements Callable<Integer> {
     private int input;
 
-    public Callable_Test(int input) {
+    public CallableTest(int input) {
         super();
         this.input = input;
     }
@@ -29,7 +29,7 @@ public class Callable_Test implements Callable<Integer> {
     //Main Method
     public static void main(String[] args) {
         ExecutorService ex = Executors.newFixedThreadPool(10);
-        Future fu = ex.submit(new Callable_Test(10));
+        Future fu = ex.submit(new CallableTest(10));
         try {
             System.out.println("Executor" + fu.get());
             try {

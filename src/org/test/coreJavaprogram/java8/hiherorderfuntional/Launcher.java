@@ -1,15 +1,15 @@
-package org.java.coreJavaprogram.java8.hiherorderfuntional;
+package org.test.coreJavaprogram.java8.hiherorderfuntional;
 
 public class Launcher {
     public static void main(String[] args) {
 
-        Funtionalinterfacetest funtionalinterfacetest = () -> {
+        FunctionalInterfaceTest funtionalinterfacetest = () -> {
             return 111;
         };
         TestInterface testInterface = () -> {
             return 222;
         };
-        TestInterfaceB testInterfaceB = (Funtionalinterfacetest ii, TestInterface jj) -> {
+        TestInterfaceB testInterfaceB = (FunctionalInterfaceTest ii, TestInterface jj) -> {
 
             System.out.println(ii.m1() + jj.m2());
         };

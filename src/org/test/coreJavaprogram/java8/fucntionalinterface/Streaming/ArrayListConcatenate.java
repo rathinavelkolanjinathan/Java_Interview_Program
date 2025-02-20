@@ -1,10 +1,10 @@
-package org.java.coreJavaprogram.java8.fucntionalinterface.Streaming;
+package org.test.coreJavaprogram.java8.fucntionalinterface.Streaming;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class ArrayList_Concatinate {
+public class ArrayListConcatenate {
     public static void main(String[] args) {
 
 
