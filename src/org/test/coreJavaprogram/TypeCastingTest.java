@@ -21,6 +21,8 @@ public class TypeCastingTest {
 
         //int it4 = fl;
        // int it5=dd;
+        ss= bb;
+
 
 
 

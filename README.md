@@ -1,25 +1,32 @@
-# Java_Interview_Program
+# Java Versioning details
 
-feature-dev
-[README.md](README.md)
+JDK17 Feature
+Ref: https://copilot.microsoft.com/chats/6SyS99mZWR6gjQEP3rAXZ
+
 https://javatechonline.com/java-17-features/
-JDK17 Feature  Ref: https://copilot.microsoft.com/chats/6SyS99mZWR6gjQEP3rAXZ
-------------------------
-1.Pattern Matching For Switch Statements
-2.Pattern Matching for instanceof
-3.Sealed Classes & Interfaces
-4.Enhanced Pseudo-Random Number Generators
-5.Restore Always-Strict Floating-Point Semantics
-6.Strongly Encapsulate JDK Internals
-7.New macOS Rendering Pipeline
-8.Deprecate the Applet API for Removal
+
+https://www.crsinfosolutions.com/scenario-based-java-interview-questions/
+
+| JDK VERSION 17 | Feature |
+|----------------|:--------|
+| 1              | Pattern Matching For Switch Statements        |
+| 2              | Pattern Matching for instanceof        |
+| 3              | Enhanced Pseudo-Random Number Generators                                       |
+| 4              | Restore Always-Strict Floating-Point Semantics                                       |
+| 5              | Strongly Encapsulate JDK Internals                                       |
+| 6              | New macOS Rendering Pipeline                                       |
+| 7              | Deprecate the Applet API for Removal                                                                   |
 
 Main Feature
-1.Sealed Classes (JEP 409)
-2.Pattern Matching for instanceof (JEP 394)
-3.Records (JEP 395)
-4.Enhanced Pseudo-Random Number Generators (JEP 356)
+---------------
+| JKD17 | Fetaure |
+|-------|:--------|
+| 1     | Sealed Classes (JEP 409)        |
+| 2     | Pattern Matching for instanceof (JEP 394)        |
+| 3     | Records (JEP 395)        |
+| 4     | Enhanced Pseudo-Random Number Generators (JEP 356)                         |
 
+   
 // Older
 public static String getDayOfWeek(int dayNum) {
 String day;
