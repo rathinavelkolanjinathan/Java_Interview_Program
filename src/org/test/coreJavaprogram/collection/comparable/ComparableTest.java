@@ -1,7 +1,5 @@
 package org.test.coreJavaprogram.collection.comparable;
 
-import org.test.common.Student;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

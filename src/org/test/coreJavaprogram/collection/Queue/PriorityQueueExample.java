@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.Queue;
 
 import java.time.LocalDate;
 import java.util.PriorityQueue;
@@ -24,7 +24,7 @@ public class PriorityQueueExample {
 		PriorityQueueTest e = queue.poll();
 
 		// System.out.println(e);
-		logger.info(""+queue);
+		logger.info("Queue "+queue);
 		/*
 		 * while(true) { PriorityQueueTest e=queue.poll(); System.out.println(e);
 		 * if(e==null)break;

@@ -1,7 +1,5 @@
 package org.test.coreJavaprogram.collection.map;
 
-import org.test.coreJavaprogram.collection.Account;
-
 import java.util.HashMap;
 import java.util.logging.Logger;
 

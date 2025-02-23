@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
 
 public class Account {
     public int getId() {

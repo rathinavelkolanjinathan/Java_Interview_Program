@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.Queue;
 
 import java.time.LocalDate;
 
@@ -43,8 +43,12 @@ public class PriorityQueueTest implements Comparable<PriorityQueueTest> {
         return this.getId().compareTo(emp.getId());
     }
 
+    @Override
     public String toString() {
-
-        return "id" + id;
+        return "PriorityQueueTest{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", dob=" + dob +
+                '}';
     }
 }
