@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection;
 
 import java.time.LocalDate;
 import java.util.PriorityQueue;
