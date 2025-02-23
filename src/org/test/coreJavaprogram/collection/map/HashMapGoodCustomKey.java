@@ -1,10 +1,12 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
+
+import org.test.coreJavaprogram.collection.Account;
 
 import java.util.HashMap;
 import java.util.logging.Logger;
 
-public class HashMap_GoodCustomeKey {
-    private static final Logger logger = Logger.getLogger(HashMap_GoodCustomeKey.class.toString());
+public class HashMapGoodCustomKey {
+    private static final Logger logger = Logger.getLogger(HashMapGoodCustomKey.class.toString());
 
     public static void main(String[] args) {
 

@@ -1,8 +1,11 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.ArrayList;
 
+
+import org.test.common.Student;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class CustomArrayList extends ArrayList {
@@ -27,9 +30,9 @@ public class CustomArrayList extends ArrayList {
         System.out.println(list1);
 
         Set<Student> set = new HashSet<>();
-        Student s1 = new Student(101, "Basant");
-        Student s2 = new Student(101, "Basant");
-        Student s3 = new Student(105, "Prakash");
+        Student s1 = new Student(101, "Basant", 0, "", "", "", 0, null);
+        Student s2 = new Student(101, "Basant",0, "", "", "", 0, null);
+        Student s3 = new Student(105, "Prakash",0, "", "", "", 0, null);
         set.add(s1);
         set.add(s2);
         set.add(s3);

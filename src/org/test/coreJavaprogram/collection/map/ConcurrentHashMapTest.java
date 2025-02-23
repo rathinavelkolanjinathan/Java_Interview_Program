@@ -1,11 +1,12 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
 
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class FailFastMap {
+public class ConcurrentHashMapTest {
 
+    // FailFastMap
     public static void main(String[] args) {
 
         Map<Integer, String> map = new ConcurrentHashMap<>();

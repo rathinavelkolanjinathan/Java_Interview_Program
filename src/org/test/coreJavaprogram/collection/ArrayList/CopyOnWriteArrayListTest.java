@@ -1,11 +1,11 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.ArrayList;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class FailFastList {
-
+public class CopyOnWriteArrayListTest {
+// FailFatList
     public static void main(String[] args) {
 
         List<String> list = new CopyOnWriteArrayList<>();

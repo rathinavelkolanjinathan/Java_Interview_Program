@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

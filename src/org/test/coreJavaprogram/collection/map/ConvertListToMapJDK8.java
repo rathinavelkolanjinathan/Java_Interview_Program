@@ -1,4 +1,6 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
+
+import org.test.common.Hosting;
 
 import java.util.ArrayList;
 import java.util.List;

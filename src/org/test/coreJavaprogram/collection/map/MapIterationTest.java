@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.coreJavaprogram.collection.map;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -6,8 +6,8 @@ import java.util.logging.Logger;
 /*
  * This class testing for java collections map values
  */
-public class Map_Test {
-    private static final Logger logger = Logger.getLogger(Map_Test.class.toString());
+public class MapIterationTest {
+    private static final Logger logger = Logger.getLogger(MapIterationTest.class.toString());
 
     public static void main(String[] args) {
         Map map = new HashMap();

@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 
-public class CountTest {
-	private static final Logger logger = Logger.getLogger(CountTest.class.toString());
+public class ListUsingStream {
+	private static final Logger logger = Logger.getLogger(ListUsingStream.class.toString());
 	public static void main(String[] args) {
-		final CountTest co = new CountTest();
+		final ListUsingStream co = new ListUsingStream();
 		// co=new CountTest(); //The final local variable co cannot be assigned. It must
 		// be blank and not using a compound assignment
 

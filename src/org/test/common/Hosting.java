@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection;
+package org.test.common;
 
 public class Hosting {
     private int Id;
