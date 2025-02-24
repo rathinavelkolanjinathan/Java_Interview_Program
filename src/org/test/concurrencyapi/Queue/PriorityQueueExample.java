@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.collection.Queue;
+package org.test.concurrencyapi.Queue;
 
 import java.time.LocalDate;
 import java.util.PriorityQueue;
