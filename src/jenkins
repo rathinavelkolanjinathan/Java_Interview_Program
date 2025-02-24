@@ -1,0 +1,26 @@
+pipeline{
+agent any
+
+stage('Build'){
+steps{
+git 'https://github.com/rathinavelkolanjinathan/EarnestOnlineBankBackEnd.git'
+sh 'mvn clean package'
+}
+}
+stage('Test'){
+steps{
+sh 'mvn test'
+}
+}
+
+stage('Deploy'){
+steps{
+deployToEnvironment('dev')
+}
+}
+}
+
+def deployToEnvironment(String env){
+sh "scp target/EarnestOnlineBankBackEnd.jar" user @${env}.myserver.com/opt/myapp/"
+sh "ssh user @${env}.myserver.com  'systemctl restart myapp'
+}

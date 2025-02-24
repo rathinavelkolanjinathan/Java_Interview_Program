@@ -72,3 +72,39 @@ default -> "Invalid day";
 };
 }
 
+
+# Garbage collections Type
+
+| S.No | Garbage CoolectorType | Feature                                        |
+|:-----|:----------------------|------------------------------------------------|
+| 1.   | Serial Garbage Collector                      | single thread                                  |
+| 2.   | Parallel Garbage Collector                      | Multiple thread garbage collections            |
+| 3.   | Concurrent Mark Sweep Garbage Collector(CMS)                      |    scan heap memory and mark instance for evict and then sweep marked instance                                            |
+| 4.   | Garbage First(G1) in jdk7                      |  large heap memory areas splitted many region                                              |
+| 5.   | ZGC(Z Garbage collector) In jdk15                      |  Without stopping the execution of application free the heap                                              |
+| 6.   | Shenandoah Garbage collector (In Jdk12)                                                       | Reduce the pass times                          |
+
+# Remove Objects from the catch algorithm
+1.Least Frequently used (LFU)
+
+2.Least Recently used(LRU)
+
+3.Most Recently used(MRU)
+
+4.First In First Out(FIFO)
+
+5.Last Access Time
+
+6.Object Size
+
+# JDK21 Feature
+1.Record Patterns (JEP 440)
+2.Pattern Matching for switch (JEP 441)
+3.Virtual Threads (Project Loom)
+4.Sequenced Collections
+
+Feature	Java 21 (Record Patterns)	Java 20 and Earlier
+Destructuring	Directly deconstruct record components	Requires explicit calls to accessor methods
+Pattern Matching in Switch	Supports record patterns	Not supported
+Nested Matching	Fully supported	Not supported
+Boilerplate Code	Significantly reduced	More verbose

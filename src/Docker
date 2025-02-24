@@ -1,0 +1,3 @@
+FROM openjdk:11-jre-slim
+COPY target/EarnestOnlineBankBackEnd.jar/opt/EarnestOnlineBankBackEnd.jar
+CMD ["java","-jar","/opt/myapp/EarnestOnlineBankBackEnd.jar"]
