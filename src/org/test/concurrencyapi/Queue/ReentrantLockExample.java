@@ -1,7 +1,10 @@
 package org.test.concurrencyapi.Queue;
 
 import java.util.concurrent.locks.ReentrantLock;
-
+//ReentrantLock is a class in Java's java.util.concurrent.locks package that
+// provides a more advanced mechanism for locking compared to the built-in
+// synchronized blocks and methods.
+// Here are some key points about ReentrantLock
 public class ReentrantLockExample {
    private final ReentrantLock lock = new ReentrantLock();
     public static void main(String[] args) {
