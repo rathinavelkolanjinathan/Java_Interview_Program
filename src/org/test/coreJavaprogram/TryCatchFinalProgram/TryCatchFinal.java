@@ -1,6 +1,6 @@
-package org.test.coreJavaprogram.trycatchfinalprogram;
+package org.test.coreJavaprogram.TryCatchFinalProgram;
 
-public class TryCatchfinal {
+public class TryCatchFinal {
     private final int i = 0;
 
     public void m1() {
@@ -13,13 +13,14 @@ public class TryCatchfinal {
         }
     }
 
+
     protected void finalize() throws Throwable {
         System.out.println("finalize block");
 
     }
 
     public static void main(String[] args) {
-        TryCatchfinal method = new TryCatchfinal();
+        TryCatchFinal method = new TryCatchFinal();
         method.m1();
         method = null;
         System.gc();

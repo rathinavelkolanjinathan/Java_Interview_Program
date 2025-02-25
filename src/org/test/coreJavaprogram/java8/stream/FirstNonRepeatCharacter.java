@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class FirstNonRepeatCharacter {
     public static void main(String[] args) {
         String str = "koollaanji";
-
+// approach-1
        String firstNonRepeat = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(),
                         LinkedHashMap::new,Collectors.counting()))
@@ -21,7 +21,7 @@ public class FirstNonRepeatCharacter {
 
        System.out.println("First Non-Repeated Character :: "+firstNonRepeat);
 
-       //First Repeat character
+       //First Repeat character  approach 2
 
            String firstRepeat =    Arrays.stream(str.split(""))
                                   .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,

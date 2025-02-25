@@ -1,12 +1,12 @@
 package org.test.coreJavaprogram.java8.lamdaexpression;
 
-public class Prdicate_Test {
+public class PrdicateTest {
 	private Integer id;
 	   private Integer age;
 	   private String gender;
 	   private String firstName;
 	   private String lastName;
-	public Prdicate_Test(Integer id, Integer age, String gender, String firstName, String lastName) {
+	public PrdicateTest(Integer id, Integer age, String gender, String firstName, String lastName) {
 		this.id = id;
 		this.age = age;
 		this.gender = gender;

@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.java8.lamdaexpression;
 
-public interface ThisFunction_Test {
+public interface ThisFunctionTest {
 
     public abstract int m1();
 }
@@ -15,7 +15,7 @@ class Employee extends Student {
     public int test() {
 
         int a = 333;
-        ThisFunction_Test i = () -> {
+        ThisFunctionTest i = () -> {
             //System.out.println("hello");
             return a;
         };

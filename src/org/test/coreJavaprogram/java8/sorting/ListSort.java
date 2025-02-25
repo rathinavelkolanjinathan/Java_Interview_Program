@@ -1,10 +1,11 @@
 package org.test.coreJavaprogram.java8.sorting;
-import java.util.ArrayList;
+
+import org.test.common.Database;
+import org.test.common.Employee;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import org.test.common.Database;
-import org.test.common.Employee;
 
 public class ListSort {
 

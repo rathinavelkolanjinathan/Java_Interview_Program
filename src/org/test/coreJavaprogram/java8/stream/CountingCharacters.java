@@ -6,12 +6,12 @@ import java.util.stream.Collectors;
 
 public class CountingCharacters {
     public static void main(String[] args) {
-        String st = "Koollaaaaaaaaaaaaaaaannjji";
-        String[] aa = st.split("");
+        String str = "Koollaaaaaaaaaaaaaaaannjji";
+        String[] temp = str.split("");
         //System.out.println(aa.toString());
-        Map<String, Long> map = Arrays.stream(aa)
+        Map<String, Long> map = Arrays.stream(temp)
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-        map.forEach((k, v) -> System.out.println(k + "=" + v));
+        map.forEach((key, value) -> System.out.println(key + "=" + value));
     }
 }

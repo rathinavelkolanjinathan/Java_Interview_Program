@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.concurrenthashmap;
+package org.test.concurrencyapi;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -2,7 +2,7 @@ package org.test.coreJavaprogram.java8.lamdaexpression;
 
 import java.util.function.BiFunction;
 
-public class BiFunction_Test {
+public class BiFunctionTest {
 
 	public static void main(String[] args) {
 		/*
