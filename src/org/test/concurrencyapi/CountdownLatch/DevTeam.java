@@ -1,4 +1,4 @@
-package org.test.concurrencyapi;
+package org.test.concurrencyapi.CountdownLatch;
 
 import java.util.concurrent.CountDownLatch;
 

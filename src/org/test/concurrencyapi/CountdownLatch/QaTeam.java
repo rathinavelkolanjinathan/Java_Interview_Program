@@ -1,4 +1,4 @@
-package org.test.concurrencyapi;
+package org.test.concurrencyapi.CountdownLatch;
 
 public class QaTeam  extends Thread{
     public QaTeam(String name) {

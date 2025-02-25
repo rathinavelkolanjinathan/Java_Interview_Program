@@ -14,7 +14,7 @@ public class ArrayListWithSquareRoot {
         l.add(30);
         l.add(40);
         l.add(50);
-        List ll = l.stream().map((x) -> (x * x)).collect(Collectors.toList());
+        List ll = l.stream().map((x) -> (x * 5)).collect(Collectors.toList());
 
         ll.forEach((x) -> {
             System.out.println(x);

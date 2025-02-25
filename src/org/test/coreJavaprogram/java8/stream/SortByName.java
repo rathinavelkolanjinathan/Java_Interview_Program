@@ -11,8 +11,8 @@ public class SortByName {
 
     public static void main(String[] args) {
         List<Employee> emp = Database.getEmployeeDetails();
-        List<Employee> employee = emp.stream().
-                sorted(Comparator.comparing(Employee::getName))
+        List<Employee> employee = emp.stream()
+                .sorted(Comparator.comparing(Employee::getName))
                 .collect(Collectors.toList());
                 employee.forEach(System.out::println);
     }

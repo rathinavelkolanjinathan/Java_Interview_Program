@@ -23,6 +23,7 @@ public class StreamSummingInt {
         //Long ll=(Long) list.stream().collect(Collectors.counting());
         int ll = (int) list.stream().collect(Collectors.summingInt((nb) -> nb.nbook));
         System.out.println(ll);
+
         Double d = (Double) list.stream().collect(Collectors.summingDouble((nb) -> nb.bprice));
         System.out.println(d);
 

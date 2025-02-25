@@ -17,10 +17,10 @@ public class SortedReduceTest {
 		l.add(3);
 		l.add(9);
 		l.add(10);
-		Stream<Integer> s=l.stream();
-		Stream ss=s.sorted();
-		
-		ss.forEach((x)->System.out.println(x));
+		Stream<Integer> stream = l.stream();
+		Stream sorted = stream.sorted();
+
+		sorted.forEach((x)->System.out.println(x));
 		//System.out.println(ss);
 	}
 }
