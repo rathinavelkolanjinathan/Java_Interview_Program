@@ -2,21 +2,22 @@ package org.test.dataStructure.arrayprogram;
 
 public class FindMissingNumber {
 
-	// Needs to check the logic out is wrong
-	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 15 };
-		int length = arr.length;
-		//System.out.println("array length " + arrayLength);
-		int ideal = (length * (length + 1) / 2);
-		System.out.println("ideal::" + ideal);
-		
-		int sum = 0; // Arrays.stream(missingNum).sum();
-		for (int i = 0; i < length - 1; i++) {
-			sum += arr[i];
-		}
+    // Needs to check the logic out is wrong
+    public static void main(String[] args) {
+        int[] nums = {0, 1, 3, 4, 5}; // Replace with your array
+        int missingNumber = findMissingNumber(nums);
+        System.out.println("The missing number is: " + missingNumber);
+    }
 
-		System.out.println("Array sum::" + sum);
-		int missingNumber = ideal - sum;
-		System.out.println("missingNumber::" + missingNumber);
-	}
+    public static int findMissingNumber(int[] nums) {
+        int n = nums.length;
+        int totalSum = (n * (n + 1)) / 2; // Sum of first n natural numbers
+        int arraySum = 0;
+
+        for (int num : nums) {
+            arraySum += num;
+        }
+
+        return totalSum - arraySum;
+    }
 }

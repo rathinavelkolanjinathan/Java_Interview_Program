@@ -13,7 +13,9 @@ public class PrimeChecker {
     public static boolean isPrime(int num) {
         //prime number 2,3,5,7,11....97
         for (int i = 2; i < sqrt(num); i++) {
-            if (num % i == 0) return false;
+            if (num % i == 0) {
+                return false;
+            }
         }
         return true;
     }
