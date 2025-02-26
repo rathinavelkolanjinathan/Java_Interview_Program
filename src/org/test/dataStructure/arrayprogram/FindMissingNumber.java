@@ -10,8 +10,8 @@ public class FindMissingNumber {
     }
 
     public static int findMissingNumber(int[] nums) {
-        int n = nums.length;
-        int totalSum = (n * (n + 1)) / 2; // Sum of first n natural numbers
+        int length = nums.length;
+        int totalSum = (length * (length + 1)) / 2; // Sum of first n natural numbers
         int arraySum = 0;
 
         for (int num : nums) {

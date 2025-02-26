@@ -21,14 +21,19 @@ public class MinMaxTest {
 		//find max values find in arrayList
 		 Optional<Integer> maxValue = l.stream()
 				 .max((x,y)->{ return x.compareTo(y);});
+
+		if (maxValue.isPresent()) {
+
+			System.out.println("Max Value " + maxValue.get());
+		}
 		
 		//Find the Minimum values for arrayList
 		
 		Optional<Integer> minValue = ll.min((x, y) -> {return x.compareTo(y);});
 
-		if (maxValue.isPresent()) {
+		if (minValue.isPresent()) {
 
-			System.out.println("Max Value " + maxValue.get());
+			System.out.println("Min Value " + minValue.get());
 		}
 
 	}

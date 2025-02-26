@@ -3,7 +3,6 @@ package org.test.coreJavaprogram.java8.stream;
 import org.test.common.Database;
 import org.test.common.Employee;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
@@ -12,12 +11,12 @@ import java.util.stream.Collectors;
 public class MinSalaryAndMaxSalary {
     public static void main(String[] args) {
 
-
         //Minimum salary
         List<Employee> minimumSalary = Database.getEmployeeDetails()
                 .stream()
-                .filter(salary -> salary.getSalary() > 50000)
+                .filter(salary -> salary.getSalary() > 500)
                 .collect(Collectors.toList());
+        //minimumSalary.stream().forEach(a-> System.out.println(a));
         System.out.println("Minimum Salary" + minimumSalary);
 
         //max salary
@@ -26,8 +25,14 @@ public class MinSalaryAndMaxSalary {
                 .collect(Collectors.maxBy(Comparator.comparingDouble
                         (Employee::getSalary)));
 
+        System.out.println("maxSalary Salary" + maxSalary.get());
 
-        System.out.println("Maximum Salary" + maxSalary.get());
+        Optional<Employee> minSalary = Database.getEmployeeDetails()
+                .stream()
+                .collect(Collectors.minBy(Comparator.comparingDouble
+                        (Employee::getSalary)));
+
+        System.out.println("Minimum Salary" + minSalary.get());
 
         //second max
         Optional<Employee> secondMaxSalary = Database.getEmployeeDetails()
