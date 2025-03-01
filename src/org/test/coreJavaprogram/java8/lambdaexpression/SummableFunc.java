@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.lamdaexpression;
+package org.test.coreJavaprogram.java8.lambdaexpression;
 
 public class SummableFunc {
     public static void main(String[] args) {

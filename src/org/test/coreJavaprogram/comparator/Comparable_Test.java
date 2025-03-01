@@ -1,4 +1,4 @@
-package org.test.comparator;
+package org.test.coreJavaprogram.comparator;
 
 public class Comparable_Test implements Comparable {
 	

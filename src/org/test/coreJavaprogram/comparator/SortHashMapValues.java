@@ -1,4 +1,4 @@
-package org.test.comparator;
+package org.test.coreJavaprogram.comparator;
 
 import java.util.Collections;
 import java.util.Comparator;

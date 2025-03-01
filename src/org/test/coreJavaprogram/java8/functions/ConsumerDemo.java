@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8.functionalInterfaceTest;
+package org.test.coreJavaprogram.java8.functions;
 
 import java.util.Arrays;
 import java.util.List;

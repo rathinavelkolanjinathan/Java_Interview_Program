@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.java8;
+package org.test.coreJavaprogram.java8.stream;
 
 import java.io.IOException;
 import java.io.InputStream;

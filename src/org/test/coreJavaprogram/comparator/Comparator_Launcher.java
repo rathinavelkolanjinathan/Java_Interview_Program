@@ -1,4 +1,4 @@
-package org.test.comparator;
+package org.test.coreJavaprogram.comparator;
 
 import org.test.common.Database;
 
