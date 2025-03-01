@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.exception;
+package org.test.coreJavaprogram.exception;
 
 public class OrderNotFoundException extends Exception {
 

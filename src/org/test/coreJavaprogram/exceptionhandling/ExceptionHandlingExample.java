@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.exceptionhandling;
+package org.test.coreJavaprogram.exceptionhandling;
 
 import java.util.*;
 import java.util.function.Consumer;

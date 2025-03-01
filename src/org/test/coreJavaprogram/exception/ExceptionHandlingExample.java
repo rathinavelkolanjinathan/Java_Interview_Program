@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.exception;
+package org.test.coreJavaprogram.exception;
 
 import java.util.Arrays;
 import java.util.List;

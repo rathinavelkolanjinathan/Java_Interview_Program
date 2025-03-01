@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.exception;
+package org.test.coreJavaprogram.exception;
 @FunctionalInterface
 public interface CheckedExceptionHandlerConsumer <Target,ExObj extends Exception> {
 
