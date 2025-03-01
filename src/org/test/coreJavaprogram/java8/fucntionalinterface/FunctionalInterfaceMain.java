@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.java8.fucntionalinterface;
 
-public class FunctionalInterfaceMain implements FunctionalInterfaceTest {
+public class FunctionalInterfaceMain implements I {
 
     @Override
     public void m1() {
@@ -9,17 +9,14 @@ public class FunctionalInterfaceMain implements FunctionalInterfaceTest {
     }
 
     public static void main(String[] args) {
-        FunctionalInterfaceTest obj = new FunctionalInterfaceMain();
-        obj.m1();
-        obj.m2();
-        //m4();  static method call
-        //m4(); static method
+        I obj = new FunctionalInterfaceMain();
+        obj.m1(); //Default method call
+        obj.m2(); //Default method call
+        I.m4();  //static method call
+        I.m4();  //static method
 
-        // Just testing lambda expression
-
-        FunctionalInterfaceTest obj1 =
-                () -> System.out.println("Gahe");
-        obj1.m2();
+// so if we want to call the default interface method we should use the implementation class
+        // for static method no need the implementation class objects
     }
 
 }

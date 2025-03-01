@@ -1,13 +1,5 @@
 package org.test.coreJavaprogram.java8.lambdaexpression.demo;
 
-interface Calculator {
-
-	// void switchOn();
-
-	/* void sum(int input); */
-
-	int substract(int i1, int i2);
-}
 
 public class CalculatorImpl {
 
@@ -32,7 +24,7 @@ public class CalculatorImpl {
 			}
 		};
 
-		System.out.println(calculator.substract(8, 20));
+		System.out.println(calculator.subtract(8, 20));
 	}
 
 	// () -> {body};
