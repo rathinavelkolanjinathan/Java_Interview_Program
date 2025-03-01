@@ -13,6 +13,8 @@ public class Distinct {
 		l.add(3);
 		l.add(3);		
 		Stream<Integer> s=l.stream();
+
+		 s.distinct().forEach(a->System.out.println(a));
 		
 		/*
 		 * Stream<Integer>ss=s.distinct();

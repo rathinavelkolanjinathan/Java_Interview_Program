@@ -21,7 +21,7 @@ public class TestEmployeePredicates {
 	        List<Employee> employees = new ArrayList<Employee>();
 	        employees.addAll(Arrays.asList(new Employee[]{e1,e2,e3,e4,e5,e6,e7,e8,e9,e10}));
 	                
-	       // System.out.println( filterEmployees(employees, isAdultMale()) );
+	      // System.out.println( filterEmployees(employees, isAdultMale()) );
 	         
 	        //System.out.println( filterEmployees(employees, isAdultFemale()) );
 	         
