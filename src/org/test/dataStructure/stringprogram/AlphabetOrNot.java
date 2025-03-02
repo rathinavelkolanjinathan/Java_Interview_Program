@@ -1,6 +1,6 @@
 package org.test.dataStructure.stringprogram;
 
-public class AphaBetOrNot {
+public class AlphabetOrNot {
 
     public static void main(String[] args) {
         System.out.println(checkAllChars("qwertyuioplkjhgfdsAzxcvbnm"));
