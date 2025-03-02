@@ -1,5 +1,7 @@
 # Java Versioning details
 
+# Generate dummy xml or csv file https://www.mockaroo.com/
+
 JDK17 Feature
 Ref: https://copilot.microsoft.com/chats/6SyS99mZWR6gjQEP3rAXZ
 

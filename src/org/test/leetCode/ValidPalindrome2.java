@@ -1,4 +1,4 @@
-package org.java.leetCode;
+package org.test.leetCode;
 
 public class ValidPalindrome2 {
     public boolean validPalindrome(String s) {

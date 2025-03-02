@@ -1,4 +1,4 @@
-package org.java.leetCode;
+package org.test.leetCode;
 
 /**
  * Example 1:

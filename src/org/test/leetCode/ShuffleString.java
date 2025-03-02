@@ -1,4 +1,4 @@
-package org.java.leetCode;
+package org.test.leetCode;
 public class ShuffleString {
     public static String restoreString(String s, int[] indices) {
         char[] result = new char[indices.length];
