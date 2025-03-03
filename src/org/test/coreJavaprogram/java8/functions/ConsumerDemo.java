@@ -11,6 +11,8 @@ public class ConsumerDemo {
 		 * Consumer<Integer> consumer = t -> System.out.println("Printing  : " + t);
 		 * 
 		 * consumer.accept(10);
+		 *
+		 * Not retrun any values
 		 */
 
 		List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);

@@ -1,6 +1,6 @@
-package org.java.designpattern.creationaldesignpattern.factorydesign;
+package org.test.designpattern.creationaldesignpattern.factorydesign;
 
-public class FactoryImpl_USA implements FactoryMethod_Currency {
+public class USACurrency implements Factory {
 
     @Override
     public String getCurrency() {

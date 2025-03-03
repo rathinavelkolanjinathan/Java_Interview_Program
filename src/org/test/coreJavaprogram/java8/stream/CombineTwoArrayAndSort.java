@@ -20,7 +20,8 @@ public class CombineTwoArrayAndSort {
          Two different arrays and sorted and distinct
          */
         String[] mergedDistinct = Stream.concat(Arrays.stream(array1), Arrays.stream(array2))
-                .sorted().distinct()
+                .sorted()
+                .distinct()
                 .toArray(String[]::new);
         System.out.println("Merged with distinct" + Arrays.toString(mergedDistinct));
 
@@ -42,7 +43,8 @@ public class CombineTwoArrayAndSort {
          */
         Integer[] distinct = Stream.of(arrOne, arrTwo)
                 .flatMap(Stream::of)
-                .sorted().distinct()
+                .sorted()
+                .distinct()
                 .toArray(Integer[]::new);
         System.out.println("Merged with distinct values " + Arrays.toString(distinct));
     }

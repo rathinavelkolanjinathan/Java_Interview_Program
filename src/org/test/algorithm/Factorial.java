@@ -6,20 +6,20 @@ public class Factorial {
     private static final Logger logger = Logger.getLogger(Factorial.class.toString());
 
     public static void main(String[] args) {
-        int factNum = 5;
-        int result = factorial(factNum);
+        int num = 5;
+        int result = factorial(num);
 
-        logger.info("Factorials of " + factNum + "= " + result);
+        logger.info("Factorials of " + num + "= " + result);
     }
 
-    static int factorial(int factNum) {
-        if (factNum < 0) {
+    static int factorial(int num) {
+        if (num < 0) {
             return -1;
-        } else if (factNum == 0) {
+        } else if (num == 0) {
             return 1;
 
         } else {
-            return factNum * factorial(factNum - 1);
+            return num * factorial(num - 1);
         }
     }
 }

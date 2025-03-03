@@ -1,4 +1,4 @@
-package org.java.designpattern.creationaldesignpattern.singleTonPattern;
+package org.test.designpattern.creationaldesignpattern.singleTonPattern;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

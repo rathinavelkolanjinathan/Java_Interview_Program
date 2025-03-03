@@ -14,7 +14,8 @@ public class WordsCounting {
         //methods2
         Map<String, Long> countWord =
                 Arrays.stream(str.split(" "))
-                        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                        .collect(Collectors.groupingBy(Function.identity(),
+                                Collectors.counting()));
         System.out.println("CountWord Method2" + countWord);
 
 

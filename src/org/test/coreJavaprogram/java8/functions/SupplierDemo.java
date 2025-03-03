@@ -6,7 +6,7 @@ import java.util.List;
 public class SupplierDemo {
 
     public static void main(String[] args) {
-
+//No input but out put is avilable
 
         List<String> list1 = Arrays.asList();
 

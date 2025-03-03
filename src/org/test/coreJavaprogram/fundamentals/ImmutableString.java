@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram.fundamentals;
 
-public class TestImmutableString {
+public class ImmutableString {
 
     public static void main(String[] args) {
         String s = "Java";//-------1010

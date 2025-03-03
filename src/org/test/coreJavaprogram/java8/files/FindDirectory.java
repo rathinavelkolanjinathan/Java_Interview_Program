@@ -14,7 +14,7 @@ public class FindDirectory {
                 .filter(Files::isRegularFile)
                 .forEach(System.out::println);
 
-        System.out.println(" Exceutable file  ");
+        System.out.println(" Executable file  ");
         Files.list(Paths.get(""))
                 .filter(Files::isExecutable)
                 .forEach(System.out::println);

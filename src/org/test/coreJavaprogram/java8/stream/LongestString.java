@@ -10,6 +10,6 @@ public class LongestString {
                 .reduce((word1, word2) ->
                         word1.length() >
                                 word2.length() ? word1 : word2).get();
-        System.out.println("longestString" + longestString);
+        System.out.println("Longest String is>>>>> " + longestString);
     }
 }

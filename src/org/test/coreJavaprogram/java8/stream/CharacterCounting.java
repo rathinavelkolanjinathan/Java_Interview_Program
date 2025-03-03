@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 public class CharacterCounting {
     public static void main(String[] args) {
         String str = "Koollaaaaaaaaaaaaaaaannjji";
-        Map<String, Long> countChar = Arrays.asList(str.split(""))
+        Map<String, Long> map = Arrays.asList(str.split(""))
                 .stream()
-                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+                .collect(Collectors.groupingBy(ch -> ch, Collectors.counting()));
 
-        countChar.forEach((key, value) -> System.out.println(key + "=" + value));
+        map.forEach((key, value) -> System.out.println(key + "=" + value));
 
 
     }

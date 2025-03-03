@@ -14,10 +14,10 @@ public class MapTest {
         list.add(10);
         list.add(10);
 
-        List<Integer> l = list.stream()
-                .map((x) -> (x * x)).collect(Collectors.toList());
-        //List<Integer> l = st.collect(Collectors.toList());
-        System.out.println("List values " + l);
+        List<Integer> listValue = list.stream()
+                .map((x) -> (x * x))
+                .collect(Collectors.toList());
+        System.out.println("Multiplication " + listValue);
 
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
         Integer sum = integers.stream()
@@ -25,10 +25,10 @@ public class MapTest {
                 .mapToInt(Integer::intValue)
                 .sum();
 
-        System.out.println("sum Values " + sum);
+        System.out.println("Sum Values " + sum);
 
         //List words= Arrays.asList("JavaDevJournal","Java");
-        List words = Arrays.asList("clone", "aava", "aava", "nathan");
+        List words = Arrays.asList("clone", "aava", "aava","nathan", "nathan");
         words.stream()
                 .map(s -> ((String) s).split(""))
                 .distinct()

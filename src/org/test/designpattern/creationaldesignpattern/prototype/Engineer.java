@@ -1,8 +1,6 @@
-package org.java.designpattern.creationaldesignpattern.prototype;
+package org.test.designpattern.creationaldesignpattern.prototype;
 
 public class Engineer extends Profession {
-
-
     @Override
     void print() {
 

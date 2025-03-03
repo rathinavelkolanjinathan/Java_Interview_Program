@@ -7,22 +7,20 @@ import java.util.stream.Stream;
 public class FlatMapExample {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList();
-        System.out.println("list size" + list.size());
-        list.add("corejava advancedjava orcle");
+        //System.out.println("list size" + list.size());
+        list.add("CoreJava AdvancedJava Oracle");
         list.add("NIIT KANPUR");
         list.add("iit chennai");
         list.add("values  chennai");
 
-
-        Stream<String> s = list.stream().flatMap((String x) -> {
-            String[] value = x.split(" ");
+        Stream<String> stream = list.stream().flatMap((String str) -> {
+            String[] value = str.split(" ");
             return Arrays.asList(value).stream();
 
         });
 
-        // System.out.println(val.count());
-        //List<String> li1 = val.collect(Collectors.toList());
-        s.forEach((x) -> {
+
+        stream.forEach((x) -> {
             System.out.println(x + "...." + x.length());
         });
     }

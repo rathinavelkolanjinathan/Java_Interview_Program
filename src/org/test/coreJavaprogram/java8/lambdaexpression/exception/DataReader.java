@@ -1,4 +1,4 @@
-package org.test.coreJavaprogram.exception;
+package org.test.coreJavaprogram.java8.lambdaexpression.exception;
 
 import java.io.*;
 

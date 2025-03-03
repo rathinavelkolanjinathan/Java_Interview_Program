@@ -5,6 +5,7 @@ public class Home {
     public String floor;
     public String walls;
     public String terace;
+
     @Override
     public String toString() {
         return "Home{" +
@@ -13,7 +14,6 @@ public class Home {
                 ", terace='" + terace + '\'' +
                 '}';
     }
-
 
 
     public static void main(String[] args) {

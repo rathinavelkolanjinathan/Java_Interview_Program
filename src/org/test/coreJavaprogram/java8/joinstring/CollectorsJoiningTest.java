@@ -11,6 +11,6 @@ public class CollectorsJoiningTest {
         List<String> values = Arrays.asList("how", "are", "you");
         String join = values.stream()
                 .collect(Collectors.joining(",", "[", "]"));
-        System.out.println("St" + join);
+        System.out.println("CollectorsJoiningTest" + join);
     }
 }

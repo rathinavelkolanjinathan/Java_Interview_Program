@@ -4,7 +4,7 @@ public interface Square {
 
     default void calc(int x) {
 
-        System.out.println("calc");
+        System.out.println("Square-calc");
     }
 
 

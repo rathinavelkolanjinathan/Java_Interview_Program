@@ -13,7 +13,7 @@ public class FibonacciSeries {
      * @return a nth fibonacci number
      */
     public static int fib(int num) {
-        logger.info("input values: " + num);
+       // logger.info("input values: " + num);
         if (num <= 0) {
             return 0;
         } else if (num == 1) {
