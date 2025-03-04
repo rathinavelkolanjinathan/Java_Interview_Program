@@ -2,9 +2,9 @@ package org.test.solidprinciple.interfacesegrgationprincipal;
 
 public interface UPIPayments {
 
-    public void payMoney();
+     void payMoney();
 
-    public void getScratchCard();
+     void getScratchCard();
 
 
 }

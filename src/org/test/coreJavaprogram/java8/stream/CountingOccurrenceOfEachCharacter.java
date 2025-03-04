@@ -30,8 +30,7 @@ public class CountingOccurrenceOfEachCharacter {
         int value = 21122556;
 
         Map<String, Long> integerCount =
-                Arrays.asList(String.valueOf(value).split(""))
-                        .stream()
+                Arrays.stream(String.valueOf(value).split(""))
                         .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println("Integer Count {}" + integerCount);

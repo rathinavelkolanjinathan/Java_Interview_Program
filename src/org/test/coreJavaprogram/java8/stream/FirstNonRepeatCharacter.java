@@ -19,6 +19,7 @@ public class FirstNonRepeatCharacter {
                 .get()
                 .getKey();
 
+
        System.out.println("First Non-Repeated Character :: "+firstNonRepeat);
 
        //First Repeat character  approach 2

@@ -11,7 +11,7 @@ public class DuplicatesCharacter {
 
         String str = "kooolllaanjii";
         /* All Duplicate Element */
-        List<String> results = Arrays.stream(str.split(""))
+       /* List<String> results = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(),
                         Collectors.counting()))
                 .entrySet()
@@ -22,7 +22,7 @@ public class DuplicatesCharacter {
 
         System.out.println("Duplicate Values " + results);
 
-        /* All Unique Element */
+        *//* All Unique Element *//*
 
       //List<String> unique =  Arrays.asList(str.split("")).stream().distinct().collect(Collectors.toList());
         List<String> uniqueElement = Arrays.stream(str.split(""))
@@ -33,6 +33,19 @@ public class DuplicatesCharacter {
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
         System.out.println("Unique Values  " + uniqueElement);
+*/
 
+        Map<Character, Long> map = str.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        map.forEach((k, v) -> {
+            if (v > 1) {
+                System.out.println("repeated "+k + ":" + v);
+            }
+            /*if (v == 1) {
+                System.out.println("non repeated"+k + ":  " + v);
+            }*/
+        });
     }
 }
