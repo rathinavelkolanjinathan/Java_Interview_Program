@@ -16,7 +16,7 @@ public class CopyOnWriteArrayListTest {
 
         while (iterator.hasNext()) {
             String element = iterator.next();
-            System.out.println(element);
+            System.out.println("Iterator"+element);
             list.add("c");
         }
 
