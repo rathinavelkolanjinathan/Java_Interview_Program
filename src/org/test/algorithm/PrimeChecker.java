@@ -22,7 +22,7 @@ public class PrimeChecker {
 
     public static void main(String[] args) {
         boolean checkPrime = PrimeChecker.isPrime(10);
-        logger.info("Prime number{}:" + checkPrime);
+        logger.info("Prime Number...." + checkPrime);
     }
 
 }

@@ -24,7 +24,7 @@ public class ReverseArray {
             array[other] = temp;
         }
         for (int arr : array) {
-            System.out.println("after reverse array " + arr);
+            System.out.println("After Reverse Array....." + arr);
         }
     }
     //using jdk8
@@ -36,7 +36,7 @@ public class ReverseArray {
                 .toArray();
 
         // Print the reversed array
-        System.out.print("Reversed Array jdk8 : ");
+        System.out.print("Reversed Array jdk8...... ");
         for (int num : reversedArray) {
             System.out.print(num + " ");
         }

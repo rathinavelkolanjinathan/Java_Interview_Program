@@ -19,10 +19,10 @@ public class ValidPalindrome {
     }
 
     public static void main(String[] args) {
-        String inputString = "A man, a plan, a canal: Panama";
+        String inputString = "A man, a plan, a canal... Panama";
         //String s = "race a car"
         //s = " "
         boolean result = ValidPalindrome.isPalindrome(inputString);
-        System.out.println(inputString+" is a valid Palindrome is:"+result);
+        System.out.println(inputString+" is a valid Palindrome is...."+result);
     }
 }

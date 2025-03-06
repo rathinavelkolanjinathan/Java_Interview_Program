@@ -20,8 +20,8 @@ public class TopTwoMaximum {
 				max2 = number;
 			}
 		}
-		System.out.println("Given integer array : " + Arrays.toString(numbers));
-		System.out.println("First maximum number is : " + max1);
-		System.out.println("Second maximum number is : " + max2);
+		System.out.println("Given integer array...... " + Arrays.toString(numbers));
+		System.out.println("First maximum number is....... " + max1);
+		System.out.println("Second maximum number is..... " + max2);
 	}
 }

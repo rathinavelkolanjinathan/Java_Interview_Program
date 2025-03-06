@@ -10,7 +10,7 @@ public class ShuffledString {
                 output = "" + s;
             }
         }
-        System.out.print("Output" + output);
+        System.out.print("Output......" + output);
         return output;
     }
 

@@ -20,7 +20,7 @@ public class NthHighestSalaryDemo {
 
 
         Map.Entry<String, Integer> highestSalary = getNthHighestSalary(3, map1);
-        //System.out.println(3+"highestSalary :: "+highestSalary);
+        //System.out.println(3+"highestSalary ..... "+highestSalary);
 
 
         System.out.println(getDynamicNthHighestSalary(3, map1));

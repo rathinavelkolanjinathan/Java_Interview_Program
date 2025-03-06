@@ -7,8 +7,8 @@ import java.util.stream.IntStream;
 public class EvenAndOddPrinter {
     private static Object object = new Object();
 
-    private static IntPredicate evenCondition = e -> e % 2 == 0;
-    private static IntPredicate oddCondition = e -> e % 2 != 0;
+    private static final IntPredicate evenCondition = e -> e % 2 == 0;
+    private static final IntPredicate oddCondition = e -> e % 2 != 0;
 
     public static void main(String[] args) throws InterruptedException {
         CompletableFuture.runAsync(() -> EvenAndOddPrinter.printResults(oddCondition));

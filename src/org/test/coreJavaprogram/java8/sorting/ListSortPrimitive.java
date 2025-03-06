@@ -16,11 +16,11 @@ public class ListSortPrimitive {
         list.add("kuppuswamy");
         list.stream()
                 .sorted()
-                .forEach(result -> System.out.println("Ascending order=>>"+result));
+                .forEach(result -> System.out.println("Ascending Order..."+result));
 
         //Descending order
         list.stream()
                 .sorted(Comparator.reverseOrder())
-                .forEach(result -> System.out.println("Descending order==>"+result));
+                .forEach(result -> System.out.println("Descending Order..."+result));
     }
 }

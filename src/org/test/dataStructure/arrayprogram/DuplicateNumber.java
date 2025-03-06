@@ -13,7 +13,7 @@ public class DuplicateNumber {
                 {1, 2, 1, 1, 1, 1, 1},};
         for (int[] arr : array) {
             //System.out.println("Array with Duplicates       : " + Arrays.toString(input));
-            System.out.println("After Removing Duplicate   : " +
+            System.out.println("After Removing Duplicate.... " +
                     Arrays.toString(removeDuplicates(arr)));
         }
     }
@@ -41,7 +41,7 @@ public class DuplicateNumber {
         ArrayList<Integer> arrayList = new ArrayList<>
                 (Arrays.asList(1, 1, 2, 3, 3, 3, 4, 5, 6, 6, 6, 7, 8));
 
-        System.out.println("Array:" + arrayList);
+        System.out.println("Array...." + arrayList);
 
         List<Integer> withoutDuplicates =
                 arrayList
@@ -49,6 +49,6 @@ public class DuplicateNumber {
                         .distinct()
                         .collect(Collectors.toList());
 
-        System.out.println("With out duplicate:" + withoutDuplicates);
+        System.out.println("With out Duplicate......" + withoutDuplicates);
     }
 }

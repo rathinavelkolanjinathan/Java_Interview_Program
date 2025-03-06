@@ -31,7 +31,7 @@ public class MoveZeroes {
 
         }
         Arrays.stream(intArray)
-                .forEach(array-> System.out.println("Array values"+array));
+                .forEach(array-> System.out.println("Array values...."+array));
 
     }
 

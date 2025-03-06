@@ -10,7 +10,7 @@ public class Institute {
     private static final int SLEEP = 10;
     /**
      * This method is classroom
-     * @param facultyName
+     * @ param String facultyName
      */
     synchronized public void classRoom(final String facultyName) {
 
@@ -43,12 +43,12 @@ class MyThread extends Thread {
     /**
      *
      * @param inst
-     * @param facutyName
+     * @param facultyName
      */
-	MyThread(final Institute inst, final String facutyName) {
+	MyThread(final Institute inst, final String facultyName) {
 
 		this.ins = inst;
-		this.facultyName = facutyName;
+		this.facultyName = facultyName;
 	}
 
 }

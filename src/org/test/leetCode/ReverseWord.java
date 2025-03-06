@@ -31,7 +31,7 @@ public class ReverseWord {
     private static void reverse(char[] arr, int left, int right) {
         while (left < right) {
             char temp = arr[left];
-            System.out.println("Revers of word:" + temp);
+            System.out.println("Revers Of Word......" + temp);
             arr[left++] = arr[right];
             arr[right--] = temp;
         }
@@ -40,6 +40,6 @@ public class ReverseWord {
     public static void main(String[] args) {
         String st = "kolanji";
         String ref = reverseWords(st);
-        System.out.println("Revers of word:" + ref);
+        System.out.println("Revers Of Word........" + ref);
     }
 }

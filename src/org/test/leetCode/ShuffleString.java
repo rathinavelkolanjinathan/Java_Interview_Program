@@ -6,7 +6,7 @@ public class ShuffleString {
            // System.out.println("Result shuffling>>"+indices[i] +s.charAt(i));
             //System.out.println("Result >>"+s.charAt(i));
             result[indices[i]] = s.charAt(i);
-        System.out.println("Result shuffling>>"+result.toString());
+        System.out.println("Result Shuffling....."+result.toString());
         return new String(result);
     }
     public static void main(String[] args) {
@@ -14,6 +14,6 @@ public class ShuffleString {
         String st = "codeleet";
         int[] indices = {4, 5, 6, 7, 0, 2, 1, 3};
         String result = ShuffleString.restoreString(st, indices);
-        System.out.println("Result shuffling>>" + result);
+        System.out.println("Result Shuffling...." + result);
     }
 }

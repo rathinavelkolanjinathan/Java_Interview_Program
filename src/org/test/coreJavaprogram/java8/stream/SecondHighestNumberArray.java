@@ -18,7 +18,7 @@ public class SecondHighestNumberArray {
                         .skip(1)
                         .findFirst()
                         .get();  //collect(Collectors.toList());
-        System.out.println("Second Highest>>" + secondHighest);
+        System.out.println("Second Highest..." + secondHighest);
 
         //Second lowest
 
@@ -28,7 +28,7 @@ public class SecondHighestNumberArray {
                   .skip(1)
                   .findFirst()
                   .get();
-        System.out.println("Second Lowest>>" + secondLowest);
+        System.out.println("Second Lowest..." + secondLowest);
 
     }
 }

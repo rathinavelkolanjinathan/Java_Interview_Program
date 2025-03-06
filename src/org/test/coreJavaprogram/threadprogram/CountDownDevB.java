@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 public class CountDownDevB extends Thread {
 	
-	private CountDownLatch countDownLatch;
+	private final CountDownLatch countDownLatch;
 
 	public CountDownDevB(CountDownLatch count, String name) {
 		super(name);

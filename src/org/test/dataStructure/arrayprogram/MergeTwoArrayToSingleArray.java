@@ -33,6 +33,6 @@ public class MergeTwoArrayToSingleArray {
         int[] arr2 = {2, 4, 6, 8};
         int[] mergedArray = mergeArray(arr1, arr2);
 
-        System.out.println("Merged array: " + Arrays.toString(mergedArray));
+        System.out.println("Merged Array....." + Arrays.toString(mergedArray));
     }
 }

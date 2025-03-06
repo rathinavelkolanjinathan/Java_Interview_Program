@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class HashMapVSTreeMap {
     public static void main(String[] args) {
-        Map<String,String> map1 = new LinkedHashMap();
+        Map<String,String> map1 = new LinkedHashMap<>();
         map1.put("Key1","kolanji");
         map1.put("Film","veera");
         map1.put("addres","12 56");
@@ -17,7 +17,7 @@ public class HashMapVSTreeMap {
 
         System.out.println("-----------------Tree Map------------------- ");
 
-        Map<String,String> treeMap = new TreeMap();
+        Map<String,String> treeMap = new TreeMap<>();
         treeMap.put("name","kolanji");
         treeMap.put("adress","veera");
         treeMap.put("balance","1256");

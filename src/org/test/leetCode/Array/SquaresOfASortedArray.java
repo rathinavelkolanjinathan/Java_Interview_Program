@@ -1,4 +1,4 @@
-package org.java.leetCode.Array;
+package org.test.leetCode.Array;
 
 import java.util.Arrays;
 
@@ -25,6 +25,6 @@ public class SquaresOfASortedArray {
         int[] intArray = {-4, -1, 0, 3, 10};
         int[] result = SquaresOfASortedArray.sortedSquares(intArray);
         Arrays.stream(result)
-                .forEach(aa -> System.out.println("Square of"+aa));
+                .forEach(aa -> System.out.println("Square of...."+aa));
     }
 }

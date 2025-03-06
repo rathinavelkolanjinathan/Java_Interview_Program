@@ -27,7 +27,7 @@ public class ArraySegregationZeroOnes {
 
     // function to print segregated array
     static void print(int [] array, int length) {
-        System.out.print("Array After segregation is:: ");
+        System.out.print("After Array Segregation Is.... ");
         for (int i = 0; i < length; i++)
             System.out.print(array[i] + " ");
     }

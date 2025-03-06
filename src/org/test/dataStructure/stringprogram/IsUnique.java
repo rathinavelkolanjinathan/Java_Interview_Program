@@ -16,7 +16,7 @@ public class IsUnique {
         boolean[] char_set = new boolean[128];
         for (int i = 0; i < str.length(); i++) {
             int val = str.charAt(i);
-            //System.out.println("values:: "+val);
+            //System.out.println("values..... "+val);
             if (char_set[val]) {
                 return false;   // all ready found the char
             }

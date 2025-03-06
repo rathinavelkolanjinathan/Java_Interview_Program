@@ -28,7 +28,7 @@ public class ValidParentheses {
      */
     public static void main(String[] args) {
         boolean bb = isValid("()");
-        System.out.println("Balanced brackets::" + bb);
+        System.out.println("Balanced Brackets...." + bb);
 
     }
 }

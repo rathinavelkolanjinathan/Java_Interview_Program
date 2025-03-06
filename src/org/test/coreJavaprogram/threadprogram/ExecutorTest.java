@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 public class ExecutorTest implements Callable<Integer> {
-    private int input;
+    private final int input;
     public ExecutorTest(int input) {
         super();
         this.input = input;

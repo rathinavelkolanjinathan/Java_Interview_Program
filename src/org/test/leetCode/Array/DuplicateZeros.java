@@ -34,7 +34,7 @@ public class DuplicateZeros {
             }
         }
         Arrays.stream(memo)
-                .forEach(a -> System.out.println("index>>" + a));
+                .forEach(a -> System.out.println("Index...." + a));
 
     }
 

@@ -8,6 +8,6 @@ public class SecondLargest {
         Arrays.sort(array);
         //System.out.println(Arrays.toString(arr));
         int secondLargest = array[length - 2];
-        System.out.println("secondLargest:: " + secondLargest);
+        System.out.println("Second Largest.... " + secondLargest);
     }
 }

@@ -19,7 +19,7 @@ public class SortingArrayUsingBubbleSort {
         }
         //Second largest element
         int secondLargest = arr[arr.length - 3];
-        System.out.println("secondLargest:: " + secondLargest);
+        System.out.println("Second Largest..... " + secondLargest);
 
     }
 }

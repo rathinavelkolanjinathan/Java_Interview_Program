@@ -34,12 +34,12 @@ public class ReverseLinkedList {
         list.head.next.next = new Node(3);
         list.head.next.next.next = new Node(4);
 
-        System.out.println("Original list:");
+        System.out.println("Original list...");
         list.printList();
 
         list.reverse();
 
-        System.out.println("Reversed list:");
+        System.out.println("Reversed list....");
         list.printList();
     }
 }

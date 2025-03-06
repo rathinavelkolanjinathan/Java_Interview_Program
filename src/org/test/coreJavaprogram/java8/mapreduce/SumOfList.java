@@ -22,20 +22,20 @@ public class SumOfList {
         //method3
         Optional<Integer> sum2 = list.stream().reduce(Integer::sum);
 
-        System.out.println("sum2::" + sum2);
+        System.out.println("Sum2..." + sum2);
 
         Integer multiple = list.stream().reduce(1, (a, b) -> a * b);
-        System.out.println("multiple::" + multiple);
+        System.out.println("Multiple..." + multiple);
 
         //method 1
         Integer maxvalue = list.stream().reduce(0, (a, b) -> a > b ? a : b);
 
-        System.out.println("maxvalue::" + maxvalue);
+        System.out.println("Max Value...." + maxvalue);
 
         //method 2
 
         Integer max1 = list.stream().reduce(Integer::max).get();
-        System.out.println("max1::" + max1);
+        System.out.println("Max1...." + max1);
 
     }
 }

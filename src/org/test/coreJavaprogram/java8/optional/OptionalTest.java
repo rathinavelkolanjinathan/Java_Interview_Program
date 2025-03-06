@@ -24,12 +24,12 @@ public class OptionalTest {
         Customer cust = new Customer(101, "john", "kolanjirathna@gmail.com", Arrays.asList("3214"));
         Optional<String> prsent = (customer.getEmail());
         if (prsent.isPresent()) {
-            System.out.println("values " + prsent.get());
+            System.out.println("isPresent.... " + prsent.get());
         }
-        System.out.println("values " + prsent.orElse("default message "));
+        System.out.println("orElse.... " + prsent.orElse("default message "));
         //System.out.println("values " + prsent.orElseThrow(() -> new IllegalArgumentException("email is not found")));
 
-        System.out.println("values " + prsent.map(String::toUpperCase).orElseGet(() -> "defult values "));
+        System.out.println("Map....." + prsent.map(String::toUpperCase).orElseGet(() -> "defult values "));
 
 
     }

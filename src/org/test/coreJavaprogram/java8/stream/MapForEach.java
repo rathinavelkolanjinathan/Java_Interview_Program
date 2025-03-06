@@ -15,12 +15,12 @@ public class MapForEach {
 
         //Method 1 lambda
         map.forEach((key, value) ->
-                System.out.println(" key {} :: " + key + " values {}::" + value));
+                System.out.println(" key {}.... " + key + " values {}..." + value));
 
         //Method 2 using stream
         map.entrySet()
                 .stream()
-                .forEach(m -> System.out.println("map values {} :: " + m));
+                .forEach(m -> System.out.println("map values {}... " + m));
 
     }
 

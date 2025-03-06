@@ -7,6 +7,6 @@ public class IntToArrayJdk8 {
                 .chars()
                 .map(c -> c - '0').toArray();
         for (int value : intArray)
-            System.out.println("Array Values :: " + value);
+            System.out.println("Array Values...... " + value);
     }
 }

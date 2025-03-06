@@ -30,6 +30,6 @@ public class FibonacciSeries {
         //scanner.close();
 
         int fibonacci = FibonacciSeries.fib(5);
-        logger.info("fibonacci::" + fibonacci);
+        logger.info("Fibonacci..." + fibonacci);
     }
 }

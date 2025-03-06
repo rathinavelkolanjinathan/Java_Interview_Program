@@ -38,7 +38,7 @@ public class HashTableVSHashMap {
 		logger.info("Hashtable Value .... "+hashtable);
 
 
-		Map<String,String> map = new HashMap();
+		Map<String,String> map = new HashMap<>();
 
 		// Creating a synchronized Map
 		Map<String, String> synchronizedMap = Collections.synchronizedMap(map);

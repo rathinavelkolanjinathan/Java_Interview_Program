@@ -6,9 +6,9 @@ public class Palindrome {
         String str = "202";
         String result = palindrome(str);
         if (str.equals(result)) {
-            System.out.println(str + " is a Palindrome  : " + result);
+            System.out.println(str + " is a Palindrome....." + result);
         } else {
-            System.out.println(str + " is not a Palindrome  : " + result);
+            System.out.println(str + " is not a Palindrome...." + result);
         }
     }
 

@@ -21,7 +21,7 @@ public class Compression {
 
     public static void main(String[] args) {
         String st1 = compress("kollaann");
-        logger.info("count>>>>" + st1);
+        logger.info("Count....." + st1);
     }
 
 }

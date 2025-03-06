@@ -21,7 +21,7 @@ public class ReverseLetter {
                     .reverse()
                     .toString());
         }
-        System.out.println("Using string builder ::" + stringJoiner.toString());
+        System.out.println("Using String Builder....." + stringJoiner);
 
         //Using Jdk8
         String String = Stream.of(str)
@@ -29,7 +29,7 @@ public class ReverseLetter {
                         new StringBuilder(values)
                                 .reverse())
                 .collect(Collectors.joining());
-        System.out.println("Using jdk8 :: " + String);
+        System.out.println("Using jdk8...... " + String);
 
     }
 }

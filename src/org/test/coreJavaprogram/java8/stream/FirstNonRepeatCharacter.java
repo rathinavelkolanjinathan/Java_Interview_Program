@@ -21,7 +21,7 @@ public class FirstNonRepeatCharacter {
                 .getKey();
 
 
-       System.out.println("First Non-Repeated Character :: "+firstNonRepeat);
+       System.out.println("First Non-Repeated Character..... "+firstNonRepeat);
 
        //First Repeat character  approach 2
         String firstRepeat = Arrays.stream(str.split(""))
@@ -33,6 +33,6 @@ public class FirstNonRepeatCharacter {
                        .findFirst()
                        .get()
                        .getKey();
-        System.out.println("First Repeated Character:: "+ firstRepeat);
+        System.out.println("First Repeated Character...... "+ firstRepeat);
     }
 }

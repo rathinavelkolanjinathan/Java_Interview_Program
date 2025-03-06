@@ -17,42 +17,42 @@ public class MapReduceExample {
         for (int no : numbers) {
             sum = sum + no;
         }
-        System.out.println("Old method>> " + sum);
+        System.out.println("Old Method... " + sum);
 
         //using stream
         int sum1 = numbers.stream()
                 .mapToInt(i -> i).sum();
-        System.out.println("Sum1>>" + sum1);
+        System.out.println("Sum1..." + sum1);
         //using reduce
 
         Integer reduceSum = numbers.stream()
                 .reduce(0, (a, b) -> a + b);
-        System.out.println("ReduceSum>> " + reduceSum);
+        System.out.println("ReduceSum..." + reduceSum);
 
         Optional<Integer> reduceSumWithMethodReference = numbers.stream()
                 .reduce(Integer::sum);
-        System.out.println("Reduce Sum With Method Reference>>" + reduceSumWithMethodReference.get());
+        System.out.println("Reduce Sum With Method Reference..." + reduceSumWithMethodReference.get());
 
         Integer mulResult = numbers.stream()
                 .reduce(1, (a, b) -> a * b);
-        System.out.println("Mul Result>>" + mulResult);
+        System.out.println("Mul Result..." + mulResult);
 
         //find the max values using reduce
         Integer maxvalue = numbers.stream()
                 .reduce(0, (a, b) -> a > b ? a : b);
-        System.out.println("Maxvalue>>" + maxvalue);
+        System.out.println("Max Value.." + maxvalue);
         //find the max values
         Integer maxvalueWithMethodReference = numbers.stream()
                 .reduce(Integer::max)
                 .get();
-        System.out.println("Max Value With Method Reference>>" + maxvalueWithMethodReference);
+        System.out.println("Max Value With Method Reference..." + maxvalueWithMethodReference);
 
         // find the longest string
         String longestString = words.stream()
                 .reduce((word1, word2) -> word1.length() > word2.length() ?
                         word1 : word2)
                 .get();
-        System.out.println("Longest String>>" + longestString);
+        System.out.println("Longest String..." + longestString);
 
         //get employee whose grade A
         //get salary
@@ -64,7 +64,7 @@ public class MapReduceExample {
                 .average()
                 .getAsDouble();
 
-        System.out.println("Avg Salary>>" + avgSalary);
+        System.out.println("Avg Salary..." + avgSalary);
 
         //sum of salary for a grade employee
         double sumSalary = Database.getEmployeeDetails().stream()
@@ -72,7 +72,7 @@ public class MapReduceExample {
                 .map(employee -> employee.getSalary())
                 .mapToDouble(i -> i)
                 .sum();
-        System.out.println("Sum Salary>>" + sumSalary);
+        System.out.println("Sum Salary.." + sumSalary);
     }
 
 

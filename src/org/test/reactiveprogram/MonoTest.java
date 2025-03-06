@@ -28,13 +28,13 @@ public class MonoTest {
         String st = "kolanji";
         Mono<String> supplier = Mono.fromSupplier(() -> st);
 
-        System.out.println("UsingSupplier:: " + supplier.subscribe().toString());
+        System.out.println("Using Supplier... " + supplier.subscribe().toString());
 
         //from callable
 
         Mono<String> callable = Mono.fromCallable(() -> "Hello");
 
-        System.out.println("callable:: " + callable);
+        System.out.println("Callable.... " + callable);
 
         //Feature
 
@@ -42,6 +42,6 @@ public class MonoTest {
 
         Mono<String> complete = Mono.fromFuture(completableFuture);
 
-        System.out.println("feature:: " + complete);
+        System.out.println("Feature..... " + complete);
     }
 }

@@ -11,7 +11,7 @@ public class ConvertListToMap {
                 Database.getEmployeeDetails()
                         .stream()
                         .collect(Collectors.toMap(Employee::getId, Employee::getName));
-                          System.out.println("Employee Values::" + empMap);
+                          System.out.println("Employee Values..." + empMap);
 
     }
 }

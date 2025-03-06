@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class ConvertSetToArray {
     public static void main(String[] args) {
 
-        Set<String> hashSet = new HashSet();
+        Set<String> hashSet = new HashSet<>();
         hashSet.add("kolanji");
         hashSet.add("rathna");
 
@@ -20,7 +20,7 @@ public class ConvertSetToArray {
         System.out.println("TreeSet After Convert List.............." + ll);
 
         //3.TreeSet To Array
-        Set<String> treeSet = new TreeSet();
+        Set<String> treeSet = new TreeSet<>();
         treeSet.add("A");
         treeSet.add("B");
         treeSet.add("C");

@@ -17,7 +17,7 @@ public class LinkedHashMapTest {
         map.put("weigh","nat");
          System.out.print("");
         for(Map.Entry<String,String> value:map.entrySet()){
-           // System.out.println("map value >>>>  "+value);
+           // System.out.println("map value....  "+value);
             System.out.println("Key: " + value);
         }
         System.out.print("\n");
@@ -27,7 +27,7 @@ public class LinkedHashMapTest {
         treeMap.put("Address","Addition");
         treeMap.put("when","celmurugan");
         for(Map.Entry<String,String> value:treeMap.entrySet()){
-            System.out.println("Tree Map >>>  "+value);
+            System.out.println("Tree Map....  "+value);
 
         }
         System.out.print("\n");
@@ -41,7 +41,7 @@ public class LinkedHashMapTest {
         linkedHashMap.put("weigh","nat");
 
         for(Object value:linkedHashMap.entrySet()){
-            System.out.println("linkedHashMap >>>  "+value);
+            System.out.println("LinkedHashMap.....  "+value);
 
         }
         System.out.print("\n");

@@ -2,7 +2,7 @@ package org.test.coreJavaprogram.threadprogram;
 
 public class EvenAndOddPrinterTwoThreads implements Runnable {
     static int count = 1;
-    Object object;
+   private  Object object;
 
     public EvenAndOddPrinterTwoThreads(Object object) {
         this.object = object;

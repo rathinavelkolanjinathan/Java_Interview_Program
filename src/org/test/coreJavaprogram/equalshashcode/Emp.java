@@ -6,8 +6,8 @@ public class Emp {
         Emp emp = new Emp(101, "Besant ");
         Emp emp1 = new Emp(102, "test ");
 
-        System.out.println("is hashcode:: " + (emp.hashCode() == emp1.hashCode()));
-        System.out.println("is equals:: " + (emp.equals(emp1)));
+        System.out.println("is hashcode.... " + (emp.hashCode() == emp1.hashCode()));
+        System.out.println("is equals..... " + (emp.equals(emp1)));
 
 
     }

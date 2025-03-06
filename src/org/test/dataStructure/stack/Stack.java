@@ -13,25 +13,25 @@ public class Stack {
     }
 
     // Utility function to add an element `x` to the stack
-    public void push(int x) {
+    public void push(int input) {
         if (isFull()) {
-            System.out.println("Overflow\nProgram Terminated\n");
+            System.out.println("Overflow\nProgram Terminated\n...");
             System.exit(-1);
         }
 
-        System.out.println("Inserting " + x);
-        arr[++top] = x;
+        System.out.println("Inserting.... " + input);
+        arr[++top] = input;
     }
 
     // Utility function to pop a top element from the stack
     public int pop() {
         // check for stack underflow
         if (isEmpty()) {
-            System.out.println("Underflow\nProgram Terminated");
+            System.out.println("Underflow\nProgram Terminated....");
             System.exit(-1);
         }
 
-        System.out.println("Removing " + peek());
+        System.out.println("Removing.... " + peek());
 
         // decrease stack size by 1 and (optionally) return the popped element
         return arr[top--];
@@ -74,16 +74,16 @@ public class Stack {
 
         stack.push(3); // inserting 3 in the stack
 
-        System.out.println("The top element is " + stack.peek());
-        System.out.println("The stack size is " + stack.size());
+        System.out.println("Top Element is..... " + stack.peek());
+        System.out.println("Stack Size is.... " + stack.size());
 
         stack.pop(); // removing the top element (3)
 
         // check if the stack is empty
         if (stack.isEmpty()) {
-            System.out.println("The stack is empty");
+            System.out.println("The Stack is Empty...");
         } else {
-            System.out.println("The stack is not empty");
+            System.out.println("The Stack is Not Empty...");
         }
     }
 }
