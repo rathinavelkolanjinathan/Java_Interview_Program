@@ -39,6 +39,7 @@ public class DuplicatesCharacter {
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
+
         map.forEach((k, v) -> {
             if (v > 1) {
                 System.out.println("repeated "+k + ":" + v);

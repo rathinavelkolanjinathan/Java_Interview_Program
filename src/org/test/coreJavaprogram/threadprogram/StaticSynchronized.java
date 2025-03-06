@@ -1,4 +1,4 @@
-package org.test.threadprogram;
+package org.test.coreJavaprogram.threadprogram;
 
 public class StaticSynchronized {
     public static synchronized void wish(String name) {

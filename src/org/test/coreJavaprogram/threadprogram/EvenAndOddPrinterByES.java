@@ -1,4 +1,4 @@
-package org.test.threadprogram;
+package org.test.coreJavaprogram.threadprogram;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;

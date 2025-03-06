@@ -1,4 +1,4 @@
-package org.test.threadprogram;
+package org.test.coreJavaprogram.threadprogram;
 /**
  * This is example of Institute class using thread
  */

@@ -1,4 +1,4 @@
-package org.test.threadprogram;
+package org.test.coreJavaprogram.threadprogram;
 
 public class SynchronizedTest2 {
     public static void main(String[] args) {

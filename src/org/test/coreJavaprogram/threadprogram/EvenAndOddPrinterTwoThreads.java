@@ -1,4 +1,4 @@
-package org.test.threadprogram;
+package org.test.coreJavaprogram.threadprogram;
 
 public class EvenAndOddPrinterTwoThreads implements Runnable {
     static int count = 1;
