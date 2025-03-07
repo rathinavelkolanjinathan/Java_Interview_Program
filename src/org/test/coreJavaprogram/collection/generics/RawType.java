@@ -5,7 +5,7 @@ package org.test.coreJavaprogram.collection.generics;
  *
  * @param <T>
  */
-public class Box<T> {
+public class RawType<T> {
     private T t;
 
     public T getT() {
@@ -20,14 +20,14 @@ public class Box<T> {
     public static void main(String[] args) {
 
 
-        Box<String> st = new Box<>();  //scenario 1
-        Box st1= st;
+        RawType<String> st = new RawType<>();  //scenario 1
+        RawType st1= st;
 
-        Box b= new Box(); // scenario 2
-        Box<Integer> bb =b;
+        RawType b= new RawType(); // scenario 2
+        RawType<Integer> bb =b;
 
-        Box<String> ss= new Box<>();
-        Box c= ss;
+        RawType<String> ss= new RawType<>();
+        RawType c= ss;
         c.setT(8);
 
 
