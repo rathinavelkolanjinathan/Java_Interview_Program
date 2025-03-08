@@ -3,13 +3,13 @@ package org.test.concurrencyapi;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ExecutorServiceTest {
+public class ExecutorServiceDemo {
 
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-        ExecutorService executorService1 = Executors.newSingleThreadExecutor();
+        ExecutorService executorServiceFirst = Executors.newSingleThreadExecutor();
+        ExecutorService executorServiceSecond = Executors.newSingleThreadExecutor();
 
-        executorService1.execute(new Runnable() {
+        executorServiceSecond.execute(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 100; i++)
@@ -20,7 +20,7 @@ public class ExecutorServiceTest {
         });
 
 
-        executorService.execute(new Runnable() {
+        executorServiceFirst.execute(new Runnable() {
             @Override
             public void run() {
                 for (int i = 2; i < 100; i++)
@@ -30,7 +30,7 @@ public class ExecutorServiceTest {
                     }
             }
         });
-        executorService.shutdown();
+        executorServiceFirst.shutdown();
     }
 
 
