@@ -1,6 +1,7 @@
 package org.test.coreJavaprogram.java8.stream.HiddenMethods;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -26,7 +27,7 @@ public class HiddenMethodsJDK8 {
         List<String> nonNull = name.stream()
                 .flatMap(Stream::ofNullable)
                 .collect(Collectors.toList());
-        System.out.println("Ofnullable " + nonNull);
+        System.out.println("OfNullable.... " + nonNull);
 
         //2.Iterate
 
@@ -45,7 +46,7 @@ public class HiddenMethodsJDK8 {
                 .collect(Collectors.collectingAndThen
                         (Collectors.averagingDouble(Double::doubleValue), Math::round));
 
-        System.out.println("Collect and then" + emp1);
+        System.out.println("Collect and then..." + emp1);
         //4.Takewhile and dropwhile
 
         List<Integer> number = List.of(1, 2, 3, 4, 5, 6, 7);
@@ -54,20 +55,20 @@ public class HiddenMethodsJDK8 {
                 .stream()
                 .takeWhile(num -> num < 5)
                 .collect(Collectors.toList());
-        System.out.println("Take while test" + takewhil);
+        System.out.println("Take While Test..." + takewhil);
 
         List<Integer> dropwhile = number
                 .stream()
                 .dropWhile(num -> num < 5)
                 .collect(Collectors.toList());
-        System.out.println("dropwhile" + dropwhile);
+        System.out.println("Drop While...." + dropwhile);
 
         List<Integer> dropwhiletake = number
                 .stream()
                 .dropWhile(num -> num < 3)
                 .takeWhile(num -> num < 7)
                 .collect(Collectors.toList());
-        System.out.println("dropwhiletake" + dropwhiletake);
+        System.out.println("Drop WhileTake...." + dropwhiletake);
 
         //5.Teeing
 
@@ -77,27 +78,42 @@ public class HiddenMethodsJDK8 {
                         Collectors.minBy(Integer::compareTo),
                         (e1, e2) ->
                                 Map.of("Max", e1.get(), "min", e2.get())));
-        System.out.println("teeing" + teeing);
+        System.out.println("Teeing...." + teeing);
 
         //6.Concatnate
         Stream<Integer> s1 = Stream.of(1, 2, 3);
         Stream<Integer> s2 = Stream.of(4, 5, 6);
         Stream<Integer> concat = Stream.concat(s1, s2);
 
-        System.out.println("concat" + concat);
+        System.out.println("Concat.." + concat);
 
         long sum = concat.mapToInt(Integer::intValue).sum();
-        System.out.println("sum" + sum);
+        System.out.println("Sum..." + sum);
         //7.PartioningBy
 
         Map<Boolean, List<Integer>> map = number.stream().collect(Collectors.partitioningBy(num -> num % 2 == 0));
-        System.out.println("OddNumber" + map.get(Boolean.FALSE));
-        System.out.println("Even Number" + map.get(Boolean.TRUE));
+        System.out.println("OddNumber..." + map.get(Boolean.FALSE));
+        System.out.println("Even Number..." + map.get(Boolean.TRUE));
 
         //8.ForRange
         List<Integer> range = IntStream.range(1, 100).boxed().collect(Collectors.toList());
-        System.out.println("range" + range);
+        System.out.println("Range" + range);
+
         List<Integer> rangeclosed = IntStream.rangeClosed(1, 20).boxed().collect(Collectors.toList());
-        System.out.println("rangeClosed" + rangeclosed);
+        System.out.println("RangeClosed..." + rangeclosed);
+
+        //N copies
+
+       List<String> copy =  Collections.nCopies(5,"Kolanji");
+       System.out.println(copy);
+       try{
+
+           copy.set(0,"Hai");
+       }catch(UnsupportedOperationException ex) {
+           System.out.println("Lis is immutable  it cant be modify");
+
+       }
+
+
     }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// rotate the left and right
 public class RotationCollection {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
