@@ -8,7 +8,12 @@ public class ReverseLetter {
     public static void main(String[] args) {
       //Wthout jdk8
         String str = "Hello Java";
+        String reverse ="";
+        for(int i=str.length()-1;i>=0;i--){
+            reverse = reverse+str.charAt(i);
+        }
 
+        System.out.println("Reverse..... "+reverse);
 
 
         //StringJoiner is used to construct a sequence of characters separated

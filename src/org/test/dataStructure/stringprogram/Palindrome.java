@@ -21,6 +21,7 @@ public class Palindrome {
         for (int i = length - 1; i >= 0; i--) {
             //System.out.println("reverse: " + reverse);
             reverse = reverse + str.charAt(i);
+
         }
         return reverse;
     }
