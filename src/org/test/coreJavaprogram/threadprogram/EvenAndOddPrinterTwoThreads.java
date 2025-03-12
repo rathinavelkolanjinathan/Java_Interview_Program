@@ -2,7 +2,7 @@ package org.test.coreJavaprogram.threadprogram;
 
 public class EvenAndOddPrinterTwoThreads implements Runnable {
     static int count = 1;
-   private  Object object;
+    private Object object;
 
     public EvenAndOddPrinterTwoThreads(Object object) {
         this.object = object;
@@ -36,9 +36,9 @@ public class EvenAndOddPrinterTwoThreads implements Runnable {
     }
 
     public static void main(String[] args) {
-        Object lock= new Object();
-        Runnable r1=new EvenAndOddPrinterTwoThreads(lock);
-        Runnable r2=new EvenAndOddPrinterTwoThreads(lock);
+        Object lock = new Object();
+        Runnable r1 = new EvenAndOddPrinterTwoThreads(lock);
+        Runnable r2 = new EvenAndOddPrinterTwoThreads(lock);
         new Thread(r1, "even").start();
         new Thread(r2, "odd").start();
     }

@@ -26,6 +26,11 @@ public class OptionalTest {
         if (prsent.isPresent()) {
             System.out.println("isPresent.... " + prsent.get());
         }
+
+        prsent.ifPresent(value -> System.out.println("Value: " + value));
+
+
+
         System.out.println("orElse.... " + prsent.orElse("default message "));
         //System.out.println("values " + prsent.orElseThrow(() -> new IllegalArgumentException("email is not found")));
 

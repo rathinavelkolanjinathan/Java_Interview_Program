@@ -29,5 +29,15 @@ public class ConvertSetToArray {
         treeSet.toArray(value);
         System.out.println("TreeSet After Convert Array.........." + Arrays.toString(value));
 
+
+        //convert List to Map
+        List<String> list = Arrays.asList("Apple", "Banana", "Cherry");
+
+        // Convert to map: Key is the string, value is the length of the string
+        Map<String, Integer> map = list.stream()
+                .collect(Collectors.toMap(
+                        item -> item,           // Key mapper
+                        item -> item.length()   // Value mapper
+                ));
     }
 }

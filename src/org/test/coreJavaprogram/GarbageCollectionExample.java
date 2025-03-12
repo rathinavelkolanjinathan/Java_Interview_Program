@@ -1,11 +1,11 @@
 package org.test.coreJavaprogram;
 
 public class GarbageCollectionExample {
-    @Override
+   /* @Override
     protected void finalize() throws Throwable {
         System.out.println("Finalize method called. Object is being garbage collected.");
         super.finalize();
-    }
+    }*/
 
     public static void main(String[] args) {
         GarbageCollectionExample obj1 = new GarbageCollectionExample();

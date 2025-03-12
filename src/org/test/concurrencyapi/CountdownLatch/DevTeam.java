@@ -3,11 +3,11 @@ package org.test.concurrencyapi.CountdownLatch;
 import java.util.concurrent.CountDownLatch;
 
 public class DevTeam extends Thread {
-    private CountDownLatch latch;
+    private CountDownLatch countDownLatch;
 
     public DevTeam(CountDownLatch latch, String name) {
         super(name);
-        this.latch = latch;
+        this.countDownLatch = latch;
     }
 
     public void run() {

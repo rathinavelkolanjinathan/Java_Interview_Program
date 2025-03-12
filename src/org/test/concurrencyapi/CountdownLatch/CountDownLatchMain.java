@@ -5,6 +5,7 @@ import java.util.concurrent.CountDownLatch;
 // same way one thread is execution is completed then allow to other thread execution
 public class CountDownLatchMain {
     public static void main(String[] args) throws InterruptedException {
+        System.out.print("Size of main "+args.length);
         CountDownLatch latch1 = new CountDownLatch(3);
         DevTeam dev = new DevTeam(latch1, "dev-a");
         DevTeam dev2 = new DevTeam(latch1, "dev-b");

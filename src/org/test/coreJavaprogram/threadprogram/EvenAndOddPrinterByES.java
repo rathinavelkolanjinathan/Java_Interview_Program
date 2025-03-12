@@ -15,7 +15,8 @@ public class EvenAndOddPrinterByES {
                     CompletableFuture<Integer> oddCompletableFuture = CompletableFuture.completedFuture(num)
                             .thenApplyAsync(x -> {
                                 if (x % 2 != 0) {
-                                    System.out.println("Thread Name " + Thread.currentThread().getName() + " : " + x);
+                                    System.out.println("Odd number Thread Name " +
+                                            Thread.currentThread().getName() + " : " + x);
                                 }
                                 return num;
                             }, executorService);
@@ -24,7 +25,8 @@ public class EvenAndOddPrinterByES {
                     CompletableFuture<Integer> evenCompletableFuture = CompletableFuture.completedFuture(num)
                             .thenApplyAsync(x -> {
                                 if (x % 2 == 0) {
-                                    System.out.println("Thread Name " + Thread.currentThread().getName() + " : " + x);
+                                    System.out.println(" Even NumberThread Name " +
+                                            Thread.currentThread().getName() + " : " + x);
                                 }
                                 return num;
                             }, executorService);
