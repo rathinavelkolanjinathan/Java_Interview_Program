@@ -1,4 +1,4 @@
-package org.test.designpattern.structural.ProxyPattern;
+package org.test.designpattern.structural.proxypattern;
 
 public class RealSubject  implements Subject {
 
