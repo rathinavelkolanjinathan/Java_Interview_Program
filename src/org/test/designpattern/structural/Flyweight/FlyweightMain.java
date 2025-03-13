@@ -1,4 +1,4 @@
-package org.test.designpattern.structural.ProxyDesignPattern.Flyweight;
+package org.test.designpattern.structural.Flyweight;
 
 public class FlyweightMain {
     public static void main(String[] args) {

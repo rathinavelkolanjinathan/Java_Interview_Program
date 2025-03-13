@@ -1,4 +1,4 @@
-package org.test.designpattern.structural.ProxyDesignPattern;
+package org.test.designpattern.structural.ProxyPattern;
 
 public class ProxyApp {
 
