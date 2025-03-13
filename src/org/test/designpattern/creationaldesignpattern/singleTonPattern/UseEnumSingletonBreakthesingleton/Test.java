@@ -1,4 +1,4 @@
-package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingleton;
+package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingletonBreakthesingleton;
 
 public class Test {
     public static void main(String[] args) {

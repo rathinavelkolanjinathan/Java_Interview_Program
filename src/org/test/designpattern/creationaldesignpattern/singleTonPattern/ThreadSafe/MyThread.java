@@ -3,7 +3,7 @@ package org.test.designpattern.creationaldesignpattern.singleTonPattern.ThreadSa
 public class MyThread implements Runnable {
     @Override
     public void run() {
-        Singleton sin = Singleton.getInstance();
+        SingletonThreadSafe sin = SingletonThreadSafe.getInstance();
         System.out.println("Thread" + Thread.currentThread().getName()+" "+sin.hashCode());
     }
 }

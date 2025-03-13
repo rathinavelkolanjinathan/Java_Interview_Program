@@ -1,4 +1,4 @@
-package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingleton;
+package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingletonBreakthesingleton;
 
 // this class is used for avoid attack using the reflection,clone,serializable
 public enum Singleton {

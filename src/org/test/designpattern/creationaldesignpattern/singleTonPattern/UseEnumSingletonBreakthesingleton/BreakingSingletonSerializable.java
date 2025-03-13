@@ -1,4 +1,4 @@
-package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingleton;
+package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingletonBreakthesingleton;
 
 import java.io.*;
 

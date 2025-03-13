@@ -1,4 +1,4 @@
-package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingleton;
+package org.test.designpattern.creationaldesignpattern.singleTonPattern.UseEnumSingletonBreakthesingleton;
 
 import java.lang.reflect.Constructor;
 // Throw the exception block so we cant able to break the singleton class using reflection method
