@@ -1,4 +1,4 @@
-package org.test.designpattern.structural.Flyweight;
+package org.test.designpattern.structural.flyweightpattern;
 
 import java.util.HashMap;
 
