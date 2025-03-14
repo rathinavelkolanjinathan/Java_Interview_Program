@@ -24,10 +24,10 @@ public class MergeTwoArray {
 
         ArrayList<String> listTwo2 = new ArrayList<>(Arrays.asList("c", "d", "e"));
 
-        List<String> combinedList = Stream.of(listOne1, listTwo2)
+        List<String> mergedList = Stream.of(listOne1, listTwo2)
                 .flatMap(x -> x.stream())
                 .collect(Collectors.toList());
 
-        System.out.println("Merged Array" + combinedList);
+        System.out.println("Merged List......" + mergedList);
     }
 }

@@ -19,10 +19,12 @@ public class SplitStringByComma {
 		// let's print input and output 
 		System.out.println("comma separated String: " + languages); 
 		System.out.println("array of String: " + Arrays.toString(array)); 
-		System.out.println("list of String: " + list); 
+		System.out.println("list of String: " + list);
+
 		// In case your CSV String contains leading or trailing spaces
 		// call trim() before calling split() to avoid leading
-		// space on first and last word. 
+		// space on first and last word.
+
 		String CSVWithLeadingSpace = " XBOX,PlayStation,Wii ";
 		String[] withoutTrim = CSVWithLeadingSpace.split(",");
 		String[] afterTrimming = CSVWithLeadingSpace.trim().split(",");

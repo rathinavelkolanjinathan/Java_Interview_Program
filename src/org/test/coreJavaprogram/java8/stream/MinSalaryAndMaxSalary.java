@@ -17,7 +17,7 @@ public class MinSalaryAndMaxSalary {
                 .filter(salary -> salary.getSalary() > 500)
                 .collect(Collectors.toList());
         //minimumSalary.stream().forEach(a-> System.out.println(a));
-        System.out.println("Minimum Salary" + minimumSalary);
+        System.out.println("Minimum Salary......" + minimumSalary);
 
         //max salary
         Optional<Employee> maxSalary = Database.getEmployeeDetails()
@@ -25,14 +25,14 @@ public class MinSalaryAndMaxSalary {
                 .collect(Collectors.maxBy(Comparator.comparingDouble
                         (Employee::getSalary)));
 
-        System.out.println("maxSalary Salary" + maxSalary.get());
+        System.out.println("Max Salary....." + maxSalary.get());
 
         Optional<Employee> minSalary = Database.getEmployeeDetails()
                 .stream()
                 .collect(Collectors.minBy(Comparator.comparingDouble
                         (Employee::getSalary)));
 
-        System.out.println("Minimum Salary" + minSalary.get());
+        System.out.println("Minimum Salary....." + minSalary.get());
 
         //second max
         Optional<Employee> secondMaxSalary = Database.getEmployeeDetails()
@@ -41,7 +41,7 @@ public class MinSalaryAndMaxSalary {
                         .reversed())
                 .skip(1)
                 .findFirst();
-        System.out.println("Second MaxSalary" + secondMaxSalary.get());
+        System.out.println("Second MaxSalary....." + secondMaxSalary.get());
 
         // System.out.println(employee);
     }

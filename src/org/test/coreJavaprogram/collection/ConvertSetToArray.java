@@ -34,10 +34,13 @@ public class ConvertSetToArray {
         List<String> list = Arrays.asList("Apple", "Banana", "Cherry");
 
         // Convert to map: Key is the string, value is the length of the string
+
         Map<String, Integer> map = list.stream()
                 .collect(Collectors.toMap(
                         item -> item,           // Key mapper
                         item -> item.length()   // Value mapper
                 ));
+        //map.forEach((k,v)->System.out::print(k,v));
+        map.forEach((key,va)->System.out.println(key+"=="+va));
     }
 }

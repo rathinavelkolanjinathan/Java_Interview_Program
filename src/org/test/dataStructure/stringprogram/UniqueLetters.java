@@ -15,7 +15,7 @@ public class UniqueLetters {
                 .distinct()
                 .collect(Collectors.toList());
 
-        System.out.println("Unique values " + unique);
+        System.out.println("Unique values....." + unique);
     }
 
 

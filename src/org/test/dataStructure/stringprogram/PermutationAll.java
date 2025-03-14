@@ -8,7 +8,7 @@ public class PermutationAll {
 
     public static void permutation(String str, String prefix) {
         if (str.length() == 0) {
-            System.out.println("Prefix " + prefix);
+            System.out.println("Prefix......." + prefix);
         }
         for (int i = 0; i < str.length(); i++) {
 

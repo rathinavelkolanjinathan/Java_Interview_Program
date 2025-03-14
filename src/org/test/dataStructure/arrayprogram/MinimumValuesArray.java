@@ -15,7 +15,7 @@ public class MinimumValuesArray {
             throw new IllegalArgumentException("Exception");
         }
         int minValue = array[0];
-        System.out.println("Min"+minValue);
+        System.out.println("Min........"+minValue);
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] < minValue) {   // this is find the minimum logic

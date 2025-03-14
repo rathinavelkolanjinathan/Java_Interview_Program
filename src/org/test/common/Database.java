@@ -13,6 +13,7 @@ public class Database {
         employeeList.add(new Employee(203, "agilan", "Admin", 800,"A"));
         employeeList.add(new Employee(204, "Priyadharshini", "account", 900,"A"));
         employeeList.add(new Employee(205, "Kuppuswamy", "Network", 1000,"A"));
+        employeeList.add(new Employee(205, "arun", "IT", 1000,"A"));
         return employeeList;
     }
 

@@ -11,5 +11,8 @@ public class Join {
         List<String> values = Arrays.asList("how","are","you");
         String join1 = String.join("$",values);
         System.out.println("St"+join1);
+        String ss="ABCD";
+       String s= String.join("","#",ss);
+       System.out.print(s);
     }
 }
