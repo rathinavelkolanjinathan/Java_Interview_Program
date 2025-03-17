@@ -2,8 +2,6 @@ package org.test.dataStructure.stringprogram;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class WordCount {
@@ -18,18 +16,13 @@ public class WordCount {
 
         Stream<String> streamVal = wordList.stream()
                 .flatMap((String str) -> {
-            String[] value = str.split(" ");
-            return Arrays.asList(value).stream();
+                    String[] value = str.split(" ");
+                    return Arrays.asList(value).stream();
 
-        });
-
+                });
 
         streamVal.forEach((result) -> {
             System.out.println(result + " <--------> " + result.length());
         });
-
-
     }
-
-
 }

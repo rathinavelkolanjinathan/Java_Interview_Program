@@ -1,6 +1,6 @@
 package org.test.coreJavaprogram;
 
-public class SplitSingleDigitTechiequestion {
+public class SplitSingleDigitTechieQuestion {
     public static void main(String[] args) {
         int number = 123456; // Original number
         System.out.println("Original number: " + number);

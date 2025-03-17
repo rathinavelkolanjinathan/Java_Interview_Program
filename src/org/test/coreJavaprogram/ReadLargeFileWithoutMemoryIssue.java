@@ -3,7 +3,7 @@ package org.test.coreJavaprogram;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class ReadlargefileWithoutMemoryIssue {
+public class ReadLargeFileWithoutMemoryIssue {
     public void readFile(String filePath) {
         try (FileInputStream fis = new FileInputStream(filePath)) {
             byte[] buffer = new byte[1024];

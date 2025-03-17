@@ -1,7 +1,16 @@
 package org.test.dataStructure.stringprogram;
 
-public class ValueCompare {
+public class StringValueCompare {
     public static void main(String[] args) {
+        String blogName = "HowToDoInJava.com";
+
+        String anotherString = new String("HowToDoInJava.com");
+
+        System.out.println(blogName == anotherString);     //false
+
+        System.out.println(blogName.equals(anotherString));
+
+
         String s1 = "kolanji";
         String s2 = new String("kolanji");
         String s3 = "kolanji";

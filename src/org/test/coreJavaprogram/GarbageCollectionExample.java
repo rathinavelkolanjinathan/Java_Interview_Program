@@ -1,7 +1,7 @@
 package org.test.coreJavaprogram;
 
 public class GarbageCollectionExample {
-   /* @Override
+   /* @Override  after 17 they are removed this method
     protected void finalize() throws Throwable {
         System.out.println("Finalize method called. Object is being garbage collected.");
         super.finalize();

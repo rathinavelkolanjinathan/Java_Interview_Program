@@ -1,8 +1,6 @@
 package org.test.coreJavaprogram.collection.map;
 
 
-import java.util.Set;
-
 public class DuplicateKeyAllowMap {
     public static void main(String[] args) {
        /* String a, b, c;

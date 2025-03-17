@@ -2,6 +2,7 @@ package org.test.coreJavaprogram.java8.stream;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class CharacterCounting {
@@ -13,6 +14,13 @@ public class CharacterCounting {
 
         map.forEach((key, value) -> System.out.println(key + "=" + value));
 
+        String[] st = {"Balaji", "Pankaj", "RAM"};
+
+        Map<Character, Long> characterCount = String.join("", st)
+                .chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println("CharacterCount..."+characterCount);
 
     }
 }

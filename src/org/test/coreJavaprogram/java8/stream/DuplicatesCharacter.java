@@ -1,7 +1,5 @@
 package org.test.coreJavaprogram.java8.stream;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -48,5 +46,8 @@ public class DuplicatesCharacter {
                 System.out.println("non repeated"+k + ":  " + v);
             }*/
         });
+
+
+        int[] str1 = {11,11,12,13,14,15};
     }
 }

@@ -1,6 +1,6 @@
 package org.test.dataStructure.stringprogram;
 
-public class Immutable {
+public class ImmutableCheck {
     public static void main(String[] args) {
         String st = new String("kolanji");
         String st2 = "nathan";

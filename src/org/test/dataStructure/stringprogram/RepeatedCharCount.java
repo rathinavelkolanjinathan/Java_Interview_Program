@@ -20,14 +20,26 @@ public class RepeatedCharCount {
                 map.put(c, 1);
             }
         }
+
+        map.forEach((key, value) -> {
+            if (value > 1) {
+                System.out.println("Duplicate Values " + key + "-" + value);
+            } else {
+                System.out.println("Non Duplicate Values " + key + "-" + value);
+            }
+
+
+        });
+
+
         //System.out.println(map);
         // Iterate through HashMap to print all duplicate characters of String
-        Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
+        /*Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
         System.out.printf("List of duplicate characters in String '%s' %n", word);
         for (Map.Entry<Character, Integer> entry : entrySet) {
             if (entry.getValue() > 1) {
                 System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
             }
-        }
+        }*/
     }
 }

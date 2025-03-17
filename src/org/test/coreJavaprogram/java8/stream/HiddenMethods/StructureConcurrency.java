@@ -1,9 +1,5 @@
 package org.test.coreJavaprogram.java8.stream.HiddenMethods;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-
 public class StructureConcurrency {
     public static void main(String[] args) throws InterruptedException {
         // This method is common thread
