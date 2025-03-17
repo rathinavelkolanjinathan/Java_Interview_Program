@@ -1,5 +1,7 @@
 package org.test.coreJavaprogram.java8.stream;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -40,13 +42,22 @@ public class DuplicatesCharacter {
 
         map.forEach((k, v) -> {
             if (v > 1) {
-                System.out.println("repeated "+k + ":" + v);
+                System.out.println("Duplicate Character...."+k + ":" + v);
             }
             /*if (v == 1) {
-                System.out.println("non repeated"+k + ":  " + v);
+                System.out.println("Without Duplicate....."+k + ":  " + v);
             }*/
         });
 
+        //Duplicate string remove
+        String ss = "hello how are are you";
+        // Remove duplicates while maintaining order
+        String result = Arrays.stream(ss.split(" "))
+                .collect(Collectors.toCollection(LinkedHashSet::new)) // Preserve order
+                .stream()
+                .collect(Collectors.joining(" ")); // Combine words back into a single string
+
+        System.out.println(result);
 
         int[] str1 = {11,11,12,13,14,15};
     }

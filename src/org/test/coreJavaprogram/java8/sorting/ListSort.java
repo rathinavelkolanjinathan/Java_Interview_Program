@@ -39,9 +39,12 @@ public class ListSort {
 				.map(Employee::getName).collect(Collectors.toList());
 		//System.out.print(ee);
 		// length based
-		List<String> leng= emp.stream().filter(e->e.getName().length()>5).map(e->e.getName()).collect(Collectors.toList());
+		List<String> nameLength= emp.stream()
+                .filter(e->e.getName().length()>5)
+                .map(e->e.getName())
+                .collect(Collectors.toList());
 
-		System.out.print("Length"+leng);
+		System.out.print("Length"+nameLength);
         /*
          * Collections.sort(list);//ASSENDING Collections.reverse(list);
          * System.out.println(list);
