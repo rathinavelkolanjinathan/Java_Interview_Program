@@ -50,14 +50,14 @@ public class DuplicatesCharacter {
         });
 
         //Duplicate string remove
-        String ss = "hello how are are you";
+        String ss = "hello how are are you you you";
         // Remove duplicates while maintaining order
-        String result = Arrays.stream(ss.split(" "))
+        String duplicateRemove = Arrays.stream(ss.split(" "))
                 .collect(Collectors.toCollection(LinkedHashSet::new)) // Preserve order
                 .stream()
                 .collect(Collectors.joining(" ")); // Combine words back into a single string
 
-        System.out.println(result);
+        System.out.println("After duplicate removed....."+duplicateRemove);
 
         int[] str1 = {11,11,12,13,14,15};
     }
