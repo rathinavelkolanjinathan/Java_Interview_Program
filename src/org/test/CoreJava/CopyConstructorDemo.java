@@ -1,17 +1,17 @@
 package org.test.CoreJava;
 
-public class CopyConstructorTest {
+public class CopyConstructorDemo {
     private String name;
     private int age;
 
     // Regular constructor to initialize fields
-    public CopyConstructorTest(String name, int age) {
+    public CopyConstructorDemo(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     // Copy constructor
-    public CopyConstructorTest(CopyConstructorTest student) {
+    public CopyConstructorDemo(CopyConstructorDemo student) {
         this.name = student.name; // Copy the name field
         this.age = student.age;   // Copy the age field
     }
@@ -24,8 +24,8 @@ public class CopyConstructorTest {
 
     // Main method to test the copy constructor
     public static void main(String[] args) {
-        CopyConstructorTest student1 = new CopyConstructorTest("John", 20); // Create original object
-        CopyConstructorTest student2 = new CopyConstructorTest(student1);   // Create copy using the copy constructor
+        CopyConstructorDemo student1 = new CopyConstructorDemo("John", 20); // Create original object
+        CopyConstructorDemo student2 = new CopyConstructorDemo(student1);   // Create copy using the copy constructor
 
         // Display both objects to show they are identical but separate instances
         System.out.println(student1); // Output: Name: John, Age: 20

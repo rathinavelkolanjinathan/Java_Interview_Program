@@ -1,4 +1,4 @@
-package org.test.CoreJava.TryCatchFinalProgram;
+package org.test.CoreJava.trycatchfinalprogram;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

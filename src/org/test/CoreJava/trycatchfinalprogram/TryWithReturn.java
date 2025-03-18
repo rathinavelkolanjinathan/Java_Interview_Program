@@ -1,4 +1,4 @@
-package org.test.CoreJava.TryCatchFinalProgram;
+package org.test.CoreJava.trycatchfinalprogram;
 
 public class TryWithReturn {
 
