@@ -1,4 +1,4 @@
-package org.test.dataStructure.string;
+package org.test.datastructure.string;
 
 import java.io.IOException;
 import java.nio.file.Files;

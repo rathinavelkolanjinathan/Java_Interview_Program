@@ -1,4 +1,4 @@
-package org.test.dataStructure.string;
+package org.test.datastructure.string;
 
 public class StringCompare {
     public static void main(String[] args) {

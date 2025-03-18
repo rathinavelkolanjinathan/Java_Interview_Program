@@ -1,4 +1,4 @@
-package org.test.dataStructure.array;
+package org.test.datastructure.array;
 
 public class FindMissingNumber {
 

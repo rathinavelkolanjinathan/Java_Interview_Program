@@ -1,4 +1,4 @@
-package org.test.dataStructure.string;
+package org.test.datastructure.string;
 
 /**
  * Implement an algorithms stringDemo has all unique characters.

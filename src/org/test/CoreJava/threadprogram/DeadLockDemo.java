@@ -24,7 +24,7 @@ public class DeadLockDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
-        JoinTest joinTest = new JoinTest();
+        JoinDemo joinTest = new JoinDemo();
 		joinTest.setName("Sub1");
         // mt.start();
 

@@ -1,4 +1,4 @@
-package org.test.dataStructure.stack;
+package org.test.datastructure.stack;
 
 public class Stack {
     private final int arr[];
