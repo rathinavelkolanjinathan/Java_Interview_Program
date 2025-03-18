@@ -10,9 +10,9 @@ public class UniqueCharacterModel2 {
         String input = "GeeksforGeeks";
 
         if (obj.uniqueCharacters(input))
-            logger.info("The String " + input + " has all unique characters");
+            logger.info("The stringDemo " + input + " has all unique characters");
         else
-            logger.info("The String " + input + " has duplicate characters");
+            logger.info("The stringDemo " + input + " has duplicate characters");
     }
 
     boolean uniqueCharacters(String str) {

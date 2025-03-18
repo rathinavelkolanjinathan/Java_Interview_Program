@@ -1,4 +1,4 @@
-package org.test.CoreJava.CovariantReturnType;
+package org.test.CoreJava.covariantreturntype;
 
 public class CovariantReturnType1 extends CovariantReturnType {
     public CovariantReturnType1 get() {

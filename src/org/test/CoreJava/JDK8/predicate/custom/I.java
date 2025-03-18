@@ -1,4 +1,4 @@
-package org.test.CoreJava.JDK8.prdicate.custom;
+package org.test.CoreJava.JDK8.predicate.custom;
 
 public interface I <T>{
     boolean test(T t);

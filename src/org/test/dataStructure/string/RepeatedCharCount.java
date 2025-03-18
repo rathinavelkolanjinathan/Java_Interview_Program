@@ -32,9 +32,9 @@ public class RepeatedCharCount {
 
 
         //System.out.println(map);
-        // Iterate through HashMap to print all duplicate characters of String
+        // Iterate through HashMap to print all duplicate characters of stringDemo
         /*Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
-        System.out.printf("List of duplicate characters in String '%s' %n", word);
+        System.out.printf("List of duplicate characters in stringDemo '%s' %n", word);
         for (Map.Entry<Character, Integer> entry : entrySet) {
             if (entry.getValue() > 1) {
                 System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());

@@ -1,4 +1,4 @@
-package org.test.CoreJava.enumSetDemo;
+package org.test.CoreJava.enumDemo;
 
 import java.util.EnumSet;
 

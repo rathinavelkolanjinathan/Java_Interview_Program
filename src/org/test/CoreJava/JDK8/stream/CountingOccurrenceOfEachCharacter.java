@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * This class used to counting the character from the given input String.
+ * This class used to counting the character from the given input stringDemo.
  *
  */
 public class CountingOccurrenceOfEachCharacter {

@@ -19,8 +19,8 @@ public class PatternMatchingForInstanceOf {
     public static void PatternMatch(Animal animal) {
         // Old way with pattern matching (Before Java 17)
 
-       /* if (object instanceof String) {
-            String str = (String) obj;
+       /* if (object instanceof stringDemo) {
+            stringDemo str = (stringDemo) obj;
             System.out.println(str.length());
         }*/
 // New way with pattern matching (Since Java 17)

@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Permutation {
     public static void main(String args[]) {
 
-        /* * A method exposed to client to calculate permutation of String in Java. */
+        /* * A method exposed to client to calculate permutation of stringDemo in Java. */
         boolean result = permutation("god", "dog");
         System.out.println(result);
 

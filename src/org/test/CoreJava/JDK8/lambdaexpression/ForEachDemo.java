@@ -45,7 +45,7 @@ public class ForEachDemo {
 
 
         /*
-         * Consumer<String> consumer=(t)->System.out.println(t); for(String s1:list) {
+         * Consumer<stringDemo> consumer=(t)->System.out.println(t); for(stringDemo s1:list) {
          * consumer.accept(s1); }
          */
 

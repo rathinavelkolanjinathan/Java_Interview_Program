@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.java8.foreachloops;
+package org.test.CoreJava.JDK8.foreachloops;
 
 public class foreachloop {
     public static void main(String[] args)

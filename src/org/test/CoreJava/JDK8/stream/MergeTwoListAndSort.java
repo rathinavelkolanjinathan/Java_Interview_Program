@@ -18,7 +18,7 @@ public class MergeTwoListAndSort {
                 .sorted()
                 .collect(Collectors.toList());
         // second options
-        // List<String> result = combinedList.stream().sorted().collect(Collectors.toList());
+        // List<stringDemo> result = combinedList.stream().sorted().collect(Collectors.toList());
 
         System.out.println("Sorted values " + combinedList);
     }

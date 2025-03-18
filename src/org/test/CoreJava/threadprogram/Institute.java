@@ -10,7 +10,7 @@ public class Institute {
     private static final int SLEEP = 10;
     /**
      * This method is classroom
-     * @ param String facultyName
+     * @ param stringDemo facultyName
      */
     synchronized public void classRoom(final String facultyName) {
 

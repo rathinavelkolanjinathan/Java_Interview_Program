@@ -15,10 +15,10 @@ public class OptionalTest {
         //   Optional<Object> o = Optional.empty();
         //  System.out.print("values of "+o);
 
-        // Optional<String> p = Optional.ofNullable(customer.getEmail());
+        // Optional<stringDemo> p = Optional.ofNullable(customer.getEmail());
         //System.out.println("of nullable "+p.get());
 
-        //Optional<String> op = Optional.of(customer.getEmail());
+        //Optional<stringDemo> op = Optional.of(customer.getEmail());
         //System.out.println("optional"+op);
 
         Customer cust = new Customer(101, "john", "kolanjirathna@gmail.com", Arrays.asList("3214"));

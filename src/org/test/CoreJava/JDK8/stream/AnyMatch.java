@@ -41,7 +41,7 @@ public class AnyMatch {
             return xx.startsWith("c");
 
         });
-        System.out.println("String Results::" + matchingResults);
+        System.out.println("stringDemo Results::" + matchingResults);
 
         System.out.println("AllMatch Results " + bb);
     }

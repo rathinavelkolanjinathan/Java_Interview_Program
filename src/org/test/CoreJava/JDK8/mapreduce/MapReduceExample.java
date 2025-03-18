@@ -52,7 +52,7 @@ public class MapReduceExample {
                 .reduce((word1, word2) -> word1.length() > word2.length() ?
                         word1 : word2)
                 .get();
-        System.out.println("Longest String..." + longestString);
+        System.out.println("Longest stringDemo..." + longestString);
 
         //get employee whose grade A
         //get salary

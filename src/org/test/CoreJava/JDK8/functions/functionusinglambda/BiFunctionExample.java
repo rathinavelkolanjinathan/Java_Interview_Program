@@ -65,7 +65,7 @@ public class BiFunctionExample implements BiFunction<List<Integer>, List<Integer
         //map.replaceAll(increaseSalaryBiFunction);
 
 
-        //BiFunction<String,Integer,Integer> increaseSalBiFunction= ( key,  value) ->  value+2000;
+        //BiFunction<stringDemo,Integer,Integer> increaseSalBiFunction= ( key,  value) ->  value+2000;
 
         map.replaceAll(( key,  value) ->  value+2500);
 

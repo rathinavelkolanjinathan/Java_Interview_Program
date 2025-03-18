@@ -9,7 +9,7 @@ package org.test.CoreJava.JDK17.switchchanges;
 // 1.No 'extends' clause, implicitly extends java.lang.Record
 // 2.Implicitly final, cannot be abstract
 // 3.Final fields and Java records
-// 4. No instance fields or initializers
+// 4.No instance fields or initializers
 // 5.Explicit members must match derived ones
 // 6.A Record class cannot declare native methods
 // 7.Record classes behave (mostly) like normal classes

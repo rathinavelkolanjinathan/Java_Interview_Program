@@ -1,4 +1,4 @@
-package org.test.CoreJava.JDK8.prdicate.custom;
+package org.test.CoreJava.JDK8.predicate.custom;
 
 import java.util.ArrayList;
 import java.util.Arrays;

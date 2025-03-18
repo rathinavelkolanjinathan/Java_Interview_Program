@@ -10,7 +10,7 @@ public class ShuffleString {
         return new String(result);
     }
     public static void main(String[] args) {
-        // String st = "abc", int [] indices = [0,1,2]
+        // stringDemo st = "abc", int [] indices = [0,1,2]
         String st = "codeleet";
         int[] indices = {4, 5, 6, 7, 0, 2, 1, 3};
         String result = ShuffleString.restoreString(st, indices);

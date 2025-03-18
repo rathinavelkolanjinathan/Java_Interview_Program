@@ -26,7 +26,7 @@ public class ReverseLetter {
                     .reverse()
                     .toString());
         }
-        System.out.println("Using String Builder....." + stringJoiner);
+        System.out.println("Using stringDemo Builder....." + stringJoiner);
 
         //Using Jdk8
         String String = Stream.of(str)

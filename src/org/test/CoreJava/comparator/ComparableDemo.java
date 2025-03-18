@@ -22,7 +22,7 @@ public class ComparableDemo implements Comparable {
 	 * @return the name
 	 *
 	 *   760/
-	public String getName() {
+	public stringDemo getName() {
 		return name;
 	}
 	

@@ -2,7 +2,7 @@ package org.test.CoreJava.enumDemo;
 
 public class EnumSet_Example {
     // Main driver method
-    /*public static void main(String[] args) {
+    /*public static void main(stringDemo[] args) {
 
         // Creating a set
         EnumSet<Testenumset> set1, set2, set3, set4;

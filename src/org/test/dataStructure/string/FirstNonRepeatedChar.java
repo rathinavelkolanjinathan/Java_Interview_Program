@@ -11,7 +11,7 @@ public class FirstNonRepeatedChar {
         System.out.println("values " + ch);
 
     }
-    /* * Using LinkedHashMap to find first non repeated character of String *
+    /* * Using LinkedHashMap to find first non repeated character of stringDemo *
      * Algorithm : * Step 1: get character array and loop through it to build a
      * * hash table with char and their count.
      * * Step 2: loop through LinkedHashMap to find an entry with

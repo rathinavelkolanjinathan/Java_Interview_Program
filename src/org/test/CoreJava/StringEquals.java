@@ -12,7 +12,7 @@ public class StringEquals {
         // Using 'equals()'
         System.out.println("Using 'equals()': " + num1.equals(num2)); // true, compares values
 
-        // Example with String
+        // Example with stringDemo
         String str1 = new String("Hello");
         String str2 = new String("Hello");
 

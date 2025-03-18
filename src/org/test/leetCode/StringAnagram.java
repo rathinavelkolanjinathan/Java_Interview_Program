@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  *
- * String anagram
+ * stringDemo anagram
  *
  * Example 1:
  *

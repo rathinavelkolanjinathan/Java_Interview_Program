@@ -8,7 +8,7 @@ public class MapVsFlatMapCustomised {
 
         List<Customer> customers = EkartDataBase.getAll();
 
-        //List<Customer>  convert List<String> -> Data Transformation
+        //List<Customer>  convert List<stringDemo> -> Data Transformation
         //mapping : customer -> customer.getEmail()
         //customer -> customer.getEmail()  one to one mapping
         List<String> emails = customers.stream()
@@ -23,7 +23,7 @@ public class MapVsFlatMapCustomised {
                 .collect(Collectors.toList());
         System.out.println("using map read phoneNumbers:" + phoneNumbers);
 
-        //List<Customer>  convert List<String> -> Data Transformation
+        //List<Customer>  convert List<stringDemo> -> Data Transformation
         //mapping : customer -> phone Numbers
         //customer -> customer.getPhoneNumbers()  ->> one to many mapping
         List<String> phones = customers.stream()

@@ -1,7 +1,7 @@
 package org.test.dataStructure.string;
 
 /**
- * Implement an algorithms String has all unique characters.
+ * Implement an algorithms stringDemo has all unique characters.
  */
 public class IsUnique {
     public static void main(String[] args) {

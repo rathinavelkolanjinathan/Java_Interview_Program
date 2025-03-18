@@ -1,4 +1,4 @@
-package org.test.CoreJava.JDK8.DateAndTime;
+package org.test.CoreJava.JDK8.dateandtime;
 
 import java.time.Duration;
 import java.time.LocalDate;

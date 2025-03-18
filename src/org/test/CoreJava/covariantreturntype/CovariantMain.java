@@ -1,7 +1,7 @@
-package org.test.CoreJava.CovariantReturnType;
+package org.test.CoreJava.covariantreturntype;
 
 //As you can see in the above example, the return type of the get()
-// method of CovariantReturnType class is CovariantReturnType but the return type of the get() method of CovariantReturnType1 class is CovariantReturnType1.
+// method of covariantreturntype class is covariantreturntype but the return type of the get() method of CovariantReturnType1 class is CovariantReturnType1.
 // Both methods have different return type but it is method overriding.
 // This is known as covariant return type.
 

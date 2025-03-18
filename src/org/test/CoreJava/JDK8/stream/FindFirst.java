@@ -15,7 +15,7 @@ public class FindFirst {
         l.add("xml");
 
         Stream<String> ll = l.stream();
-        // Optional<String> o=ll.findFirst();
+        // Optional<stringDemo> o=ll.findFirst();
         Optional<String> o = ll.findFirst();
 
             System.out.println(o.isPresent());

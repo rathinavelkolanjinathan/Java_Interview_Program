@@ -13,7 +13,7 @@ public class ListFilter {
         listVal.add("amuthavalli");
         listVal.add("kala");
         listVal.add("kuppuswamy");
-// Internally used prdicate method
+// Internally used predicate method
         listVal.
                 stream()
                 .filter(values -> values.startsWith("m"))

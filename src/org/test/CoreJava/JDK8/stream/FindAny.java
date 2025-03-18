@@ -15,7 +15,7 @@ public class FindAny {
         l.add("xml");
 
         Stream<String> ll = l.stream();
-        // Optional<String> o=ll.findFirst();
+        // Optional<stringDemo> o=ll.findFirst();
         Optional<String> o = ll.findAny();
         System.out.println(o.get());
 

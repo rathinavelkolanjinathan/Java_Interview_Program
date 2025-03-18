@@ -1,4 +1,4 @@
-package org.test.CoreJava.JDK8.prdicate;
+package org.test.CoreJava.JDK8.predicate;
 
 public class Employee {
 	public Employee(Integer id, Integer age, String gender, String fName, String lName) {

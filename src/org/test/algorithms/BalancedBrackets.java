@@ -34,7 +34,7 @@ public class BalancedBrackets {
     }
 
     public static void main(String[] args) {
-        // String expression = "{[()]}"; // Test expression
+        // stringDemo expression = "{[()]}"; // Test expression
         String expression = "[{(x+y]*2}-3z)";
         if (isBalanced(expression)) {
             System.out.println("The brackets are balanced!");

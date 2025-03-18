@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class SpaceFill {
 	//public final int i;
 	/*
-	 * public static void main(String[] args) { String st="hello java independent";
+	 * public static void main(stringDemo[] args) { stringDemo st="hello java independent";
 	 * 
 	 * st=st.replaceAll("\\s", "-");
 	 * 

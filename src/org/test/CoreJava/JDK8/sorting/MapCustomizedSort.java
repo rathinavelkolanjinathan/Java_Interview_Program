@@ -15,7 +15,7 @@ public class MapCustomizedSort {
         empMap.put(new Employee(204, "Priyadharshini", "account", 90000,"A"), 90);
         empMap.put(new Employee(205, "Kuppuswamy", "Network", 100000,"A"), 100);
 
-        //List<Entry<String,Integer>> entries = new ArrayList(map.entrySet());
+        //List<Entry<stringDemo,Integer>> entries = new ArrayList(map.entrySet());
         // System.out.println("After entry set"+entries);
         // Collections.sort(entries,(emp1,emp2)->emp1.getKey().compareTo(emp2.getKey()));
 

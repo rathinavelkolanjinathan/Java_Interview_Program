@@ -1,4 +1,4 @@
-package org.test.CoreJava.enumSetDemo;
+package org.test.CoreJava.enumDemo;
 
 public enum Day {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY

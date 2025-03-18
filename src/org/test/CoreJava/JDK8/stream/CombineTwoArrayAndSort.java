@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 public class CombineTwoArrayAndSort {
 
     public static void main(String[] args) {
-        //String array
+        //stringDemo array
         String[] array1 = {"1", "3", "4", "4"};
         String[] array2 = {"2", "5", "5"};
 

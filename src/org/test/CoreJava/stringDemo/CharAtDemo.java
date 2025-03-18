@@ -1,4 +1,4 @@
-package org.test.CoreJava.String;
+package org.test.CoreJava.stringDemo;
 
 public class CharAtDemo {
     public static void main(String[] args) {

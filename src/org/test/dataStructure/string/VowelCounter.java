@@ -18,11 +18,11 @@ public class VowelCounter {
                 case 'u':
                     count++;
                     break;
-                default: // no count increment } } System.out.println("Number of vowels in String [" +
+                default: // no count increment } } System.out.println("Number of vowels in stringDemo [" +
                     // input + "] is : " + count); }
             }
         }
-        System.out.println("Number of vowels in String [" + input + "]" + "is" + count);
+        System.out.println("Number of vowels in stringDemo [" + input + "]" + "is" + count);
 
     }
 

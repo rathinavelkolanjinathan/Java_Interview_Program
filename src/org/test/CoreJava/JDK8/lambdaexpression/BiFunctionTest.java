@@ -6,7 +6,7 @@ public class BiFunctionTest {
 
 	public static void main(String[] args) {
 		/*
-		 * BiFunctionInter<Integer, Integer, String> bi = (Integer i, Integer j) -> {
+		 * BiFunctionInter<Integer, Integer, stringDemo> bi = (Integer i, Integer j) -> {
 		 * 
 		 * int square = i * i; int square2 = j * j; return "The result" + square +
 		 * square2; };

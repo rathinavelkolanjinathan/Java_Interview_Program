@@ -7,7 +7,7 @@ public class StringObject {
         //how many object created here
         String s1 = new String("javatechieCore");
         //1 object -> new -> heap
-        //2 object -> literal -> SCP (String constant pool area)
+        //2 object -> literal -> SCP (stringDemo constant pool area)
 
         String s2 = "javatechieCore";
         // intern method used to get reference from SCP

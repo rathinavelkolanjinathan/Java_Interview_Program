@@ -1,4 +1,4 @@
-package org.test.CoreJava.JDK8.prdicate;
+package org.test.CoreJava.JDK8.predicate;
 
 
 import java.util.Arrays;

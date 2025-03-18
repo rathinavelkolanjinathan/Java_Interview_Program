@@ -26,8 +26,8 @@ public class FlatMapDemo {
     }
 
     /*
-     * List < String > words = Arrays.asList("JavaDevJournal", "Java"); List <
-     * String > unique = words.stream() .map(s -> s.split(""))
+     * List < stringDemo > words = Arrays.asList("JavaDevJournal", "Java"); List <
+     * stringDemo > unique = words.stream() .map(s -> s.split(""))
      * .flatMap(Arrays::stream) .distinct() .collect(Collectors.toList());
      */
     //System.out.println(unique);
