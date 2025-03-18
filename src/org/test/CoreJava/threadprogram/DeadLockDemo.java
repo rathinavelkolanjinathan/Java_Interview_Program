@@ -1,32 +1,40 @@
 package org.test.CoreJava.threadprogram;
 
-public class SleepTestUserDefined extends Thread {
+public class DeadLockDemo {
+    static Thread thread;
 
     public void run() {
+        try {
+			thread.join();
+        } catch (InterruptedException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
         for (int i = 0; i < 10; i++) {
-
-            System.out.println("run -" + Thread.currentThread().getName());
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
+            System.out.println("run -" + Thread.currentThread().getName());
 
         }
-
     }
 
     public static void main(String[] args) throws InterruptedException {
 
-        SleepTestUserDefined tt = new SleepTestUserDefined();
-        tt.setName("Sub1");
-        tt.start();
+        JoinTest joinTest = new JoinTest();
+		joinTest.setName("Sub1");
+        // mt.start();
 
+		joinTest.start();
+		joinTest.join();
+        //mt.join();
         for (int i = 0; i < 10; i++) {
 
             System.out.println("Main -" + Thread.currentThread().getName());
-            Thread.sleep(3000);
+            // Thread.sleep(3000);
         }
     }
 }

@@ -1,10 +1,10 @@
-package org.test.CoreJava.Serialization;
+package org.test.CoreJava.serialization;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-public class DeserializableTest {
+public class DeserializableDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         FileInputStream input = new FileInputStream("child.ser");
         ObjectInputStream objectInputStream = new ObjectInputStream(input);

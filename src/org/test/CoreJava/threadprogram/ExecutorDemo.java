@@ -10,9 +10,9 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-public class ExecutorTest implements Callable<Integer> {
+public class ExecutorDemo implements Callable<Integer> {
     private final int input;
-    public ExecutorTest(int input) {
+    public ExecutorDemo(int input) {
         super();
         this.input = input;
     }
@@ -33,7 +33,7 @@ public class ExecutorTest implements Callable<Integer> {
         ExecutorService exe = Executors.newFixedThreadPool(5);
         List<Future<Integer>> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            Future<Integer> fut = exe.submit(new ExecutorTest(i));
+            Future<Integer> fut = exe.submit(new ExecutorDemo(i));
             System.out.println("return " + fut.get());
         }
 

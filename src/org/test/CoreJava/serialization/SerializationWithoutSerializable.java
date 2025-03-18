@@ -1,4 +1,4 @@
-package org.test.CoreJava.Serialization;
+package org.test.CoreJava.serialization;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -9,11 +9,11 @@ public class SerializationWithoutSerializable {
     public static void main(String[] args) {
         Child child = new Child();
         child.setId(101);
-        child.setName("Kolanji");
+        child.setName("Kolanjinathan");
         try {
 
-            FileOutputStream fileout = new FileOutputStream("child.ser");
-            ObjectOutputStream outPut = new ObjectOutputStream(fileout);
+            FileOutputStream fileOut = new FileOutputStream("child.ser");
+            ObjectOutputStream outPut = new ObjectOutputStream(fileOut);
             outPut.writeObject(child);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

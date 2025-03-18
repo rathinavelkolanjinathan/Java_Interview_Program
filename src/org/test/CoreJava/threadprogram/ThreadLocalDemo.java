@@ -1,6 +1,6 @@
 package org.test.CoreJava.threadprogram;
 
-public class ThreadLocalProgram {
+public class ThreadLocalDemo {
 
     // Create a ThreadLocal variable
     private static final ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 1);

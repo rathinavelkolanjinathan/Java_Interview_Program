@@ -1,5 +1,6 @@
 package org.test.CoreJava;
-//the volatile keyword is used to indicate that a variable’s value can be modified by multiple threads.
+//the volatile keyword is used to indicate that a variable’s value can be
+// modified by multiple threads.
 // When a variable is declared as volatile ,
 // any changes made to it by one thread are immediately visible to all other threads.
 //The volatile keyword is best suited for cases where multiple threads read and write

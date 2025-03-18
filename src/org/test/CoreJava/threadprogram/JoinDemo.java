@@ -1,6 +1,6 @@
 package org.test.CoreJava.threadprogram;
 
-public class JoinTest extends Thread {
+public class JoinDemo extends Thread {
 
 	public void run() {
 		for (int i = 0; i < 10; i++) {
@@ -16,7 +16,7 @@ public class JoinTest extends Thread {
 	}
 	public static void main(String[] args) throws InterruptedException {
 
-		JoinTest tt = new JoinTest();
+		JoinDemo tt = new JoinDemo();
 		tt.setName("Sub1");
 		tt.start();
         tt.join();

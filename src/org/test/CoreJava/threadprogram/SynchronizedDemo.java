@@ -1,6 +1,6 @@
 package org.test.CoreJava.threadprogram;
 
-public class SynchronizedTest  {
+public class SynchronizedDemo  {
 public static void main(String[] args) {
 	Institute ins=new Institute();
 	MyThread m1 =new MyThread(ins, "Raj");

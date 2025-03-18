@@ -1,4 +1,4 @@
-package org.test.CoreJava.Serialization;
+package org.test.CoreJava.serialization;
 
 import java.io.Serializable;
 
