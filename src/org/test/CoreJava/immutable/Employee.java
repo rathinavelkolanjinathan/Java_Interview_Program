@@ -1,4 +1,4 @@
-package org.java.coreJavaprogram.immutable;
+package org.test.CoreJava.immutable;
 
 import java.util.*;
 import java.util.stream.Collectors;

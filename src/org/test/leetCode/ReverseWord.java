@@ -27,7 +27,7 @@ public class ReverseWord {
         return new String(ch);
     }
 
-    // reverse algorithm
+    // reverse algorithms
     private static void reverse(char[] arr, int left, int right) {
         while (left < right) {
             char temp = arr[left];

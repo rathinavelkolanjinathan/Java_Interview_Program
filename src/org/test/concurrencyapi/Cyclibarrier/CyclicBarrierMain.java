@@ -8,7 +8,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 //The CyclicBarrier in Java is a synchronization and that allows a set of threads
-// to all wait for each other to reach a common barrier point. It is useful in scenarios
+// to all wait for each other to reach a commons barrier point. It is useful in scenarios
 // where you want to perform some action after
 // a fixed number of threads have reached a certain point.
 public class CyclicBarrierMain {

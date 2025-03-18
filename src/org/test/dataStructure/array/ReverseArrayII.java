@@ -9,7 +9,7 @@ public class ReverseArrayII {
     public static void main(String[] args) {
 
         int [] array = {2, 3, 4, 5, 6, 7, 8, 9};
-        //Use algorithm
+        //Use algorithms
         ReverseArrayII.reverseArray(array, 0, array.length - 1);
         //Use jdk8
         Arrays.stream(array)

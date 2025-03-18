@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// find out the common element
+// find out the commons element
 public class DisJoint {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -26,12 +26,12 @@ public class DisJoint {
 
 
         Collections.addAll(list1,2,3,4,5,6,7);
-        //find the common element
+        //find the commons element
         boolean boo = Collections.disjoint(list, list1);
         if (boo) {
-            System.out.println("This is no common");
+            System.out.println("This is no commons");
         } else {
-            System.out.println("This is  common");
+            System.out.println("This is  commons");
         }
     }
 }

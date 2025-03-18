@@ -6,11 +6,11 @@ import java.util.Collections;
 public class ReverseArray {
     public static void main(String[] args) {
         int[] originalArray = {10, 4, 2, 5, 9, 8, 7};
-        getReverse(originalArray);   //Using algorithm
+        getReverse(originalArray);   //Using algorithms
         //getReverseJdk8(originalArray);
     }
 
-    //old method algorithm o(n)
+    //old method algorithms o(n)
     public static void getReverse(int[] array) {
        /* for(int i= array.length-1;i>=0;i--){
 

@@ -1,6 +1,6 @@
 package org.test.CoreJava.collection.comparator;
 
-import org.test.common.Student;
+import org.test.commons.Student;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,7 +1,7 @@
 package org.test.CoreJava.collection.ArrayList;
 
 
-import org.test.common.Student;
+import org.test.commons.Student;
 
 import java.util.ArrayList;
 import java.util.HashSet;
