@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
   <!-- <modules>
-        <module>org.test.algorithm</module>
+        <module>org.java.algorithm</module>
         &lt;!&ndash; <module>common</module>
          <module>domain</module>
          <module>primary-adaptor</module>&ndash;&gt;
@@ -22,22 +22,37 @@
     </properties>
 
     <dependencies>
-        <dependency>
+       <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.5</version>
         </dependency>
 
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+
+                </exclusion>
+            </exclusions>
+            <version>1.2.3</version>
         </dependency>
 
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.5</version>
+            <scope>runtime</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <!-- Remove conflicting -->
+            </exclusions>
         </dependency>
 
 
@@ -52,7 +67,7 @@
             <artifactId>reactor-adapter</artifactId>
             <version>3.4.6</version>
         </dependency>
-        <!-- test data -->
+        <!-- java data -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -91,13 +106,13 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
+-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
