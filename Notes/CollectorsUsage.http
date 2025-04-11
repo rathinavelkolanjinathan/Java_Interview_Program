@@ -30,15 +30,18 @@ import java.util.Collections;
 
   int total = employees.stream()
    .collect(Collectors.summingInt(Employee::getSalary));
+
  5. Group employees by department
 
   Map<Department, List<Employee>> byDept = employees.stream()
     .collect(Collectors.groupingBy(Employee::getDepartment));
+
  6. Compute sum of salaries by department
 
   Map<Department, Integer> totalByDept = employees.stream()
     .collect(Collectors.groupingBy(Employee::getDepartment,
                                    Collectors.summingInt(Employee::getSalary)));
+
  7.Partition students into passing and failing
 
   Map<Boolean, List<Student>> passingFailing = students.stream()

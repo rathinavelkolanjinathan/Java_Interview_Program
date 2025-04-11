@@ -13,7 +13,7 @@ public class CustomizeListSorting {
 
 
         List<Employee> list = Database.getEmployeeDetails();
-        //Old Model
+        // Old Model
         Collections.sort(list, new Comparator<Employee>() {
 
             public int compare(Employee emp1, Employee emp2) {
@@ -25,7 +25,7 @@ public class CustomizeListSorting {
         });
         // System.out.println(list);
 
-        //Lambda implements
+        //Using Lambda implements
         //Ascending order  Method1
         Collections.sort(list, (emp1, emp2) ->
                 (int) (emp1.getSalary() - emp2.getSalary()));
@@ -44,6 +44,7 @@ public class CustomizeListSorting {
         list.stream()
                 .sorted(Comparator.comparing(emp -> emp.getSalary()))
                 .forEach(System.out::println);
+
         //Method4
         list.stream()
                 .sorted(Comparator.comparing(Employee::getSalary))

@@ -11,7 +11,7 @@ public class OptionalTest {
         //of -> when your object is never null the go to use for Of
         //ofNullable -> Pbject is may or may not nullable then go to OfNullable
 
-        Customer customer = new Customer(101, "john", null, Arrays.asList("3214"));
+       // Customer customer = new Customer(101, "john", null, Arrays.asList("3214"));
         //   Optional<Object> o = Optional.empty();
         //  System.out.print("values of "+o);
 
@@ -21,20 +21,18 @@ public class OptionalTest {
         //Optional<stringDemo> op = Optional.of(customer.getEmail());
         //System.out.println("optional"+op);
 
-        Customer cust = new Customer(101, "john", "kolanjirathna@gmail.com", Arrays.asList("3214"));
-        Optional<String> prsent = (customer.getEmail());
-        if (prsent.isPresent()) {
-            System.out.println("isPresent.... " + prsent.get());
+        Customer customer = new Customer(101, "john", "kolanjirathna@gmail.com", Arrays.asList("3214"));
+        Optional<String> optional = (customer.getEmail());
+        if (optional.isPresent()) {  //It returns a boolean (true if a value is present, otherwise false).
+            System.out.println("isPresent.... " + optional.get());
         }
 
-        prsent.ifPresent(value -> System.out.println("Value: " + value));
+        optional.ifPresent(value -> System.out.println("Value: " + value)); //If a value is present, invoke the specified Consumer with the value
 
-
-
-        System.out.println("orElse.... " + prsent.orElse("default message "));
+        System.out.println("orElse.... " + optional.orElse("default message "));
         //System.out.println("values " + prsent.orElseThrow(() -> new IllegalArgumentException("email is not found")));
 
-        System.out.println("Map....." + prsent.map(String::toUpperCase).orElseGet(() -> "defult values "));
+        System.out.println("Map....." + optional.map(String::toUpperCase).orElseGet(() -> "defult values "));
 
 
     }

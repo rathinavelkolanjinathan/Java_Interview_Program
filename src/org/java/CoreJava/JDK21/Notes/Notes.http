@@ -1,0 +1,147 @@
+Rules for Record classes
+----------------------------
+Now that we understand the benefits of using records,
+let's learn some rules about what we can and cannot do with them.
+
+1. No 'extends' clause, implicitly extends java.lang.Record
+Records implicitly extend the java.lang.Record class, so you cannot extend another class
+or record explicitly.
+
+public record Person(String name, int age) { }
+
+// This will NOT compile:
+public record SpecialPerson extends Person(String name, int age) { }
+The example shows that attempting to create a SpecialPerson record that extends Person will
+not compile.
+
+2. Implicitly final, cannot be abstract
+Records are implicitly final, meaning they cannot be extended or declared as abstract.
+
+// These won't compile:
+abstract record Payment(String id) { }
+final record LimitedPerson extends Person(String name, int age) { }
+The examples demonstrate that declaring an abstract record (Payment) or trying to extend a
+normal class (LimitedPerson) with a record will not compile.
+
+3. Final fields and Java records
+The component fields of a record are implicitly final, which means their values cannot be
+changed after the record instance is created.
+
+public record Transaction(String id, double amount) {
+    // This won't compile - attempting to change a final field:
+    public void changeAmount(double newAmount) {
+        amount = newAmount;
+    }
+}
+The example shows that attempting to change the amount field in the Transaction record's
+changeAmount() method will not compile.
+
+4. No instance fields or initializers
+Records cannot have instance fields or instance initializers beyond the component fields
+defined in the record header.
+
+public record Point(int x, int y) {
+    private double distanceFromOrigin; // Won't compile
+
+    {
+        // Instance initializer won't compile
+        distanceFromOrigin = calculateDistance();
+    }
+}
+The example Point record illustrates that declaring an instance field (distanceFromOrigin)
+or an instance initializer block will not compile.
+
+5. Explicit members must match derived ones
+If you declare explicit members (methods or fields) in a record, their signatures must match
+ the derived components from the record header.
+
+public record Coordinates(double latitude, double longitude) {
+    // This works, matches the auto-generated accessor
+    public double latitude() { return latitude; }
+
+    // This won't compile - type mismatch
+    public String latitude() { return Double.toString(latitude); }
+}
+In the Coordinates record example, the explicit latitude() method with a double return type
+ is valid, but one with a String return type will not compile due to a type mismatch.
+
+6. A Record class cannot declare native methods
+Record classes cannot declare native methods. Native methods depend on an external state,
+which goes against the immutable nature of records.
+
+public record Stock(String symbol, double price) {
+     // Won't compile - native methods not allowed
+     public native void updatePrice();
+}
+The Stock record example shows that declaring a native updatePrice() method will not compile.
+
+7. Record classes behave (mostly) like normal classes
+Records can have static members and nested classes and can implement interfaces similar to
+ normal classes.
+
+// Top-level or nested:
+public record Transaction(String id, double amount) {
+    // Static members:
+    private static final Logger LOGGER = LoggerFactory.getLogger(Transaction.class);
+
+    // Nested class:
+    public static record Status(String code, String description) { }
+}
+
+// Implementing Interfaces:
+public record Book(String title, String author) implements Comparable<Book> {
+    @Override
+    public int compareTo(Book other) {
+        // ... Logic for comparison
+    }
+}
+The examples illustrate declaring a static Logger, a nested Status record and implementing
+the Comparable interface in the Book record.
+
+8. Java records and annotations
+A record and the components in its header might be decorated with annotations, such as the
+ following:
+
+public record Transaction(
+    @NotNull String id,
+    @Positive double amount) {
+    // ...
+}
+The Transaction record example shows annotating the id and amount fields with @NotNull and
+ s@Positive annotations, respectively.
+
+9. Record serialization and deserialization
+Record instances can be serialized and deserialized, but the process cannot be customized
+ using methods such as writeObject(), readObject(), etc.
+
+public record Person(String name, int age) implements Serializable {
+}
+
+public static void main(String[] args) {
+   Person rushda = new Person("Rushda", 1);
+
+   // Serialize 'person' object
+   serializeToFile("person.ser", rushda);
+
+   // Deserialize into a new 'Person' instance
+   Person deserializedPerson = deserializeFromFile("person.ser");
+   System.out.println(rushda.equals(deserializedPerson)); //should print true
+}
+
+private static void serializeToFile(String filename, Person person) {
+   try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))) {
+       out.writeObject(person);
+   } catch (IOException e) {
+       throw new RuntimeException("Serialization failed: " + e.getMessage(), e);
+   }
+}
+
+private static Person deserializeFromFile(String filename) {
+   try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename))) {
+       return (Person) in.readObject();
+   } catch (IOException | ClassNotFoundException e) {
+       throw new RuntimeException("Deserialization failed: " + e.getMessage(), e);
+   }
+}
+The example demonstrates creating a Person record instance, serializing it and deserializing
+it into a new Person instance.
